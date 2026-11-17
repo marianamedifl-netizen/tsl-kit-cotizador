@@ -56,7 +56,9 @@ Cuando cambie una skill o una plantilla, se actualiza aquí. Vuelve a descargar 
 
 ## Ejemplos
 
-Este repositorio trae los ejemplos de Cotización Vuelos, Cotización Rápida y Cotización de Hoteles. Los ejemplos de Cotización Completa, Entrega Final y Guía de Viaje usan datos reales de clientes y no están incluidos.
+`TSL - Formato Nuevo` trae un ejemplo de cada documento: Cotización Completa (Laponia), Cotización Rápida, Cotización Vuelos, Cotización de Hoteles, Entrega Final y Guía de Viaje.
+
+Los ejemplos de Cotización Completa, Entrega Final y Guía de Viaje usan datos reales de clientes. Son solo referencia de formato: no se comparten fuera del equipo ni se reutilizan sus datos.
 
 ## Dónde guardar lo que se produce
 

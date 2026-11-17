@@ -1,0 +1,860 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Laponia · Año Nuevo Ártico · Cotización Opción 2</title><style>
+@font-face{font-family:'IvyOra';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/IvyOra/IvyOraDisplay-Thin.ttf');font-weight:200;font-style:normal;}
+@font-face{font-family:'IvyOra';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/IvyOra/IvyOraDisplay-ThinItalic.ttf');font-weight:200;font-style:italic;}
+@font-face{font-family:'IvyOra';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/IvyOra/IvyOraDisplay-Light.ttf');font-weight:300;font-style:normal;}
+@font-face{font-family:'Karla';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/Karla/static/Karla-Light.ttf');font-weight:300;font-style:normal;}
+@font-face{font-family:'Karla';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/Karla/static/Karla-Regular.ttf');font-weight:400;font-style:normal;}
+@font-face{font-family:'Karla';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/Karla/static/Karla-Medium.ttf');font-weight:500;font-style:normal;}
+@font-face{font-family:'Karla';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/Karla/static/Karla-Bold.ttf');font-weight:700;font-style:normal;}
+@page { size: 8.5in 11in; margin: 0; }
+:root { --paper:#FCF9F5; --almond:#F0EDE8; --oat:#DFD3C5; --stone:#7D766C; --ink:#232323; --soft:#55504A; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html,body { background:var(--paper); color:var(--ink); font:300 8.8pt/1.6 'Karla';
+  -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+.page { position:relative; width:8.5in; height:11in; overflow:hidden; page-break-after:always; background:var(--paper); }
+.page:last-child { page-break-after:auto; }
+img { display:block; width:100%; height:100%; object-fit:cover; }
+.logo { display:block; }
+.lb { font:400 6.3pt/1.4 'Karla'; letter-spacing:.3em; text-transform:uppercase; color:var(--stone); }
+h1 { font:200 43pt/1 'IvyOra'; letter-spacing:-.01em; }
+.sub { font:italic 200 13.5pt/1.3 'IvyOra'; color:var(--stone); margin-top:.1in; }
+.top { position:absolute; left:.7in; right:.7in; top:.5in; border-top:.5pt solid var(--stone); padding-top:.09in;
+  display:flex; justify-content:space-between; font:400 6pt 'Karla'; letter-spacing:.3em; text-transform:uppercase; color:var(--stone); }
+.top i { font-style:normal; margin-right:.14in; color:var(--ink); }
+.bot { position:absolute; left:.7in; right:.7in; bottom:.42in; border-top:.5pt solid var(--oat); padding-top:.11in;
+  display:flex; justify-content:space-between; align-items:center; color:var(--stone);
+  font:400 6pt 'Karla'; letter-spacing:.3em; }
+.bot .logo { width:.92in; }
+.in { position:absolute; left:.7in; right:.7in; top:1.2in; }
+
+/* portada */
+.cover > img { position:absolute; inset:0; }
+.cover .card { position:absolute; left:.7in; bottom:.95in; width:3.75in; padding:.38in .4in .36in; background:rgba(223,211,197,.82); color:var(--ink); }
+.cover .card .logo { width:1.25in; }
+.cover .card h1 { font-size:47pt; margin:.5in 0 .04in -.02in; }
+.cover .card .sub { color:var(--ink); opacity:.78; margin:0 0 .26in; }
+.cover .card dl { border-top:.5pt solid rgba(35,35,35,.4); padding-top:.17in; display:grid; grid-template-columns:.78in 1fr; row-gap:.05in; }
+.cover .card dt { font:400 5.8pt/1.9 'Karla'; letter-spacing:.3em; text-transform:uppercase; color:var(--stone); }
+.cover .card dd { font:300 8.6pt/1.45 'Karla'; }
+.cover .side { position:absolute; right:.52in; bottom:.95in; writing-mode:vertical-rl; transform:rotate(180deg);
+  font:400 6pt 'Karla'; letter-spacing:.42em; text-transform:uppercase; color:var(--ink); opacity:.6; }
+
+/* índice */
+.index .panel { position:absolute; left:0; top:0; bottom:0; width:2.95in; background:var(--oat); }
+.index .panel h1 { position:absolute; left:.7in; top:1.2in; }
+.index .panel span { position:absolute; left:.7in; bottom:1.05in; writing-mode:vertical-rl; transform:rotate(180deg);
+  font:400 6pt 'Karla'; letter-spacing:.42em; text-transform:uppercase; color:var(--stone); }
+.index .list { position:absolute; left:3.75in; right:.7in; top:1.2in; }
+.index ol { list-style:none; margin-top:.1in; }
+.index li { display:grid; grid-template-columns:.62in 1fr auto; align-items:baseline; padding:.165in 0 .15in; border-bottom:.5pt solid var(--oat); }
+.index li:first-child { border-top:.5pt solid var(--oat); }
+.index li i { font:200 15pt 'IvyOra'; font-style:normal; color:var(--stone); }
+.index li b { font:300 13.5pt 'IvyOra'; }
+.index li span { font:400 7pt 'Karla'; letter-spacing:.2em; color:var(--stone); }
+.index .meta { position:absolute; left:3.75in; right:.7in; bottom:1.05in; display:grid; grid-template-columns:1fr 1fr; gap:.3in; }
+.index .meta p { font:300 8.6pt/1.55 'Karla'; margin-top:.05in; }
+
+/* resumen */
+.map { width:5.9in; height:auto; display:block; margin:.35in auto 0; }
+.map .rt { fill:none; stroke:#232323; stroke-width:.55; stroke-dasharray:2 2.6; }
+.map .rg { font:400 5px 'Karla'; letter-spacing:.34em; fill:#7D766C; }
+.map .ct { font:300 7.4px 'Karla'; fill:#232323; }
+.map .ct.b { font:300 10.5px 'IvyOra'; }
+.map .it { font:italic 200 8px 'IvyOra'; fill:#7D766C; }
+.kv { display:grid; row-gap:.21in; align-content:start; padding-top:.04in; }
+.kv p { font:300 13pt/1.25 'IvyOra'; margin-top:.035in; }
+.kv small { display:block; font:300 8pt/1.5 'Karla'; color:var(--stone); margin-top:.02in; }
+table { width:100%; border-collapse:collapse; }
+th { font:400 6pt 'Karla'; letter-spacing:.26em; text-transform:uppercase; color:var(--stone); text-align:left;
+  padding:0 .1in .1in 0; border-bottom:.5pt solid var(--stone); }
+td { padding:.125in .1in .115in 0; border-bottom:.5pt solid var(--oat); font:300 8.6pt/1.35 'Karla'; vertical-align:baseline; }
+td:last-child, th:last-child { padding-right:0; }
+.stages { margin-top:.4in; }
+.stages td.s { font:300 12.5pt/1.2 'IvyOra'; }
+.band { margin-top:.55in; background:var(--stone); color:#FCF9F5;
+  display:flex; justify-content:space-between; align-items:center; padding:.2in .3in; }
+.band .lb { color:#FCF9F5; opacity:.8; }
+.band p { font:300 9.2pt 'Karla'; letter-spacing:.02em; }
+
+/* vuelos */
+.pax { display:flex; align-items:baseline; gap:.3in; margin-top:.55in; padding-bottom:.16in; }
+.pax p { font:300 14pt/1.2 'IvyOra'; }
+.flights td:nth-child(1), .flights td:nth-child(6) { color:var(--stone); }
+.flights td:nth-child(3) { font-weight:500; }
+.fnotes { display:grid; grid-template-columns:1fr 1fr; column-gap:.55in; margin-top:.6in; }
+.fnotes h4 { font:italic 200 14pt/1.2 'IvyOra'; margin-bottom:.1in; }
+.fnotes ul { list-style:none; }
+.fnotes li { font:300 8.3pt/1.56 'Karla'; color:var(--soft); padding-left:.15in; text-indent:-.15in; margin-bottom:.05in; }
+.fnotes li::before { content:'–'; display:inline-block; width:.15in; text-indent:0; color:var(--stone); }
+
+/* hotel */
+.stay .mos { position:absolute; left:.7in; right:.7in; top:1.2in; }
+.stay .r1 { display:grid; grid-template-columns:4.6in 2.4in; column-gap:.1in; height:3.55in; }
+.stay .r2 { display:grid; grid-template-columns:2.9in 1.75in 2.25in; column-gap:.1in; height:2.35in; margin-top:.1in; }
+.stay .r3 { display:grid; grid-template-columns:1fr 1.75in 1.75in; column-gap:.1in; height:2.6in; margin-top:.1in; }
+.stay .mos img { height:100%; }
+.stay .r1 img { height:3.55in; } .stay .r2 img { height:2.35in; } .stay .r3 img { height:2.6in; }
+.stay .name { padding:.16in .3in 0 0; }
+.stay .name h2 { font:200 31pt/1 'IvyOra'; margin-top:.1in; }
+.stay .name .sub { margin-top:.05in; }
+.stay .name dl { display:grid; grid-template-columns:1fr 1fr; column-gap:.2in; row-gap:.13in; margin-top:.24in; }
+.stay .name dd { font:300 10.5pt/1.25 'IvyOra'; margin-top:.02in; }
+.stay .name dd small { display:block; font:300 7.4pt/1.4 'Karla'; color:var(--stone); }
+
+/* itinerario */
+.day { position:absolute; left:.7in; right:.7in; display:grid; grid-template-columns:1.9in 1fr; column-gap:.5in; }
+.day.flip { grid-template-columns:1fr 1.9in; }
+.day.solo { grid-template-columns:1fr; }
+.day figure { height:2.52in; position:relative; }
+.day figcaption { position:absolute; left:0; bottom:-.21in; font:italic 200 8.5pt 'IvyOra'; color:var(--stone); }
+.day.flip figcaption { left:auto; right:0; }
+.day .dt { font:italic 200 12.5pt/1.2 'IvyOra'; color:#A8937B; }
+.day h3 { font:200 25pt/1.08 'IvyOra'; margin:.05in 0 .2in; }
+.ag { display:grid; grid-template-columns:.68in 1fr; row-gap:.1in; }
+.ag .w { font:700 8pt/1.62 'Karla'; letter-spacing:.02em; color:var(--ink); }
+.ag .t { font:400 9pt/1.4 'Karla'; }
+.ag .d { font:300 8.3pt/1.48 'Karla'; color:var(--soft); margin-top:.01in; }
+.ag .d em { font:italic 200 9.5pt 'IvyOra'; color:var(--stone); white-space:nowrap; }
+.rule { position:absolute; left:.7in; right:.7in; border-top:.5pt solid var(--oat); }
+
+/* cotización */
+.quote table { margin-top:.5in; }
+.quote th:last-child, .quote td:last-child { text-align:right; white-space:nowrap; }
+.quote td { padding:.22in .1in .2in 0; vertical-align:top; }
+.quote td b { display:block; font:300 14.5pt/1.2 'IvyOra'; }
+.quote td span { display:block; color:var(--soft); margin-top:.04in; font-size:8.4pt; }
+.quote td:last-child { font:300 14.5pt/1.2 'IvyOra'; padding-right:0; }
+.quote .total { display:flex; justify-content:space-between; align-items:baseline; background:var(--oat); color:var(--ink);
+  padding:.2in .3in .19in; margin-top:.3in; }
+.quote .total .lb { color:var(--soft); }
+.quote .total b { font:200 24pt/1 'IvyOra'; }
+.quote .opt { display:grid; grid-template-columns:1.05in 1fr auto; column-gap:.2in; align-items:baseline; margin-top:.34in;
+  padding-bottom:.2in; border-bottom:.5pt solid var(--oat); }
+.quote .opt p { color:var(--soft); font-size:8.4pt; }
+.quote .opt p b { display:block; font:300 12pt/1.3 'IvyOra'; color:var(--ink); }
+.quote .opt i { font:300 12pt 'IvyOra'; font-style:normal; }
+.quote .fine { margin-top:.24in; color:var(--soft); font-size:7.9pt; line-height:1.62; }
+.quote .valid { position:absolute; left:.7in; right:.7in; bottom:1.0in; background:var(--almond); padding:.26in .3in .24in;
+  display:grid; grid-template-columns:1.5in 1fr; column-gap:.3in; }
+.quote .valid p { font-size:8.5pt; color:var(--soft); }
+
+/* notas */
+.notes .cols { display:grid; grid-template-columns:1fr 1fr; column-gap:.55in; margin-top:.45in; }
+.notes h4 { font:italic 200 14pt/1.2 'IvyOra'; margin:0 0 .09in; }
+.notes ul { list-style:none; margin-bottom:.3in; }
+.notes li, .notes .cols p { font:300 8.1pt/1.56 'Karla'; color:var(--soft); }
+.notes li { padding-left:.15in; text-indent:-.15in; margin-bottom:.045in; }
+.notes li::before { content:'–'; display:inline-block; width:.15in; text-indent:0; color:var(--stone); }
+.notes .cols p { margin-bottom:.3in; }
+.notes td, .notes th { font-size:7.9pt; }
+.notes td { padding:.085in .1in .075in 0; color:var(--soft); }
+.notes th { font-size:5.8pt; }
+
+/* cierre */
+.end { background:var(--stone); color:#FCF9F5; }
+.end .logo { position:absolute; left:50%; top:46%; width:3.1in; transform:translate(-50%,-50%); }
+.end .who { position:absolute; left:.7in; right:.7in; bottom:1.25in; text-align:center; }
+.end .who b { display:block; font:200 17pt 'IvyOra'; }
+.end .who p { font:300 8.6pt/1.7 'Karla'; opacity:.88; margin-top:.05in; }
+.end .cred { position:absolute; left:1.4in; right:1.4in; bottom:.5in; text-align:center; font:300 6.2pt/1.6 'Karla'; opacity:.62; }
+
+/* hoteles (tabla) */
+.hot table { margin-top:.55in; }
+.hot td { padding:.17in .12in .16in 0; vertical-align:middle; }
+.hot td.h { font:300 13pt/1.2 'IvyOra'; }
+.hot td.r b { display:block; font:400 8.8pt/1.4 'Karla'; }
+.hot td.r span { display:block; color:var(--stone); font-size:8pt; margin-top:.02in; }
+.hot td.g { color:var(--stone); }
+/* resumen */
+.map { display:block; width:4.55in; margin:0 auto; }
+.map .ct.b { font:300 9.5px 'IvyOra'; }
+.map .it { font:italic 200 7px 'IvyOra'; }
+.stages { margin-top:.22in; }
+.stages td { padding:.1in .1in .09in 0; }
+.stages td { font:300 8.8pt/1.35 'Karla'; }
+.stages td.f { font-weight:700; }
+/* banda beige en encabezados de Vuelos y Hoteles */
+.flights th, .hot th { background:var(--oat); color:var(--ink); border-bottom:0; padding:.1in .1in .09in 0; }
+.flights th:first-child, .hot th:first-child, .flights td:first-child, .hot td:first-child { padding-left:.14in; }
+.flights th:last-child, .hot th:last-child, .flights td:last-child, .hot td:last-child { padding-right:.14in; }
+/* vuelos */
+.fly .fnotes { position:absolute; left:.7in; right:.7in; bottom:1.0in; margin:0; border-top:.5pt solid var(--oat); padding-top:.16in; column-gap:.5in; }
+.fly .fnotes h4 { font:400 6pt 'Karla'; letter-spacing:.26em; text-transform:uppercase; color:var(--stone); margin-bottom:.07in; }
+.fly .fnotes li { font:300 7pt/1.5 'Karla'; color:var(--stone); margin-bottom:.02in; padding-left:.12in; text-indent:-.12in; }
+.fly .fnotes li::before { width:.12in; }
+.pax p { font:300 11.5pt/1.45 'IvyOra'; }
+.pax { align-items:flex-start; }
+.pax .lb { padding-top:.05in; white-space:nowrap; }
+/* itinerario en flujo */
+.itin { position:absolute; left:.7in; right:.7in; display:grid; grid-template-columns:1.9in 1fr; column-gap:.5in; }
+.itin.flip { grid-template-columns:1fr 1.9in; }
+.itin.flip .side { order:2; }
+.side { position:relative; }
+.side figure { height:2.52in; width:1.9in; position:absolute; left:0; }
+.side figcaption { position:absolute; left:0; bottom:-.21in; font:italic 200 8.5pt 'IvyOra'; color:var(--stone); }
+.itin.flip .side figcaption { left:auto; right:0; }
+.dayf { padding-bottom:.24in; margin-bottom:.24in; border-bottom:.5pt solid var(--oat); }
+.dayf:last-child { border-bottom:0; margin-bottom:0; padding-bottom:0; }
+.dayf .dt { font:700 7.3pt/1.2 'Karla'; letter-spacing:.2em; text-transform:uppercase; color:#B9A791; }
+.dayf h3 { font:200 23pt/1.08 'IvyOra'; margin:.07in 0 .17in; }
+.dayf .ag { grid-template-columns:.7in 1fr; row-gap:.09in; }
+/* hotel: texto arriba, 4 fotos grandes */
+.stay4 .head { position:absolute; left:.7in; right:.7in; top:1.2in; }
+.stay4 h2 { font:200 34pt/1.05 'IvyOra'; }
+.stay4 .loc { display:flex; align-items:center; gap:.16in; margin-top:.09in; }
+.stay4 .loc .sub { font-size:12.5pt; margin:0; }
+.stay4 .stars { display:inline-flex; gap:.035in; }
+.stay4 .stars svg { width:.125in; height:.125in; fill:#A8937B; }
+.stay4 dl { display:grid; grid-template-columns:1.25in .8in 3.2in 1fr; column-gap:.2in; margin-top:.26in;
+  border-top:.5pt solid var(--stone); border-bottom:.5pt solid var(--oat); padding:.12in 0 .11in; }
+.stay4 dd { font:300 10.5pt/1.25 'IvyOra'; margin-top:.03in; }
+.stay4 .desc { font:300 8.7pt/1.62 'Karla'; color:var(--soft); margin-top:.2in; }
+.stay4 .four { position:absolute; left:.7in; right:.7in; bottom:.95in; display:grid; grid-template-columns:1fr 1fr; gap:.1in; }
+.stay4 .four img { height:2.8in; }
+/* cierre: minimalista, tono sobre tono */
+.end { background:var(--oat); color:var(--ink); }
+.end .logo { top:3.75in; width:2.85in; color:var(--stone); }
+.end .follow { position:absolute; left:0; right:0; top:5.25in; text-align:center; }
+.end .follow::before { content:''; display:block; width:.42in; border-top:.5pt solid var(--stone); margin:0 auto .42in; }
+.end .follow a { color:inherit; text-decoration:none; display:block; }
+.end .follow .lb { color:var(--stone); }
+.end .follow .h { font:200 27pt/1.1 'IvyOra'; margin-top:.1in; }
+.end .follow .u { font:italic 200 14pt/1.2 'IvyOra'; margin-top:.2in; color:var(--soft); }
+.end .who { bottom:1.2in; }
+.end .who b { font:300 12.5pt 'IvyOra'; }
+.end .who p { font:300 7.6pt/1.7 'Karla'; color:var(--stone); opacity:1; letter-spacing:.04em; margin-top:.04in; }
+.end .cred { left:1.7in; right:1.7in; bottom:.48in; font-size:5.6pt; color:var(--stone); opacity:.75; }
+/* cotización */
+.quote .sums { margin-top:.3in; }
+.quote .sums div { display:flex; justify-content:space-between; align-items:baseline; padding:.13in 0 .12in; border-bottom:.5pt solid var(--oat); }
+.quote .sums div b { font:300 13pt 'IvyOra'; }
+.quote .total { margin-top:.22in; }
+.index li { padding:.125in 0 .115in; }
+.index li b { font-size:12.5pt; }
+.cover .card h1 { font-size:50pt; margin-top:.45in; }
+.cover .card .t2 { font:200 19pt/1.1 'IvyOra'; margin:.02in 0 .1in; }
+
+/* ── cambios del consejo de diseño ── */
+.lb { font-size:6.8pt; letter-spacing:.22em; }
+th { font-size:6.8pt; letter-spacing:.2em; }
+.top, .bot { font-size:6.6pt; letter-spacing:.24em; }
+.bot a { display:block; color:inherit; }
+td { font-size:9pt; }
+.cover .card { bottom:.7in; width:3.9in; padding:.34in .4in .32in; background:rgba(223,211,197,.9); }
+.cover .card .logo { width:1.75in; }
+.cover .card h1 { margin-top:.3in; }
+.cover .card .sub { color:var(--stone); opacity:1; }
+.cover .card dl { grid-template-columns:.9in 1fr; }
+.cover .card dt { font-size:6.4pt; letter-spacing:.24em; }
+.open .card { width:4.6in; padding:.3in .4in .32in; }
+.hot td:nth-child(4) { white-space:nowrap; }
+.open .card h1 { font-size:36pt; margin:.14in 0 0; }
+.index li { display:block; padding:0; }
+.index li a { display:grid; grid-template-columns:.62in 1fr auto; align-items:baseline; padding:.125in 0 .115in; color:inherit; text-decoration:none; }
+.dot { display:inline-flex; align-items:center; justify-content:center; width:11pt; height:11pt; border-radius:50%;
+  background:var(--ink); color:var(--paper); font:500 6.6pt 'Karla'; letter-spacing:0; }
+.stages th, .notes table th { background:var(--oat); color:var(--ink); border-bottom:0; padding:.1in .1in .09in 0; }
+.stages th:first-child, .stages td:first-child, .notes table th:first-child, .notes table td:first-child { padding-left:.14in; }
+.stages td { font-size:9pt; }
+.fly .pax { display:block; margin-top:.5in; }
+.fly .pax .lb { display:block; padding:0; }
+.fly .pax .names { display:grid; grid-template-columns:repeat(3, auto); justify-content:start; column-gap:.45in; row-gap:.02in; margin-top:.07in; }
+.fly .pax .names span { font:300 9pt/1.5 'Karla'; color:var(--ink); white-space:nowrap; }
+.flights td { font-size:8.8pt; }
+.flights td:nth-child(1) { color:var(--ink); font-weight:700; }
+.flights td:nth-child(6) { color:var(--ink); }
+.flights td:nth-child(6) b { font-weight:500; }
+.flights th:nth-child(9), .flights td:nth-child(9) { text-align:right; }
+.flights tr.grp td { font:400 6.6pt 'Karla'; letter-spacing:.22em; text-transform:uppercase; color:var(--soft); padding:.2in 0 .07in .14in; border-bottom:.5pt solid var(--stone); }
+.flights sup { font:500 6.5pt 'Karla'; vertical-align:2pt; margin-left:.03in; }
+.fly .fnotes h4 { font-size:6.8pt; letter-spacing:.22em; }
+.fly .fnotes li { font-size:8pt; color:var(--soft); }
+.hot td.g { color:var(--ink); font-weight:700; white-space:nowrap; }
+.hot td.h { font-size:11.5pt; white-space:nowrap; }
+.hot td.r b { font-size:9pt; text-wrap:balance; }
+.hot td.r span { color:var(--soft); font-size:8.4pt; }
+.itin { grid-template-columns:2.35in 1fr; column-gap:.3in; }
+.itin.flip { grid-template-columns:1fr 2.35in; }
+.side figure { height:3.1in; width:2.35in; }
+.side figcaption { font-size:10pt; color:var(--soft); bottom:-.24in; }
+.dayf .dt { font-size:7.8pt; letter-spacing:.16em; color:#927F68; }
+.dayf.nh .ag { grid-template-columns:0 1fr; }
+.ag .t, .ag .d { max-width:4.3in; text-wrap:pretty; }
+.stay4 .desc { column-count:2; column-gap:.3in; font-size:9pt; }
+.stay4 .loc .dot { margin-right:-.04in; }
+.quote h1 i { font:italic 200 19pt 'IvyOra'; color:var(--stone); margin-left:.12in; }
+.quote td:last-child { font-size:16pt; }
+.quote .total { margin:.3in -.3in 0; align-items:center; padding:.22in .3in; }
+.quote .total .lb { font-size:7pt; letter-spacing:.2em; color:var(--ink); }
+.quote .fine { font-size:8.3pt; }
+.notes .cols { row-gap:.04in; }
+.notes li, .notes .cols p { font-size:8.5pt; }
+.notes td { font-size:8.5pt; }
+.notes th { font-size:6.4pt; }
+.end .who b { font-size:16pt; }
+.end .who p { font-size:8pt; }
+.end .who p.ct { margin-top:.09in; font:400 10pt/1.6 'Karla'; color:var(--ink); letter-spacing:.02em; }
+.end .who a { color:inherit; text-decoration:none; }
+.end .cred { font-size:6.5pt; opacity:1; }
+
+.logo { overflow:visible; }
+.fly .pax .names { display:block; margin-top:.07in; font:300 7pt/1.5 'Karla'; color:var(--ink); white-space:nowrap; }
+.fly .pax .names i { display:inline-block; width:2.4pt; height:2.4pt; border:.5pt solid var(--stone); border-radius:50%; margin:0 .045in; vertical-align:.08em; }
+.notes h4 { font:700 9pt/1.3 'Karla'; color:var(--soft); letter-spacing:.01em; margin:0 0 .08in; }
+.notes ul { margin-bottom:.26in; }
+.notes .cols p { margin-bottom:.26in; }
+
+.fly .fnotes { display:block; padding-top:.12in; }
+.fly .fnotes h4 { font-size:5.6pt; letter-spacing:.24em; margin:0 0 .03in; }
+.fly .fnotes p { font:300 6.4pt/1.5 'Karla'; color:var(--soft); max-width:5.6in; margin:0 0 .09in; }
+.fly .fnotes p:last-child { margin-bottom:0; }
+</style></head><body>
+
+<div class="page cover">
+  <img src="img/cover.jpg">
+  <div class="card">
+    <svg class="logo " viewBox="203 464 673 152" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M337.8,609.8v-11.9h1.7v10.4h6.4v1.5h-8.1Z"/>
+    <path d="M362.7,610c-1.6,0-2.8-.4-3.7-1.3s-1.3-2.2-1.3-3.9v-6.7h1.7v6.7c0,1.3.3,2.3.9,2.9s1.4.9,2.5.9,1.9-.3,2.5-.9.9-1.6.9-2.9v-6.7h1.6v6.7c0,1.7-.4,3-1.3,3.9-.9.9-2.1,1.3-3.7,1.3Z"/>
+    <path d="M379.6,609.8l4.9-6.7v1.3l-4.7-6.4h1.9l3.7,5.1h-.8s3.7-5.1,3.7-5.1h1.8l-4.6,6.3v-1.2l4.9,6.7h-1.9l-3.9-5.4h.7l-3.9,5.4h-1.9Z"/>
+    <path d="M407.4,610c-1.6,0-2.8-.4-3.7-1.3s-1.3-2.2-1.3-3.9v-6.7h1.7v6.7c0,1.3.3,2.3.9,2.9s1.4.9,2.5.9,1.9-.3,2.5-.9.9-1.6.9-2.9v-6.7h1.6v6.7c0,1.7-.4,3-1.3,3.9-.9.9-2.1,1.3-3.7,1.3Z"/>
+    <path d="M426.1,609.8v-11.9h4.6c1,0,1.9.2,2.7.5.7.3,1.3.8,1.7,1.4.4.6.6,1.4.6,2.2s-.2,1.6-.6,2.2c-.4.6-1,1.1-1.7,1.4-.7.3-1.6.5-2.7.5h-3.7l.8-.8v4.4h-1.7ZM427.8,605.6l-.8-.8h3.6c1.1,0,1.9-.2,2.5-.7.6-.5.8-1.1.8-2s-.3-1.5-.8-2c-.6-.5-1.4-.7-2.5-.7h-3.6l.8-.8v7ZM434,609.8l-3-4.3h1.8l3,4.3h-1.8Z"/>
+    <path d="M451.2,609.8v-4.5l.4,1-5.1-8.4h1.8l4.3,7.1h-1l4.3-7.1h1.7l-5.1,8.4.4-1v4.5h-1.7Z"/>
+    <path d="M486.6,609.8v-10.4h-4.1v-1.5h9.8v1.5h-4.1v10.4h-1.7Z"/>
+    <path d="M504.3,609.8v-11.9h4.6c1,0,1.9.2,2.7.5.7.3,1.3.8,1.7,1.4.4.6.6,1.4.6,2.2s-.2,1.6-.6,2.2c-.4.6-1,1.1-1.7,1.4-.7.3-1.6.5-2.7.5h-3.7l.8-.8v4.4h-1.7ZM506,605.6l-.8-.8h3.6c1.1,0,1.9-.2,2.5-.7.6-.5.8-1.1.8-2s-.3-1.5-.8-2c-.6-.5-1.4-.7-2.5-.7h-3.6l.8-.8v7ZM512.2,609.8l-3-4.3h1.8l3,4.3h-1.8Z"/>
+    <path d="M525,609.8l5.4-11.9h1.7l5.4,11.9h-1.8l-4.8-10.9h.7l-4.8,10.9h-1.7ZM527.3,606.9l.5-1.4h6.7l.5,1.4h-7.6Z"/>
+    <path d="M552.1,609.8l-5.2-11.9h1.8l4.8,10.9h-1l4.8-10.9h1.7l-5.2,11.9h-1.7Z"/>
+    <path d="M572.4,608.4h6.9v1.5h-8.6v-11.9h8.4v1.5h-6.7v8.9ZM572.2,603.1h6.1v1.4h-6.1v-1.4Z"/>
+    <path d="M592.2,609.8v-11.9h1.7v10.4h6.4v1.5h-8.1Z"/>
+    <path d="M627.1,609.8v-11.9h5c1.3,0,2.4.2,3.3.7,1,.5,1.7,1.2,2.3,2.1.5.9.8,1.9.8,3.1s-.3,2.2-.8,3.1-1.3,1.6-2.3,2.1c-1,.5-2.1.7-3.3.7h-5ZM628.8,608.4h3.2c1,0,1.8-.2,2.5-.6.7-.4,1.3-.9,1.7-1.6.4-.7.6-1.4.6-2.3s-.2-1.7-.6-2.3-1-1.2-1.7-1.6c-.7-.4-1.6-.6-2.5-.6h-3.2v8.9Z"/>
+    <path d="M652.9,608.4h6.9v1.5h-8.6v-11.9h8.4v1.5h-6.7v8.9ZM652.8,603.1h6.1v1.4h-6.1v-1.4Z"/>
+    <path d="M676.2,610c-.9,0-1.8-.1-2.6-.4s-1.5-.6-1.9-1.1l.6-1.3c.5.4,1,.7,1.7,1,.7.3,1.4.4,2.2.4s1.2,0,1.7-.2c.4-.2.7-.4.9-.7.2-.3.3-.6.3-.9s-.1-.7-.4-1c-.3-.2-.6-.4-1-.6-.4-.2-.9-.3-1.4-.4s-1-.2-1.5-.4c-.5-.2-1-.3-1.4-.6-.4-.2-.8-.6-1-1-.3-.4-.4-.9-.4-1.5s.2-1.2.5-1.7c.3-.5.8-.9,1.5-1.2.7-.3,1.5-.5,2.6-.5s1.4,0,2,.3c.7.2,1.3.4,1.8.8l-.6,1.4c-.5-.3-1-.6-1.6-.7-.6-.2-1.1-.2-1.6-.2s-1.2,0-1.6.3-.7.4-.9.7c-.2.3-.3.6-.3.9s.1.8.4,1c.3.2.6.4,1,.6.4.1.9.3,1.4.4.5.1,1,.3,1.5.4.5.1,1,.3,1.4.6.4.2.8.6,1,.9.3.4.4.9.4,1.5s-.2,1.2-.5,1.7c-.3.5-.8.9-1.5,1.2s-1.5.5-2.6.5Z"/>
+    <path d="M693.4,609.8v-11.9h1.7v11.9h-1.7Z"/>
+    <path d="M714.2,610c-.9,0-1.8-.1-2.5-.4-.8-.3-1.4-.7-2-1.3-.6-.5-1-1.2-1.3-1.9-.3-.7-.5-1.5-.5-2.4s.2-1.7.5-2.4c.3-.7.8-1.4,1.3-1.9.6-.5,1.2-1,2-1.3.8-.3,1.6-.4,2.5-.4s1.8.2,2.6.5c.8.3,1.4.8,2,1.4l-1,1c-.5-.5-1-.8-1.6-1-.6-.2-1.2-.3-1.9-.3s-1.3.1-1.9.3c-.6.2-1.1.5-1.5.9s-.8.9-1,1.4c-.2.6-.3,1.2-.3,1.8s.1,1.2.3,1.8c.2.6.6,1,1,1.5s.9.7,1.5,1,1.2.3,1.9.3,1.2,0,1.8-.3,1.1-.5,1.6-1l1,1.3c-.6.5-1.3.9-2.1,1.1-.8.3-1.6.4-2.4.4ZM717,608.2v-4.4h1.6v4.6l-1.6-.2Z"/>
+    <path d="M732,609.8v-11.9h1.4l7.8,9.7h-.7v-9.7h1.7v11.9h-1.4l-7.8-9.7h.7v9.7h-1.7Z"/>
+  </g>
+  <g>
+    <g>
+      <path d="M383.2,533.8c-2.5,11.4-11.2,18.4-26,18.4s-21.1-3-28.4-8.4v-11.3h.9c3.6,13.5,15.4,17.8,27.5,18.4,10.6.5,20.5-4.7,22.5-13.7,6.4-28.8-52.1-21.3-45.1-52,2.1-8.9,11.7-15,22.3-15s15.8,3,23.1,8.5v9.8h-.9c-3.5-12-11.4-17-22.2-17s-17.2,4.7-19,14.3c-4.6,24.6,51.1,21,45.4,48.1Z"/>
+      <path d="M464.6,471.2v1c-3.6.3-3.9,2.2-3.9,6v42.8c0,13.2-7,31.1-28.2,31.1s-31.9-11.1-31.9-31.1v-42.8c0-3.9-.2-5.7-3.9-6v-1h11.7v1c-3.6.3-3.9,2.2-3.9,6v42.8c0,18.8,12.7,29.1,28.5,29.1s26.2-17,26.2-29.1v-42.8c0-3.9-.3-5.7-4-6v-1h9.2Z"/>
+      <path d="M486.6,478.1v65.8c0,3.9.3,5.7,4,6v1h-11.7v-1c3.6-.3,3.9-2.2,3.9-6v-65.8c0-3.9-.2-5.7-3.9-5.9v-1h11.7v1c-3.6.2-4,2.1-4,5.9Z"/>
+      <path d="M566.4,482.2h-1c-1.7-5.5-4.3-9.6-12.5-9.6h-16.4v71.4c0,3.9.2,5.7,3.9,5.9v1h-11.7v-1c3.8-.2,4-2.1,4-5.9v-71.4h-16.4c-8.2,0-10.8,4.1-12.5,9.6h-1l2.1-11.1h59.6l2.2,11.1Z"/>
+      <path d="M632,539.9l-2.2,11.1h-51.4v-1c3.8-.3,4-2.2,4-6v-65.8c0-3.9-.2-5.7-4-5.9v-1h49.2l2.1,11.1h-1c-1.7-5.6-4.3-9.7-12.5-9.7h-29.9v36.9h22.3c6.6,0,7.8-1.9,8.3-5.5h1v12.4h-1c-.6-3.6-1.7-5.5-8.3-5.5h-22.3v38.5h32c8.3,0,10.9-4.1,12.7-9.6h1Z"/>
+      <path d="M721.4,539.9l-2.1,11.1h-51.4v-1c3.6-.3,3.9-2.2,3.9-6v-65.8c0-3.9-.2-5.7-3.9-5.9v-1h11.7v1c-3.8.2-4,2.1-4,5.9v71.4h32.1c8.2,0,10.8-4.1,12.5-9.6h1Z"/>
+      <path d="M740.5,478.1v65.8c0,3.9.3,5.7,4,6v1h-11.7v-1c3.6-.3,3.9-2.2,3.9-6v-65.8c0-3.9-.2-5.7-3.9-5.9v-1h11.7v1c-3.6.2-4,2.1-4,5.9Z"/>
+      <path d="M809.8,482.2h-1c-1.7-5.6-4.3-9.7-12.5-9.7h-29.2v39.2h22c6.7,0,7.8-1.9,8.3-5.6h1v12.4h-1c-.6-3.5-1.6-5.5-8.3-5.5h-22v30.8c0,3.9.3,5.7,4,6v1h-11.7v-1c3.6-.3,3.9-2.2,3.9-6v-65.8c0-3.9-.2-5.7-3.9-5.9v-1h48.5l2.1,11.1Z"/>
+      <path d="M875.4,539.9l-2.2,11.1h-51.4v-1c3.8-.3,4-2.2,4-6v-65.8c0-3.9-.2-5.7-4-5.9v-1h49.2l2.1,11.1h-1c-1.7-5.6-4.3-9.7-12.5-9.7h-29.9v36.9h22.3c6.6,0,7.8-1.9,8.3-5.5h1v12.4h-1c-.6-3.6-1.7-5.5-8.3-5.5h-22.3v38.5h32c8.3,0,10.9-4.1,12.7-9.6h1Z"/>
+    </g>
+    <g>
+      <path d="M210.4,552.1c-1.6,0-2.9-.6-4.1-1.8-1.1-1.2-1.7-3-1.7-5.4s.5-4.3,1.5-6.8c1-2.5,2.4-5.2,4.1-8.1,1.7-2.9,3.7-6.1,6.1-9.5,2.3-3.4,4.8-7,7.4-10.9,0,0,0-.1,0-.2h-9.6v-1.1h10.3c2.8-4.3,5.3-8,7.5-11.2,2.2-3.2,4.1-6.3,5.9-9.2h4.9c-1.7,2.3-3.8,5.1-6.1,8.5-2.3,3.4-4.9,7.3-7.9,12h11v1.1h-11.8c-1.6,2.5-3.3,5-5,7.8-1.8,2.7-3.6,5.6-5.6,8.7-1.3,2.1-2.5,4.2-3.6,6.3-1.1,2-2.1,4-3,5.8-.9,1.8-1.6,3.5-2,5.1-.5,1.6-.7,2.9-.7,4s.3,1.9.8,2.5c.5.6,1.4.9,2.7.9s3.3-.8,5.4-2.4c2.1-1.6,4.2-3.6,6.5-6,2.3-2.4,4.5-5.1,6.8-7.9,2.3-2.8,4.3-5.5,6.3-8l1.1.4c-4,5.4-7.5,9.7-10.4,13-2.9,3.3-5.4,5.9-7.5,7.7-2.1,1.9-3.9,3.1-5.4,3.7-1.5.6-2.8.9-3.9.9Z"/>
+      <path d="M282.5,475.7c-1.4.5-2.8,1-4.1,1.6-1.3.6-2.7,1.4-4.1,2.5-1.4,1.1-3,2.5-4.7,4.3-1.7,1.8-3.7,4.2-5.9,7.2-2.2,3-4.8,6.6-7.7,11-2.9,4.4-6.2,9.6-10,15.8,4.6-4.4,8.7-7.5,12.2-9.3,3.6-1.8,6.5-2.7,8.8-2.7s2.2.3,3.2,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.5c-1.1,2.2-2.5,4.5-4.3,6.9-1.7,2.5-3.6,4.9-5.5,7.5-2,2.5-3.8,5-5.5,7.3-1.7,2.3-3.1,4.4-4.3,6.3-1.1,1.9-1.7,3.4-1.7,4.6s.9,2,2.7,2,2.1-.4,3.6-1.1c1.4-.7,3.2-2,5.4-3.9,2.1-1.9,4.6-4.4,7.4-7.5,2.8-3.2,6.1-7.1,9.7-11.9l1.1.4c-3.8,5.1-7.1,9.3-10.1,12.6-3,3.3-5.6,5.9-7.8,7.8-2.3,1.9-4.2,3.2-5.9,4-1.7.7-3.1,1.1-4.2,1.1s-2.6-.5-3.5-1.6c-.9-1-1.3-2.3-1.3-3.8s.5-3.7,1.6-5.9c1.1-2.2,2.5-4.5,4.1-6.8,1.7-2.3,3.5-4.7,5.4-7.1,1.9-2.4,3.7-4.7,5.4-6.8,1.7-2.2,3-4.1,4.1-5.9,1.1-1.8,1.6-3.2,1.6-4.3s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.2-.6s-3,.4-4.8,1.3c-1.9.9-3.8,2-5.8,3.5-2,1.4-4.1,3.1-6.2,5-2.1,1.9-4,3.9-5.8,6l-17.4,28.5h-4.5c6.7-10.9,12.6-20.8,17.9-29.6,5.3-8.8,10.2-16.5,15-23,4.7-6.5,9.3-11.9,13.9-16,4.6-4.2,9.4-7.1,14.7-8.7l.3,1Z"/>
+      <path d="M313.4,526.7c-.8,1.1-1.9,2.6-3.3,4.3-1.4,1.7-3,3.5-4.7,5.4-1.8,1.9-3.7,3.8-5.8,5.6-2.1,1.9-4.2,3.6-6.3,5.1-2.1,1.5-4.2,2.7-6.3,3.6-2.1.9-4.1,1.4-5.9,1.4-3.4,0-5.8-.8-7.2-2.5-1.4-1.7-2.2-3.8-2.2-6.4s.4-4.7,1.3-7.4c.9-2.7,2.1-5.4,3.7-8.1,1.6-2.7,3.4-5.3,5.4-7.9,2.1-2.6,4.3-4.8,6.6-6.8,2.3-2,4.7-3.6,7.2-4.8,2.5-1.2,4.9-1.8,7.2-1.8s3.6.4,4.6,1.2c1,.8,1.5,1.9,1.5,3.4s-.7,3.9-2.2,6.2c-1.5,2.3-3.6,4.6-6.3,6.8-2.7,2.2-5.8,4.1-9.5,5.8-3.7,1.7-7.7,2.7-12.1,3.2-1.2,2.3-2.2,4.5-2.9,6.6-.7,2.1-1.1,4-1.1,5.6s.4,3,1.3,4c.9,1,2.3,1.5,4.2,1.5s4-.5,6.1-1.4c2.1-1,4.3-2.2,6.4-3.7,2.1-1.5,4.2-3.2,6.1-5.1,2-1.9,3.8-3.7,5.5-5.5,1.7-1.8,3.2-3.5,4.5-5.1,1.3-1.6,2.3-2.8,3-3.8l1.1.4ZM304,508c-1.6,0-3.5.7-5.6,2.1-2.1,1.4-4.3,3.2-6.5,5.5-2.2,2.3-4.3,4.8-6.4,7.6-2.1,2.8-3.9,5.6-5.5,8.5,4.1-.4,7.8-1.5,11.3-3.1,3.4-1.6,6.4-3.4,8.8-5.5,2.5-2.1,4.4-4.2,5.7-6.3,1.4-2.2,2-4,2-5.5s-.3-1.8-.9-2.3c-.6-.6-1.6-.9-2.9-.9Z"/>
+    </g>
+  </g>
+</svg>
+    <h1>Laponia</h1>
+    <p class="t2">Año Nuevo Ártico</p>
+    <p class="sub">Familia Porcayo González</p>
+    <dl>
+      <dt>Fechas</dt><dd>26 dic 2026 – 9 ene 2027</dd>
+      <dt>Viajeros</dt><dd>5 personas · 13 noches de hotel</dd>
+      <dt>Documento</dt><dd>Cotización · Opción 2</dd>
+    </dl>
+  </div>
+</div>
+
+<div class="page index" id="indice">
+  <div class="panel"><h1>Índice</h1><span>Luxury Travel Design</span></div>
+  <div class="list"><ol><li><a href="#s1"><i>.01</i><b>Resumen</b><span>03</span></a></li><li><a href="#s2"><i>.02</i><b>Vuelos</b><span>04</span></a></li><li><a href="#s3"><i>.03</i><b>Hoteles</b><span>05</span></a></li><li><a href="#s4"><i>.04</i><b>Itinerario Diario</b><span>06</span></a></li><li><a href="#s5"><i>.05</i><b>Waldorf Astoria Helsinki</b><span>12</span></a></li><li><a href="#s6"><i>.06</i><b>Hidden Arctic Cloud Villa</b><span>13</span></a></li><li><a href="#s7"><i>.07</i><b>Arcora Boutique Hotel &amp; Villas</b><span>14</span></a></li><li><a href="#s8"><i>.08</i><b>Fjellborg Arctic Lodge</b><span>15</span></a></li><li><a href="#s9"><i>.09</i><b>Grand Hôtel Stockholm</b><span>16</span></a></li><li><a href="#s10"><i>.10</i><b>Cotización</b><span>17</span></a></li><li><a href="#s11"><i>.11</i><b>Notas &amp; Políticas de Cancelación</b><span>18</span></a></li></ol></div>
+  <div class="meta">
+    <div><span class="lb">Propuesta para</span><p>Familia Porcayo González<br>5 personas</p></div>
+    <div><span class="lb">Diseñado por</span><p>Mariana Medina<br>Luxury Travel Designer</p></div>
+  </div>
+</div>
+
+<div class="page res" id="s1">
+  <div class="top"><span><i>.01</i>Resumen</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>03</span></div>
+  <div class="in">
+    <h1>Resumen</h1>
+    <svg class="map" viewBox="0 0 252.1 326.0" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.6,221.2L8.4,219.8L8.6,219.1L8.9,219.0L9.4,220.2L9.8,221.8L9.8,224.2L9.0,224.0L8.6,223.1L8.5,222.5L8.6,221.2ZM8.2,204.0L8.8,205.0L8.6,206.3L7.8,206.6L7.2,206.4L7.4,204.5L7.8,204.1L8.2,204.0ZM35.5,159.0L36.7,158.6L37.2,159.4L37.3,160.7L36.9,161.3L36.1,161.3L35.0,160.9L34.3,160.3L34.2,159.7L35.5,159.0ZM42.9,151.9L43.3,152.6L43.3,153.5L43.1,153.9L40.2,154.7L39.2,154.7L38.6,154.2L40.1,153.4L42.4,152.5L42.6,152.0L42.9,151.9ZM63.2,128.4L64.2,128.5L65.2,129.8L65.1,130.7L64.6,131.2L63.6,130.8L61.5,131.1L60.7,130.6L61.3,129.5L63.2,128.4ZM70.9,113.9L71.8,114.0L72.1,114.4L71.7,115.5L71.1,116.1L70.0,115.9L69.9,115.4L70.2,114.3L70.9,113.9ZM78.7,107.8L79.0,108.2L78.5,108.7L76.6,109.9L75.9,110.0L75.9,109.2L76.3,108.5L76.9,108.0L77.8,107.8L78.7,107.8ZM76.8,103.8L77.6,104.5L77.6,105.5L77.2,106.6L75.8,107.1L75.0,107.3L75.1,106.4L75.8,105.5L76.0,105.0L76.2,104.3L76.8,103.8ZM82.1,67.0L81.9,67.9L81.9,68.9L81.7,69.3L80.8,70.5L79.4,71.6L79.9,69.6L80.6,67.7L81.6,66.6L82.1,67.0ZM89.0,64.6L88.4,65.6L88.0,65.9L86.9,65.9L86.3,66.1L85.5,67.0L84.8,66.3L84.7,66.8L84.5,67.6L84.2,67.8L83.1,68.1L82.8,66.3L83.3,65.6L83.7,64.8L84.3,64.7L84.9,64.7L85.9,63.0L87.2,62.5L88.1,62.5L88.9,62.7L89.4,63.0L90.8,62.9L91.1,63.1L90.9,63.6L90.3,64.3L89.0,64.6ZM98.0,55.8L97.3,55.2L97.2,54.6L96.7,54.5L95.5,55.2L94.7,55.3L93.7,54.7L93.4,53.8L94.5,52.6L95.0,51.6L96.2,51.7L96.6,52.0L97.2,52.2L97.7,51.1L97.6,50.3L97.9,49.7L99.4,50.1L99.4,48.0L99.9,47.8L100.2,47.9L100.6,48.4L100.9,49.1L102.1,51.2L102.6,52.3L102.2,54.6L101.0,55.7L99.3,55.9L98.0,55.8ZM147.2,51.0L146.9,52.9L146.2,54.5L145.4,55.9L143.7,57.2L146.2,58.5L144.6,60.2L143.8,60.9L142.9,60.7L141.2,60.2L137.4,58.7L135.5,58.1L133.9,58.0L132.9,58.0L129.4,56.8L128.8,56.9L127.5,57.4L127.3,58.6L127.4,61.6L127.6,64.0L127.1,65.3L126.7,66.2L125.3,68.7L122.1,67.0L120.0,65.9L118.6,67.4L115.1,70.1L113.3,75.4L113.2,75.6L112.1,77.0L110.8,77.6L109.8,77.9L109.2,79.5L110.6,81.8L111.3,83.0L111.9,84.9L111.8,86.1L111.7,86.9L110.2,88.5L107.0,92.6L104.0,97.0L102.8,98.2L103.4,101.9L102.4,103.0L100.4,104.2L99.4,104.7L98.3,104.9L94.9,105.4L95.5,109.4L95.7,111.1L95.7,112.1L95.4,113.1L95.0,115.1L94.4,122.0L93.9,122.7L93.2,124.6L91.0,129.1L89.3,132.1L86.9,136.4L88.9,137.7L90.7,138.7L91.1,140.3L91.3,142.8L91.3,144.5L90.6,146.1L90.0,147.2L89.7,147.7L87.1,147.2L83.7,146.5L82.8,146.5L80.9,147.0L79.2,148.0L78.2,148.9L78.0,149.2L76.8,151.1L74.7,154.6L73.6,156.1L73.9,158.2L72.0,162.2L73.3,166.2L73.3,166.4L74.0,168.0L73.3,169.0L73.0,169.6L73.1,171.5L73.3,173.6L73.1,174.8L73.1,176.2L74.7,182.3L74.7,183.7L74.6,184.7L74.1,188.4L73.4,193.6L74.6,194.9L76.4,196.5L77.4,197.2L78.8,199.1L79.9,200.9L79.8,202.2L79.5,203.5L79.0,204.5L78.6,205.8L78.4,206.8L78.2,207.1L76.2,207.2L75.2,207.5L74.7,208.0L74.8,210.1L76.0,214.2L77.0,217.1L77.3,219.0L77.0,220.9L76.7,221.9L76.7,223.2L76.4,225.9L75.6,227.2L74.6,228.7L73.5,229.7L72.7,230.0L71.9,230.2L71.4,230.7L71.0,232.4L70.5,234.1L69.1,236.2L69.2,236.9L69.7,239.4L70.2,242.2L69.8,244.8L69.4,247.6L68.8,249.5L67.9,250.1L67.3,249.8L66.5,247.3L66.5,246.7L66.3,245.9L64.2,245.1L63.8,245.2L63.0,244.7L62.5,244.6L61.5,244.3L60.7,242.1L59.8,240.2L59.7,239.5L59.7,235.9L59.4,234.4L59.4,232.7L58.8,234.1L59.1,236.3L58.4,237.2L57.6,237.6L57.7,238.9L58.0,239.1L58.1,240.5L57.9,242.4L56.2,246.8L55.9,247.2L55.6,247.8L54.7,247.4L53.6,248.7L52.6,248.8L52.2,247.5L50.7,245.6L50.0,245.7L50.7,246.6L51.3,247.8L50.9,248.6L50.6,249.1L50.0,249.3L47.8,250.9L48.6,251.9L47.9,253.1L47.2,253.2L46.7,253.8L46.6,254.5L44.4,256.6L40.7,262.0L38.8,263.5L37.5,265.1L36.3,265.0L34.9,266.4L31.2,267.6L28.8,267.1L27.0,267.5L26.1,266.6L26.0,265.9L26.1,265.6L26.2,265.1L25.9,265.0L25.2,264.9L24.9,265.4L24.9,266.4L24.6,266.6L23.3,266.0L23.0,265.5L23.4,264.5L24.3,263.5L24.1,263.3L23.9,262.7L23.6,262.7L22.4,262.8L21.5,262.6L18.5,260.5L17.8,259.3L15.4,257.5L14.3,255.6L13.7,253.5L13.7,251.5L14.0,248.5L14.5,247.7L16.7,248.8L18.9,250.6L19.2,250.5L19.9,249.1L21.3,248.0L20.9,247.7L18.9,249.0L18.2,248.2L17.0,246.8L17.0,246.0L17.5,245.3L17.7,244.3L17.4,243.3L17.6,242.0L18.5,240.6L19.8,239.2L20.8,237.9L21.8,237.1L21.6,236.8L20.5,237.3L19.4,238.2L18.2,239.7L16.6,240.9L15.5,241.4L14.9,241.8L14.1,242.2L13.2,243.9L12.3,244.7L10.5,244.8L10.2,243.5L10.7,238.9L11.2,236.7L11.7,235.1L12.6,234.9L13.3,233.7L13.8,233.7L14.2,234.3L16.0,234.8L16.8,233.3L17.9,233.1L19.9,231.6L19.9,231.4L18.6,231.7L17.7,231.7L16.5,232.1L15.9,231.8L15.6,230.7L16.1,229.7L18.0,227.4L18.6,226.3L19.0,225.4L18.9,224.7L19.3,223.3L21.1,220.9L22.7,219.8L23.2,220.8L22.7,223.7L22.7,224.9L24.0,220.7L24.5,219.6L25.1,218.9L26.6,218.4L27.0,217.8L25.3,218.0L21.1,219.6L19.4,221.1L18.9,222.2L17.7,223.9L17.2,225.0L16.9,226.6L16.2,227.5L15.3,227.8L14.0,229.8L13.5,231.5L12.2,232.8L11.4,233.8L11.1,234.2L10.7,235.1L10.3,235.2L10.0,234.7L10.0,233.4L10.1,231.3L10.7,229.9L11.0,228.4L10.6,227.1L10.9,226.3L11.4,226.3L12.4,226.6L13.5,226.6L15.2,225.5L14.9,224.9L14.2,224.8L12.7,224.9L11.6,223.9L10.6,221.8L10.2,219.1L10.5,218.3L13.9,215.5L14.8,214.2L14.3,214.1L13.0,215.7L11.2,216.6L10.1,215.3L9.4,213.9L9.1,210.8L9.2,209.3L9.1,207.2L9.9,206.6L10.7,206.9L11.6,207.1L13.6,206.9L17.9,205.7L20.6,206.4L21.8,206.3L23.5,205.3L25.0,205.1L26.1,205.9L26.7,206.9L26.8,208.1L27.4,208.9L27.7,208.7L27.4,207.7L27.4,206.2L31.9,204.5L32.5,203.8L30.6,203.5L30.1,202.0L31.1,199.6L31.0,199.3L30.0,200.6L29.5,202.3L29.7,203.7L29.5,204.4L28.6,204.7L26.5,204.8L25.2,204.2L23.9,203.9L23.5,203.4L23.6,202.4L23.4,202.2L22.9,203.1L22.4,204.9L21.5,205.3L18.7,204.7L14.8,205.0L13.1,205.9L11.9,205.8L10.0,204.2L9.2,203.0L8.9,200.5L9.0,199.3L10.5,198.9L11.3,198.9L12.0,198.3L11.4,197.9L10.5,197.1L9.9,195.6L9.0,195.1L8.3,193.8L8.2,191.8L8.4,190.4L8.9,190.0L10.1,190.3L13.2,190.1L16.2,191.5L18.2,192.3L22.2,191.8L24.6,190.6L24.2,190.3L21.6,191.0L19.2,190.9L15.0,189.6L13.3,189.1L11.4,189.3L10.4,188.9L9.9,187.5L10.3,184.8L11.2,184.2L11.6,184.9L12.2,185.0L12.8,183.9L13.4,183.2L13.8,181.8L15.5,180.4L16.2,180.3L17.2,179.7L17.8,179.9L18.2,180.5L18.7,181.0L19.9,180.9L23.2,179.9L23.6,179.5L24.2,178.7L22.1,179.0L20.4,179.7L19.2,179.8L19.1,179.1L19.5,178.3L20.1,177.6L20.5,176.3L21.2,175.8L22.0,175.8L23.6,175.6L24.7,175.3L26.7,175.5L29.6,175.9L31.4,177.1L32.1,177.0L32.9,176.7L33.2,176.3L31.7,175.8L31.7,175.1L31.8,174.6L34.2,173.6L36.9,173.4L36.4,172.6L30.7,173.8L29.2,173.0L28.0,173.0L27.2,173.4L25.0,174.0L24.6,173.6L25.0,172.2L26.4,169.9L26.5,169.4L27.1,168.8L30.5,167.5L32.2,166.0L32.9,165.8L33.6,165.9L34.8,165.7L36.9,166.2L37.9,168.1L38.8,168.7L41.6,171.1L41.5,170.4L39.1,167.2L38.1,166.4L37.4,164.8L37.7,163.3L38.4,162.3L41.2,161.7L41.7,161.2L41.8,160.1L41.4,159.5L40.3,159.5L39.5,159.1L39.3,158.0L39.6,157.3L41.2,156.0L42.1,155.5L43.6,155.1L46.2,156.1L46.4,156.7L45.7,158.0L45.8,158.7L46.4,158.8L47.9,156.6L49.7,156.3L50.4,155.8L51.3,155.5L52.5,157.5L53.0,158.2L53.4,158.4L53.8,160.1L54.2,160.2L54.7,159.4L55.7,158.9L57.1,158.6L59.3,159.0L60.4,158.7L60.8,158.8L60.4,157.3L60.1,156.9L60.6,155.5L61.0,155.0L62.6,154.0L64.1,153.6L65.1,152.7L66.4,151.9L66.2,151.3L65.8,150.5L64.9,150.4L64.6,150.0L65.7,149.0L67.1,147.9L66.9,147.5L65.8,147.0L64.9,147.4L63.7,148.2L62.2,149.6L62.7,150.0L63.4,151.1L62.4,152.6L57.1,156.6L54.5,157.8L53.3,157.6L53.0,156.5L52.5,155.7L51.9,154.0L50.9,154.0L50.4,154.4L50.1,153.9L50.5,152.1L51.4,150.7L52.8,149.6L53.5,148.4L54.1,146.3L56.1,144.4L59.1,139.6L61.5,138.1L62.4,136.4L63.8,135.7L65.1,134.4L66.0,134.3L67.7,133.1L68.7,131.7L68.1,131.6L66.5,132.5L65.7,132.9L65.7,131.4L66.2,129.9L67.4,128.5L73.4,124.4L74.1,125.1L74.8,126.3L76.6,126.0L78.7,123.7L80.3,121.2L79.4,121.6L78.5,122.7L76.6,124.1L75.8,124.3L75.3,124.1L75.0,123.2L74.4,122.9L73.8,123.1L73.2,122.4L73.1,120.7L73.9,118.3L74.5,116.6L75.1,115.4L77.7,111.9L78.2,109.9L79.4,108.9L80.9,109.2L81.3,108.9L80.8,107.6L79.2,106.6L79.1,106.0L84.5,104.4L87.1,104.4L87.9,103.6L89.3,103.1L90.3,102.1L89.8,101.6L87.2,102.5L85.5,103.0L84.8,103.0L84.2,103.3L82.1,103.4L81.6,99.4L82.0,97.2L82.7,97.3L82.9,95.2L83.8,94.0L85.1,93.7L85.7,93.2L86.6,92.1L88.1,92.3L89.7,92.1L89.3,91.6L87.4,91.0L86.9,89.8L87.5,89.3L88.3,88.8L88.9,88.7L90.2,86.5L91.0,85.6L91.9,85.8L93.1,84.8L94.3,85.2L95.4,84.5L97.0,84.1L102.8,83.9L102.9,83.1L101.7,82.9L97.4,82.6L95.3,82.7L94.3,82.9L94.0,82.6L94.1,82.0L94.8,81.2L95.2,80.3L96.8,78.0L98.7,76.5L100.1,76.9L101.6,78.3L102.7,78.5L103.2,79.0L104.0,81.0L104.4,81.0L104.2,79.1L105.2,77.6L105.0,77.1L103.4,77.7L102.2,77.1L101.3,76.0L101.0,74.9L101.6,73.8L102.1,73.3L101.8,72.7L99.4,74.4L97.7,74.7L97.0,74.5L97.4,73.0L97.2,71.8L99.5,68.9L100.2,68.6L101.5,68.8L102.6,69.6L103.6,69.5L104.6,69.0L104.5,68.2L102.2,67.9L101.6,67.3L101.9,66.6L103.4,66.0L104.9,64.7L106.7,64.4L108.1,63.4L108.4,63.6L108.6,64.0L109.1,67.4L110.4,70.3L110.8,70.4L110.4,68.0L110.8,67.3L111.4,66.8L111.6,66.2L110.9,66.0L110.4,65.1L109.6,62.4L109.9,61.6L111.5,60.2L113.6,59.9L115.8,60.9L116.6,60.9L117.9,60.6L120.1,59.8L121.3,59.5L122.0,59.5L122.2,59.0L121.5,58.8L121.3,58.5L120.9,58.4L118.9,58.8L113.3,58.7L112.8,58.2L112.7,57.3L113.2,56.2L113.9,55.5L116.0,54.3L118.2,54.1L120.5,52.0L121.4,50.4L121.9,48.0L123.4,46.0L127.0,44.9L127.1,44.4L126.7,43.4L126.7,41.5L127.7,39.3L128.4,38.6L128.7,38.5L129.4,39.2L130.4,40.7L131.8,41.5L133.8,41.7L134.3,41.3L132.8,40.4L131.7,39.3L131.6,38.2L132.1,37.6L132.9,37.7L134.0,37.5L135.0,36.8L135.1,36.2L135.1,35.5L135.4,34.8L136.8,33.0L141.2,31.9L141.5,32.4L141.3,35.7L140.8,37.9L140.8,39.5L141.7,37.9L142.8,33.6L143.7,31.5L144.6,30.3L145.4,30.1L146.0,29.5L146.9,29.1L147.2,29.6L147.5,30.6L147.0,34.5L147.1,35.7L146.5,37.3L144.4,40.9L144.5,41.3L145.0,41.2L145.8,40.6L148.4,37.2L150.7,37.6L150.7,37.3L150.0,36.3L149.1,35.3L148.8,34.2L149.0,31.0L149.6,29.7L151.6,29.8L152.8,29.7L153.3,30.3L154.5,30.2L155.3,27.9L156.9,27.7L158.4,29.3L160.0,30.3L161.4,31.7L161.8,31.3L161.1,27.9L160.3,26.7L158.5,26.0L156.6,24.5L156.2,23.8L156.2,23.3L157.9,22.8L160.1,23.4L162.0,22.1L162.5,22.5L164.0,21.8L164.9,22.7L165.5,22.4L165.8,21.2L168.2,20.5L169.7,21.2L170.5,21.9L170.9,23.2L171.4,26.0L172.6,27.4L173.4,28.1L174.2,28.3L174.6,27.6L173.8,26.7L173.6,25.9L174.0,23.8L174.5,23.0L177.0,20.0L179.1,18.4L180.4,18.3L182.6,14.7L183.2,14.1L183.8,13.9L183.7,13.1L182.5,12.6L182.4,11.5L184.0,10.2L186.0,8.0L186.9,7.8L187.5,8.4L189.4,9.4L190.6,10.6L191.4,11.1L192.0,11.0L192.4,10.2L193.0,9.8L194.2,10.0L194.9,10.5L195.5,10.6L195.9,10.9L196.1,11.7L195.0,12.5L193.3,14.6L191.5,17.0L190.9,18.2L190.4,21.5L189.0,23.6L188.9,25.1L189.4,25.8L191.0,25.3L192.8,23.3L193.3,21.2L197.9,15.5L200.1,12.3L202.6,9.7L204.0,9.2L204.7,10.9L204.1,13.2L203.1,14.6L203.9,15.3L203.7,17.0L203.5,17.9L203.3,18.9L203.3,19.8L204.1,19.6L206.9,17.8L207.7,15.8L208.4,14.4L208.7,13.1L209.8,11.9L212.0,11.9L212.1,11.4L209.5,9.8L209.2,9.0L210.0,8.1L212.4,6.2L213.6,6.4L214.4,6.8L217.3,7.1L219.6,8.5L219.5,10.6L219.0,11.5L218.5,12.0L215.6,13.7L215.1,14.4L216.0,14.7L218.0,13.9L218.5,14.6L217.9,16.5L217.8,19.2L217.5,20.8L217.5,22.2L217.8,23.0L218.6,19.9L218.8,19.2L220.0,18.0L220.4,15.6L221.5,12.8L222.8,11.2L223.5,10.7L226.0,10.8L227.0,11.4L227.9,12.8L228.6,13.3L230.8,13.9L231.6,14.6L231.7,15.1L232.2,15.2L233.7,14.1L234.6,13.9L236.2,15.5L235.9,16.8L236.0,17.1L237.9,17.1L239.4,17.5L242.4,20.0L242.7,21.1L242.6,22.5L238.3,24.0L236.4,25.5L233.4,26.1L223.1,25.1L223.3,26.2L230.5,28.5L230.9,29.1L230.7,30.5L230.6,31.7L230.8,32.4L231.3,33.1L232.2,33.5L234.0,33.3L234.8,33.7L235.5,33.1L235.7,31.2L236.2,30.7L237.2,31.3L237.6,33.4L237.9,33.6L238.4,32.1L239.4,32.2L240.5,32.1L241.9,32.3L242.4,34.9L242.4,35.9L242.1,36.8L241.8,37.2L241.2,37.4L239.6,37.3L237.5,36.3L236.1,35.3L235.7,35.3L235.5,35.4L235.8,36.4L235.7,37.1L235.5,38.0L235.2,38.7L234.8,39.4L234.0,40.2L232.5,40.8L228.6,42.0L228.2,42.6L226.9,46.1L226.6,46.6L226.1,47.0L224.7,47.6L224.1,46.8L223.5,45.6L223.7,44.5L225.3,42.2L226.8,40.7L227.2,40.1L228.1,38.5L226.3,34.6L223.3,33.4L219.8,31.5L218.5,30.6L216.5,28.6L215.1,26.8L213.8,26.7L212.4,27.2L210.2,28.8L208.9,29.6L208.2,29.9L208.0,29.9L206.4,29.4L204.7,29.3L203.3,29.5L202.8,29.7L200.8,32.3L199.4,33.7L198.7,34.2L198.2,34.9L197.7,36.2L196.7,40.7L195.9,42.3L195.8,43.4L195.9,46.5L195.8,48.2L194.9,49.6L194.2,50.3L193.4,50.4L192.3,50.7L191.3,51.6L190.6,52.7L189.8,55.2L188.5,56.1L187.3,55.9L186.4,54.9L184.4,54.2L183.0,53.8L181.4,52.8L180.0,52.0L178.7,51.9L178.0,52.8L177.4,53.7L175.2,54.5L173.9,55.0L172.3,55.2L171.7,54.5L169.3,54.1L166.6,53.6L165.7,53.6L165.5,52.5L164.7,50.9L162.8,48.1L162.0,47.2L160.4,44.9L158.6,42.6L158.4,42.5L157.2,42.4L155.4,42.5L154.3,43.0L153.6,43.7L153.5,44.3L154.2,46.4L154.0,46.9L153.6,47.2L152.0,46.6L150.1,46.6L149.6,47.3L148.5,47.3L145.1,47.6L146.6,49.3L147.1,50.0L147.2,51.0ZM109.2,53.1L109.1,52.0L109.4,51.2L110.1,50.9L110.5,50.6L111.0,50.5L111.9,51.2L112.3,51.9L113.0,53.7L112.7,55.3L111.1,56.6L109.8,57.2L108.4,58.7L107.8,59.9L107.2,60.2L106.9,60.1L106.6,59.8L105.9,59.8L105.2,60.9L103.0,61.8L102.1,61.5L102.1,60.4L101.5,60.5L100.7,61.8L99.9,62.2L99.4,62.3L98.4,61.9L95.7,64.0L93.2,64.4L92.3,64.2L92.3,62.9L94.0,61.2L95.3,60.0L99.9,59.2L102.7,55.7L103.4,51.9L104.1,50.5L103.8,49.7L103.0,49.6L103.0,48.4L103.4,47.1L104.9,45.4L105.7,44.6L107.1,42.4L107.7,42.0L108.4,42.0L109.2,42.5L109.1,43.7L108.0,45.7L106.3,47.5L106.5,48.8L107.2,49.8L107.3,51.6L107.4,53.4L106.1,55.6L105.9,56.8L106.0,56.9L107.2,55.0L108.5,54.4L108.6,53.7L109.2,53.1ZM125.4,37.9L126.1,37.9L126.5,38.8L126.7,40.1L126.2,41.0L125.5,41.4L125.3,42.5L125.6,44.0L124.0,44.6L122.1,44.8L121.4,44.1L120.0,45.4L118.5,47.5L117.8,47.7L117.7,47.1L116.7,46.6L115.3,46.6L115.4,46.1L115.6,45.7L116.8,45.2L117.0,44.2L116.8,42.3L117.0,41.4L117.0,40.7L117.8,40.0L120.3,40.4L120.6,39.7L120.4,39.2L119.1,38.5L119.3,37.9L120.2,37.4L121.1,37.4L121.4,36.6L121.4,36.3L121.5,36.1L122.6,37.2L123.1,36.9L124.1,36.8L124.8,37.1L125.4,37.9ZM234.0,30.5L234.5,31.2L233.7,32.1L232.0,32.7L231.8,32.2L232.1,31.4L232.6,29.9L233.3,29.9L234.0,30.5ZM140.4,28.6L139.0,29.8L138.0,31.6L136.8,32.0L136.2,31.8L135.1,32.8L134.2,33.9L133.3,35.2L133.2,35.9L133.1,36.4L129.7,36.9L128.5,37.3L127.2,36.9L126.6,36.0L126.8,35.5L128.1,35.3L128.1,34.5L128.4,34.0L128.9,33.7L129.2,32.7L129.7,32.4L130.6,32.6L131.3,31.9L131.7,31.8L132.1,32.4L132.3,31.5L132.1,30.7L132.2,30.2L133.4,28.8L134.0,27.8L134.8,27.1L135.5,27.2L135.7,26.3L135.5,25.3L135.6,24.7L136.2,23.1L136.9,23.0L137.3,24.4L137.3,26.7L138.1,27.8L138.8,27.7L139.0,27.2L139.5,27.0L140.5,27.6L140.4,28.6ZM148.2,26.5L147.7,25.6L147.7,24.9L148.5,23.9L149.9,23.4L151.1,23.6L151.4,23.9L151.0,26.2L150.5,26.7L149.8,26.9L149.4,26.6L148.9,26.4L148.2,26.5ZM144.8,26.0L144.1,26.5L143.1,26.6L142.1,26.4L141.8,25.8L141.4,24.7L140.6,23.6L140.4,22.7L141.2,22.5L141.9,23.7L142.4,23.9L142.9,23.8L143.2,24.0L144.0,25.0L144.8,25.4L144.8,26.0ZM173.5,22.1L172.5,22.3L171.9,22.1L172.0,20.8L171.8,20.4L171.1,21.0L170.3,20.3L170.3,19.7L170.5,19.1L171.3,18.2L172.5,17.7L173.3,17.9L176.0,15.6L176.2,16.1L176.6,17.0L176.7,17.9L176.8,18.7L176.0,19.8L174.0,21.3L174.1,21.7L173.5,22.1ZM177.2,13.6L178.1,13.0L178.6,13.4L178.7,13.7L179.6,14.0L180.7,15.0L180.2,16.7L178.5,17.4L177.5,16.8L177.1,16.1L177.0,14.5L177.2,13.6ZM170.0,16.9L169.5,17.2L167.9,16.8L167.5,17.3L167.0,17.7L165.9,17.8L165.3,17.7L163.5,16.8L162.5,15.7L162.0,14.8L163.6,14.9L164.1,14.7L165.2,14.8L165.8,13.9L167.2,14.0L169.8,13.4L170.7,13.8L172.9,11.7L173.6,11.8L174.6,11.2L175.0,11.7L174.8,12.3L174.5,12.9L173.8,13.6L171.6,16.1L170.4,16.5L170.0,16.9ZM198.1,8.5L196.2,8.7L195.9,8.9L194.3,8.8L193.4,7.6L191.9,7.3L191.9,6.9L192.8,6.1L194.3,5.2L196.7,5.9L197.5,5.9L198.7,7.3L199.4,7.2L199.3,8.1L198.1,8.5Z" fill="#F0EDE8" stroke="#FCF9F5" stroke-width=".5" fill-rule="evenodd"/>
+<path d="M111.6,301.8L111.6,298.3L111.7,296.6L113.7,290.5L114.6,290.0L115.8,286.2L116.1,284.5L116.7,283.0L117.0,281.6L117.3,281.1L117.8,281.4L118.1,281.6L117.5,282.4L117.6,283.4L117.5,283.9L116.0,288.3L115.6,291.2L115.0,291.9L112.8,302.2L112.3,303.2L111.9,303.1L111.6,301.8ZM133.4,273.9L133.1,278.3L134.2,280.0L133.6,280.3L133.1,280.8L132.7,281.5L132.3,283.2L130.9,284.1L130.3,284.7L129.5,286.3L129.1,288.4L128.3,289.4L127.3,289.6L127.9,287.8L128.6,286.3L127.9,285.3L127.5,283.8L127.0,282.6L127.4,281.2L127.2,279.0L127.2,276.9L127.9,275.8L128.6,274.9L129.7,272.9L130.9,271.4L132.5,270.7L133.3,271.3L133.6,270.0L134.1,269.7L134.6,270.0L135.7,271.3L135.0,271.8L134.5,273.2L133.9,273.4L133.4,273.9ZM136.3,268.4L137.6,268.4L138.0,268.8L136.4,269.6L136.3,270.8L135.8,270.7L135.4,269.8L136.3,268.4ZM129.4,246.6L129.6,246.2L130.2,245.8L130.4,245.9L129.8,247.4L129.4,247.6L129.2,247.5L129.4,246.6ZM131.2,237.5L131.6,237.1L132.3,237.3L132.3,237.5L131.7,238.2L131.4,238.6L131.2,239.2L130.9,238.4L131.0,238.3L131.2,237.5ZM69.4,247.6L69.8,244.8L70.2,242.2L69.7,239.4L69.2,236.9L69.1,236.2L70.5,234.1L71.0,232.4L71.4,230.7L71.9,230.2L72.7,230.0L73.5,229.7L74.6,228.7L75.6,227.2L76.4,225.9L76.7,223.2L76.7,221.9L77.0,220.9L77.3,219.0L77.0,217.1L76.0,214.2L74.8,210.1L74.7,208.0L75.2,207.5L76.2,207.2L78.2,207.1L78.4,206.8L78.6,205.8L79.0,204.5L79.5,203.5L79.8,202.2L79.9,200.9L78.8,199.1L77.4,197.2L76.4,196.5L74.6,194.9L73.4,193.6L74.1,188.4L74.6,184.7L74.7,183.7L74.7,182.3L73.1,176.2L73.1,174.8L73.3,173.6L73.1,171.5L73.0,169.6L73.3,169.0L74.0,168.0L73.3,166.4L73.3,166.2L72.0,162.2L73.9,158.2L73.6,156.1L74.7,154.6L76.8,151.1L78.0,149.2L78.2,148.9L79.2,148.0L80.9,147.0L82.8,146.5L83.7,146.5L87.1,147.2L89.7,147.7L90.0,147.2L90.6,146.1L91.3,144.5L91.3,142.8L91.1,140.3L90.7,138.7L88.9,137.7L86.9,136.4L89.3,132.1L91.0,129.1L93.2,124.6L93.9,122.7L94.4,122.0L95.0,115.1L95.4,113.1L95.7,112.1L95.7,111.1L95.5,109.4L94.9,105.4L98.3,104.9L99.4,104.7L100.4,104.2L102.4,103.0L103.4,101.9L102.8,98.2L104.0,97.0L107.0,92.6L110.2,88.5L111.7,86.9L111.8,86.1L111.9,84.9L111.3,83.0L110.6,81.8L109.2,79.5L109.8,77.9L110.8,77.6L112.1,77.0L113.2,75.6L113.3,75.4L115.1,70.1L118.6,67.4L120.0,65.9L122.1,67.0L125.3,68.7L126.7,66.2L127.1,65.3L127.6,64.0L127.4,61.6L127.3,58.6L127.5,57.4L128.8,56.9L129.4,56.8L132.9,58.0L133.9,58.0L135.5,58.1L137.4,58.7L141.2,60.2L142.9,60.7L143.8,60.9L144.6,60.2L146.2,58.5L143.7,57.2L145.4,55.9L146.2,54.5L146.9,52.9L147.2,51.0L147.1,50.0L146.6,49.3L145.1,47.6L148.5,47.3L149.6,47.3L152.1,48.4L152.2,48.7L152.2,49.3L152.3,49.9L154.7,51.4L155.4,52.2L156.8,53.5L157.2,54.2L158.6,55.0L159.6,55.8L160.7,56.5L162.0,57.6L163.8,58.5L165.3,58.7L169.1,60.2L169.7,60.6L170.8,61.7L171.9,62.9L172.7,65.3L173.9,65.4L174.2,66.2L175.3,67.7L176.8,68.9L176.7,69.3L175.6,70.5L175.4,72.1L175.5,74.1L175.9,75.7L175.9,76.2L175.6,76.8L175.2,77.7L175.1,78.4L175.1,78.8L175.2,79.0L175.9,79.0L177.0,79.2L177.6,79.5L178.0,81.4L177.9,81.8L177.0,82.7L176.7,83.3L176.6,84.3L176.8,85.4L177.1,86.6L177.9,87.9L178.9,89.3L179.5,90.4L179.8,91.2L179.9,91.8L179.5,92.5L179.1,93.9L179.0,95.4L178.8,96.5L178.0,97.9L177.3,98.4L177.2,99.1L177.1,100.4L177.3,101.9L177.3,102.9L177.5,103.7L177.8,104.2L179.2,105.0L180.0,106.8L180.5,108.2L181.4,111.9L179.1,112.3L177.2,111.4L176.4,111.9L174.8,111.9L173.0,112.3L172.4,113.0L172.0,113.3L170.3,112.3L168.8,110.6L167.6,111.9L166.9,112.1L166.2,111.0L165.6,110.7L165.3,111.2L165.1,112.2L164.6,113.0L164.5,113.5L164.4,115.6L164.3,116.1L162.8,115.8L162.9,116.3L163.2,116.6L163.4,117.0L162.8,117.4L161.3,117.3L161.2,117.8L161.6,118.6L161.3,119.2L160.9,119.5L159.2,119.9L158.1,119.8L157.8,120.3L157.7,120.8L157.9,121.4L158.4,121.7L158.6,122.0L158.5,122.8L158.1,122.9L157.1,121.6L156.7,121.6L157.0,122.3L157.6,123.1L157.9,123.9L158.3,124.8L158.2,125.5L156.9,127.8L155.7,129.2L154.8,130.5L154.3,131.8L154.9,132.5L155.5,133.5L156.0,135.4L156.6,137.1L157.7,138.7L157.5,139.7L157.2,140.4L155.3,142.0L153.2,144.5L150.9,150.6L150.1,151.5L148.1,152.5L147.4,153.6L145.9,154.8L143.3,155.8L142.1,157.2L141.5,158.7L140.9,158.8L140.3,158.2L139.6,157.8L139.5,158.8L139.5,159.5L138.2,158.4L137.6,159.4L137.2,161.1L135.3,163.2L133.4,162.9L133.2,163.2L133.7,163.5L133.8,163.9L133.4,164.0L132.9,164.0L132.0,164.5L131.5,164.4L131.2,165.5L130.8,166.7L129.7,167.3L129.1,167.4L128.8,168.1L130.6,168.2L130.4,168.8L130.4,169.4L130.2,170.1L128.2,171.0L128.0,171.7L127.6,172.2L126.7,172.2L126.7,171.7L126.9,171.3L125.6,171.3L125.2,170.3L124.9,170.5L125.1,171.4L125.4,172.3L125.8,173.6L125.5,174.4L125.2,174.8L125.4,175.2L126.1,175.5L126.4,176.0L125.6,176.4L124.5,178.0L123.5,178.0L122.8,179.0L122.2,179.0L121.6,178.3L120.7,177.8L120.4,178.8L120.4,179.5L120.9,181.3L121.8,182.7L122.7,183.3L122.1,183.8L121.6,184.7L121.1,187.5L120.7,188.7L120.4,190.7L120.6,192.4L120.8,193.2L121.2,194.3L120.1,194.2L118.8,193.5L119.0,194.9L118.2,196.5L118.3,197.9L118.5,198.8L118.3,200.4L118.6,200.8L118.8,201.7L118.5,202.4L118.7,203.0L118.7,205.1L118.9,208.3L118.9,209.0L119.5,211.7L119.4,212.8L119.3,214.0L120.3,215.2L121.2,215.2L122.0,215.1L122.4,215.5L122.7,216.3L123.0,217.3L123.7,217.2L124.9,216.4L125.6,216.2L126.1,217.8L127.5,219.8L128.3,220.8L129.6,221.3L131.0,222.9L130.8,224.9L131.4,225.6L133.1,226.4L133.7,227.5L134.0,228.4L134.4,229.1L135.0,231.4L134.8,232.9L134.1,233.3L132.5,234.9L131.8,236.0L131.2,236.7L129.6,238.2L129.1,238.5L128.5,239.2L128.0,239.6L127.5,239.4L125.7,240.8L125.9,241.4L127.2,241.7L127.9,241.4L128.5,240.7L129.1,240.5L129.6,240.6L130.2,240.1L130.6,239.8L131.1,240.1L131.6,241.5L130.5,242.2L129.8,242.2L129.4,244.4L128.9,245.4L128.6,245.8L126.9,246.7L125.8,248.0L124.5,248.9L123.9,248.7L123.1,249.7L121.2,250.8L120.1,252.4L117.9,253.8L116.8,254.9L113.8,255.0L110.9,254.7L109.9,255.3L110.9,255.4L111.5,256.0L112.3,255.7L114.2,256.0L115.1,256.3L116.4,258.2L115.4,258.8L113.9,259.3L114.5,261.9L115.0,263.7L114.3,264.8L114.3,269.7L113.4,269.7L113.0,271.7L113.3,272.8L113.3,275.2L113.5,276.6L113.9,278.0L113.7,279.4L112.3,282.7L112.3,284.2L112.6,285.2L112.8,286.6L112.1,289.4L111.7,291.8L111.2,293.8L110.0,296.2L109.4,298.0L108.0,303.5L107.3,304.7L106.5,305.5L105.5,304.7L104.7,304.3L103.6,304.3L102.0,305.0L99.5,304.6L97.1,304.8L96.5,305.3L96.8,307.3L95.9,307.6L95.1,307.0L94.3,307.7L93.6,308.5L92.4,310.2L92.0,311.4L91.9,313.4L92.5,315.3L93.1,317.4L91.6,320.1L90.8,320.1L88.3,319.4L83.9,321.1L80.0,319.8L80.5,318.4L80.5,317.3L80.7,315.8L80.8,314.1L80.8,313.0L80.5,311.9L79.5,310.3L77.3,305.2L76.7,303.1L76.3,302.2L76.6,302.2L78.4,303.3L78.8,303.2L79.2,302.7L78.7,301.1L78.2,300.3L77.9,299.2L79.0,298.9L79.7,299.0L80.3,297.7L80.0,295.7L79.2,295.0L78.5,294.8L77.2,291.5L75.8,289.9L73.4,283.5L72.5,279.1L71.7,279.5L71.3,277.6L71.0,275.7L70.9,274.4L69.6,273.6L69.6,272.7L69.3,268.5L68.0,268.0L67.1,265.6L66.9,261.2L66.0,260.4L65.2,260.6L65.3,259.5L65.4,258.5L65.0,254.4L64.9,250.7L64.5,249.6L64.3,248.2L64.5,247.1L64.8,246.4L65.7,246.3L66.5,247.3L67.3,249.8L67.9,250.1L68.8,249.5L69.4,247.6Z" fill="#DFD3C5" stroke="#FCF9F5" stroke-width=".5" fill-rule="evenodd"/>
+<path d="M158.2,224.6L158.7,224.6L158.9,225.2L158.7,225.8L157.9,226.0L157.4,225.5L157.6,225.0L158.2,224.6ZM159.9,224.0L160.8,224.0L160.5,225.2L159.6,225.9L159.3,225.7L159.4,224.6L159.9,224.0ZM164.8,222.6L164.8,223.4L165.2,223.9L165.3,224.7L164.4,224.7L163.9,224.1L163.7,223.3L163.3,222.7L162.7,222.3L163.0,221.7L163.2,220.9L163.6,220.6L164.7,221.0L165.2,220.9L165.8,221.9L164.8,222.6ZM160.7,219.8L160.4,219.0L160.5,218.6L161.2,219.2L161.6,220.0L161.2,220.1L161.9,220.9L162.0,221.3L161.3,221.4L160.4,220.4L160.3,220.0L160.7,219.8ZM155.2,217.5L155.0,215.9L155.1,215.6L155.4,215.3L155.7,216.1L157.1,217.4L157.0,218.3L156.3,218.2L155.7,218.4L155.2,217.5ZM156.8,163.1L156.8,164.0L156.4,164.0L156.3,163.9L155.9,164.4L155.8,164.7L155.3,165.0L154.4,164.0L153.8,162.4L155.1,162.4L155.0,162.8L155.0,163.2L155.1,163.6L155.6,163.4L156.3,162.8L156.8,163.1ZM177.8,104.2L177.5,103.7L177.3,102.9L177.3,101.9L177.1,100.4L177.2,99.1L177.3,98.4L178.0,97.9L178.8,96.5L179.0,95.4L179.1,93.9L179.5,92.5L179.9,91.8L179.8,91.2L179.5,90.4L178.9,89.3L177.9,87.9L177.1,86.6L176.8,85.4L176.6,84.3L176.7,83.3L177.0,82.7L177.9,81.8L178.0,81.4L177.6,79.5L177.0,79.2L175.9,79.0L175.2,79.0L175.1,78.8L175.1,78.4L175.2,77.7L175.6,76.8L175.9,76.2L175.9,75.7L175.5,74.1L175.4,72.1L175.6,70.5L176.7,69.3L176.8,68.9L175.3,67.7L174.2,66.2L173.9,65.4L172.7,65.3L171.9,62.9L170.8,61.7L169.7,60.6L169.1,60.2L165.3,58.7L163.8,58.5L162.0,57.6L160.7,56.5L159.6,55.8L158.6,55.0L157.2,54.2L156.8,53.5L155.4,52.2L154.7,51.4L152.3,49.9L152.2,49.3L152.2,48.7L152.1,48.4L149.6,47.3L150.1,46.6L152.0,46.6L153.6,47.2L154.0,46.9L154.2,46.4L153.5,44.3L153.6,43.7L154.3,43.0L155.4,42.5L157.2,42.4L158.4,42.5L158.6,42.6L160.4,44.9L162.0,47.2L162.8,48.1L164.7,50.9L165.5,52.5L165.7,53.6L166.6,53.6L169.3,54.1L171.7,54.5L172.3,55.2L173.9,55.0L175.2,54.5L177.4,53.7L178.0,52.8L178.7,51.9L180.0,52.0L181.4,52.8L183.0,53.8L184.4,54.2L186.4,54.9L187.3,55.9L188.5,56.1L189.8,55.2L190.6,52.7L191.3,51.6L192.3,50.7L193.4,50.4L194.2,50.3L194.9,49.6L195.8,48.2L195.9,46.5L195.8,43.4L195.9,42.3L196.7,40.7L197.7,36.2L198.2,34.9L198.7,34.2L199.4,33.7L200.8,32.3L202.8,29.7L203.3,29.5L204.7,29.3L206.4,29.4L208.0,29.9L208.2,29.9L208.9,29.6L210.2,28.8L212.4,27.2L213.8,26.7L215.1,26.8L216.5,28.6L218.5,30.6L219.8,31.5L223.3,33.4L226.3,34.6L228.1,38.5L227.2,40.1L226.8,40.7L225.3,42.2L223.7,44.5L223.5,45.6L224.1,46.8L224.7,47.6L224.1,47.8L222.3,48.8L221.1,49.4L219.8,49.9L220.1,50.5L222.4,50.7L222.7,50.9L223.0,51.2L223.0,51.7L222.8,52.6L220.4,57.2L220.3,58.2L221.1,61.0L222.2,64.2L225.6,65.6L228.1,66.8L229.8,69.4L232.4,72.9L233.9,74.2L233.9,74.6L233.5,77.1L231.8,79.5L230.2,81.5L228.6,84.0L227.3,86.1L225.8,88.6L225.7,89.4L225.6,90.2L225.9,91.0L227.7,94.1L228.4,95.7L229.2,97.3L229.9,99.2L230.4,100.8L231.1,102.5L231.5,103.3L232.3,104.5L233.2,106.2L233.5,107.5L234.8,112.3L235.0,113.5L234.9,114.4L234.3,114.6L233.0,114.7L231.6,115.3L231.5,115.5L232.4,116.6L231.6,118.5L231.5,121.3L230.6,122.7L230.5,123.0L230.6,123.3L230.7,123.5L232.3,123.9L232.5,124.3L232.5,125.1L232.3,125.8L231.5,126.4L230.7,127.2L230.5,128.0L230.5,128.6L230.8,129.8L231.4,131.1L232.1,131.9L234.7,132.7L235.0,133.3L235.2,134.2L235.1,135.1L233.9,136.9L233.9,137.5L234.4,139.1L235.0,140.7L237.6,142.3L238.4,143.3L238.7,144.0L238.8,145.2L238.8,146.5L238.6,147.6L237.8,149.0L235.9,151.9L234.1,153.1L234.0,153.3L234.5,154.2L237.8,157.9L240.0,159.7L242.8,162.0L244.7,163.8L245.3,165.1L246.1,166.6L247.0,167.9L247.6,168.9L247.9,169.6L247.9,170.3L247.0,172.5L246.5,174.2L245.6,176.6L244.7,178.4L242.5,181.5L239.1,185.5L238.4,186.6L236.8,188.7L234.2,192.9L233.4,193.8L231.3,197.1L230.3,198.1L229.5,199.1L227.3,202.2L225.0,204.6L222.7,206.8L222.0,208.0L221.2,208.8L220.2,209.6L219.7,210.1L217.4,213.1L214.2,217.3L213.9,217.3L213.1,218.0L211.8,218.2L211.2,218.7L209.2,217.2L208.9,217.1L207.7,217.5L206.6,218.6L204.5,218.9L203.5,219.2L202.9,219.7L202.7,218.6L203.0,217.1L203.5,216.1L203.5,215.5L203.2,215.5L202.5,217.0L202.1,218.7L201.5,219.5L199.9,219.9L198.4,218.5L197.6,218.5L198.1,219.5L198.4,220.6L198.4,221.2L197.6,221.0L196.7,221.7L195.9,222.6L195.5,222.6L194.9,221.3L194.0,222.0L193.1,222.8L191.4,223.0L190.4,224.1L188.7,224.9L187.7,224.8L185.4,225.7L184.7,227.1L184.1,227.6L183.1,227.2L180.3,227.8L177.5,228.7L176.4,228.7L175.2,228.3L174.0,229.5L172.7,231.1L171.2,231.7L170.7,231.5L171.1,230.6L172.1,229.8L172.7,228.5L172.8,227.6L172.4,227.2L171.8,227.1L171.0,226.0L170.2,223.8L169.8,223.7L169.6,224.3L169.4,226.0L169.2,226.5L168.8,226.8L168.3,227.3L167.9,227.4L166.2,227.4L166.0,226.6L166.0,226.2L166.3,225.1L166.0,224.9L166.3,224.0L166.7,224.0L167.1,223.9L167.3,223.4L167.3,222.9L166.7,222.7L166.7,222.4L167.2,220.8L167.3,220.4L167.1,220.3L166.7,220.5L164.4,220.0L161.4,218.0L160.7,217.9L160.3,216.1L159.6,216.3L158.6,217.4L157.8,216.6L157.0,216.1L156.7,215.3L156.7,214.1L156.7,212.6L156.4,211.0L156.3,208.7L156.4,206.8L157.1,205.5L157.4,204.6L157.6,202.4L157.7,199.8L157.5,198.9L157.6,198.3L158.1,198.3L158.0,197.8L157.8,197.5L157.5,197.0L157.7,196.6L158.4,196.6L158.4,196.4L158.5,196.2L158.0,194.7L157.9,193.9L157.3,191.8L156.5,189.7L155.3,188.2L155.8,185.7L156.2,183.5L156.1,182.4L156.0,181.2L154.5,179.7L154.3,177.7L154.0,175.5L154.1,174.2L154.3,173.2L154.8,172.2L157.2,169.0L157.3,167.3L158.9,167.2L158.2,165.7L158.0,164.9L157.9,163.9L160.2,163.2L161.1,163.8L163.1,163.1L164.9,161.8L164.9,161.1L164.6,160.5L164.2,159.2L164.5,158.9L165.2,159.1L164.8,158.6L164.9,157.9L165.6,158.2L166.8,156.4L166.8,155.0L168.9,154.3L171.2,151.6L172.2,150.7L173.3,150.1L175.5,147.3L176.4,147.2L176.9,145.3L178.8,142.8L179.4,142.5L180.2,140.3L182.5,137.7L184.0,134.4L184.8,133.2L185.1,132.0L186.0,131.9L186.8,130.9L188.5,130.3L190.2,130.5L191.0,130.9L191.6,130.8L191.6,129.7L191.1,129.0L191.5,128.3L192.4,127.8L192.3,126.7L192.1,126.0L191.3,125.2L191.7,123.1L191.8,121.0L192.2,118.4L191.2,117.1L187.6,114.8L186.9,114.9L186.1,114.6L185.3,112.9L185.6,111.4L185.7,110.8L185.4,110.8L184.8,111.6L183.7,112.4L182.2,111.7L181.4,111.9L180.5,108.2L180.0,106.8L179.2,105.0L177.8,104.2ZM185.9,126.5L187.1,126.3L188.8,126.9L189.0,127.2L188.1,127.5L187.7,128.2L186.3,128.8L185.3,128.4L185.2,127.1L185.9,126.5Z" fill="#DFD3C5" stroke="#FCF9F5" stroke-width=".5" fill-rule="evenodd"/>
+<path d="M0,96.8 L252.1,96.8" stroke="#7D766C" stroke-width=".35" stroke-dasharray=".8 2.2" fill="none"/>
+<text class="it" x="2" y="93.8">Círculo Polar Ártico</text>
+<text class="rg" x="100.8" y="176.0" text-anchor="middle">SUECIA</text>
+<text class="rg" x="203.4" y="164.0" text-anchor="middle">FINLANDIA</text>
+<text class="rg" x="47.7" y="196.0" text-anchor="middle">NORUEGA</text>
+<circle cx="188.5" cy="224.6" r="4" fill="#232323"/><text x="188.5" y="226.5" text-anchor="middle" style="font:500 5.4px Karla;fill:#FCF9F5">1</text><text class="ct b" x="196.5" y="227.6" text-anchor="start">Helsinki</text>
+<circle cx="195.6" cy="98.0" r="4" fill="#232323"/><text x="195.6" y="99.9" text-anchor="middle" style="font:500 5.4px Karla;fill:#FCF9F5">2</text><text class="ct b" x="203.6" y="101.0" text-anchor="start">Rovaniemi</text>
+<circle cx="179.1" cy="68.8" r="4" fill="#232323"/><text x="179.1" y="70.7" text-anchor="middle" style="font:500 5.4px Karla;fill:#FCF9F5">3</text><text class="ct b" x="187.1" y="69.8" text-anchor="start">Muonio</text>
+<circle cx="154.8" cy="70.0" r="4" fill="#232323"/><text x="154.8" y="71.9" text-anchor="middle" style="font:500 5.4px Karla;fill:#FCF9F5">4</text><text class="ct b" x="146.8" y="64.0" text-anchor="end">Fjellborg</text>
+<circle cx="126.7" cy="241.4" r="4" fill="#232323"/><text x="126.7" y="243.3" text-anchor="middle" style="font:500 5.4px Karla;fill:#FCF9F5">5</text><text class="ct b" x="118.7" y="244.4" text-anchor="end">Estocolmo</text></svg>
+    <table class="stages">
+      <tr><th style="width:.35in">#</th><th style="width:1.3in">Fechas</th><th style="width:.75in">Noches</th><th style="width:1.35in">Destino</th><th style="width:.95in">País</th><th>Alojamiento</th></tr>
+      <tr><td><span class="dot">1</span></td><td class="f">27 – 28 dic</td><td>1</td><td>Helsinki</td><td>Finlandia</td><td>Waldorf Astoria Helsinki</td></tr>
+      <tr><td><span class="dot">2</span></td><td class="f">28 dic – 03 ene</td><td>6</td><td>Rovaniemi</td><td>Finlandia</td><td>Hidden Arctic Cloud Villa</td></tr>
+      <tr><td><span class="dot">3</span></td><td class="f">03 – 06 ene</td><td>3</td><td>Muonio</td><td>Finlandia</td><td>Arcora Boutique Hotel &amp; Villas</td></tr>
+      <tr><td><span class="dot">4</span></td><td class="f">06 – 08 ene</td><td>2</td><td>Laponia Sueca</td><td>Suecia</td><td>Fjellborg Arctic Lodge</td></tr>
+      <tr><td><span class="dot">5</span></td><td class="f">08 – 09 ene</td><td>1</td><td>Estocolmo</td><td>Suecia</td><td>Grand Hôtel Stockholm</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="page fly" id="s2">
+  <div class="top"><span><i>.02</i>Vuelos</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>04</span></div>
+  <div class="in">
+    <h1>Vuelos</h1>
+    <div class="pax"><span class="lb">Pasajeros · 5</span><p class="names">Guadalupe Xiomara González Soria<i></i>Carlos Eugenio Porcayo González<i></i>Carlos Eduardo Porcayo Guevara<i></i>Valentina Porcayo González<i></i>Paulina Porcayo González</p></div>
+    <table class="flights">
+      <tr><th>Fecha</th><th>Aerolínea</th><th>No.</th><th>Desde</th><th>Hacia</th><th>Clase</th><th>Salida</th><th>Llegada</th><th>Duración</th></tr>
+      <tr class="grp"><td colspan="9">Ida · 26 – 27 dic</td></tr>
+      <tr><td>26 dic</td><td>Lufthansa</td><td>LH 521</td><td>México (MEX)</td><td>Múnich (MUC)</td><td>Business</td><td>19:45</td><td>13:45<sup>+1</sup></td><td>11 h 00 m</td></tr>
+      <tr><td>27 dic</td><td>Lufthansa</td><td>LH 2462</td><td>Múnich (MUC)</td><td>Helsinki (HEL)</td><td>Business</td><td>15:10</td><td>18:45</td><td>2 h 35 m</td></tr>
+      <tr class="grp"><td colspan="9">Vuelos internos</td></tr>
+      <tr><td>28 dic</td><td>Finnair</td><td>AY 541</td><td>Helsinki (HEL)</td><td>Rovaniemi (RVN)</td><td><b>Economy</b></td><td>07:10</td><td>08:40</td><td>1 h 30 m</td></tr>
+      <tr><td>08 ene</td><td>SAS</td><td>SK 1047</td><td>Kiruna (KRN)</td><td>Estocolmo (ARN)</td><td>Business</td><td>11:30</td><td>13:15</td><td>1 h 45 m</td></tr>
+      <tr class="grp"><td colspan="9">Regreso · 9 ene</td></tr>
+      <tr><td>09 ene</td><td>Lufthansa</td><td>LH 2421</td><td>Estocolmo (ARN)</td><td>Múnich (MUC)</td><td>Business</td><td>07:30</td><td>09:40</td><td>2 h 10 m</td></tr>
+      <tr><td>09 ene</td><td>Lufthansa</td><td>LH 520</td><td>Múnich (MUC)</td><td>México (MEX)</td><td>Business</td><td>12:20</td><td>18:05</td><td>12 h 45 m</td></tr>
+    </table>
+  </div>
+  <div class="fnotes">
+    <h4>Equipaje</h4>
+    <p>Lufthansa 1&nbsp;×&nbsp;32&nbsp;kg &nbsp;·&nbsp; Finnair 1&nbsp;×&nbsp;23&nbsp;kg &nbsp;·&nbsp; SAS 2&nbsp;×&nbsp;23&nbsp;kg</p>
+    <h4>Políticas de cancelación</h4>
+    <p>Tarifas aéreas sujetas a disponibilidad y a cambio hasta la emisión de los boletos. Una vez emitidos, los boletos suelen ser no reembolsables; los cambios generan diferencia de tarifa y cargo de la aerolínea. Las condiciones exactas dependen de la tarifa emitida y se confirman antes de emitir.</p>
+  </div>
+</div>
+
+<div class="page hot" id="s3">
+  <div class="top"><span><i>.03</i>Hoteles</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>05</span></div>
+  <div class="in">
+    <h1>Hoteles</h1>
+    <table>
+      <tr><th style="width:.38in">#</th><th style="width:1.0in">Fechas</th><th style="width:.38in">Nts</th><th style="width:1.0in">Destino</th><th style="width:2.08in">Hotel</th><th>Habitación / Régimen</th></tr>
+      <tr><td><span class="dot">1</span></td><td class="g">27 – 28 dic</td><td>1</td><td>Helsinki</td><td class="h">Waldorf Astoria Helsinki</td><td class="r"><b>One Bedroom Suite (cama extra) + Grand Deluxe Room comunicadas</b><span>Desayuno incluido</span></td></tr>
+      <tr><td><span class="dot">2</span></td><td class="g">28 dic – 03 ene</td><td>6</td><td>Rovaniemi</td><td class="h">Hidden Arctic Cloud Villa</td><td class="r"><b>Villa privada de 3 recámaras</b><span>Chef privado · todas las comidas y bebidas</span></td></tr>
+      <tr><td><span class="dot">3</span></td><td class="g">03 – 06 ene</td><td>3</td><td>Muonio</td><td class="h">Arcora Boutique Hotel &amp; Villas</td><td class="r"><b>2x Junior Suite Kalle comunicadas (cama extra)</b><span>Desayuno incluido</span></td></tr>
+      <tr><td><span class="dot">4</span></td><td class="g">06 – 08 ene</td><td>2</td><td>Laponia Sueca</td><td class="h">Fjellborg Arctic Lodge</td><td class="r"><b>Master Lodge de 4 recámaras · uso exclusivo</b><span>Pensión completa</span></td></tr>
+      <tr><td><span class="dot">5</span></td><td class="g">08 – 09 ene</td><td>1</td><td>Estocolmo</td><td class="h">Grand Hôtel Stockholm</td><td class="r"><b>Superior Suite Harbour View + Deluxe Harbour View comunicadas</b><span>Desayuno incluido</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="page cover open" id="s4"><img src="img/opener.jpg"><div class="card"><span class="lb">.04</span><h1>Itinerario Diario</h1></div></div>
+
+<div class="page"><div class="top"><span><i>.04</i>Itinerario Diario</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>07</span></div>
+  <div class="itin" style="top:1.3in"><div class="side"><figure style="top:1.59in"><img src="img/helsinki.jpg"><figcaption>Helsinki</figcaption></figure><figure style="top:5.11in"><img src="img/aurora.jpg"><figcaption>Auroras boreales</figcaption></figure></div>
+  <div class="days"><section class="dayf"><p class="dt">Día 1 &nbsp;·&nbsp; Sábado 26 de diciembre</p><h3>Ciudad de México</h3><div class="ag"><div class="w">7:45 PM</div><div><p class="t">Vuelo LH 521 · México – Múnich</p><p class="d">Lufthansa · Business · llegada a Múnich el 27 Dic a la 1:45 PM</p></div></div></section><section class="dayf"><p class="dt">Día 2 &nbsp;·&nbsp; Domingo 27 de diciembre</p><h3>Helsinki</h3><div class="ag"><div class="w">3:10 PM</div><div><p class="t">Vuelo LH 2462 · Múnich – Helsinki</p><p class="d">Lufthansa · Business · llegada a Helsinki a las 6:45 PM</p></div><div class="w">6:45 PM</div><div><p class="t">Traslado privado Aeropuerto de Helsinki – hotel</p><p class="d">Minivan Business (V-Class o similar)</p></div><div class="w"></div><div><p class="t">Alojamiento en Waldorf Astoria Helsinki</p><p class="d">One Bedroom Suite con cama extra comunicada con Grand Deluxe Room</p></div></div></section><section class="dayf"><p class="dt">Día 3 &nbsp;·&nbsp; Lunes 28 de diciembre</p><h3>Helsinki – Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Traslado privado hotel – Aeropuerto de Helsinki</p><p class="d">Minivan Business (V-Class o similar)</p></div><div class="w">7:10 AM</div><div><p class="t">Vuelo AY 541 · Helsinki – Rovaniemi</p><p class="d">Finnair · Economy · llegada a Rovaniemi a las 8:40 AM</p></div><div class="w"></div><div><p class="t">Check-in en Hidden Arctic Cloud Villa</p><p class="d">Cena de bienvenida de 5 tiempos preparada por su chef privado.</p></div><div class="w"></div><div><p class="t">Cacería de auroras boreales en auto con su anfitrión</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p><p class="d">Chef privado · todas las comidas</p></div></div></section></div></div></div>
+<div class="page"><div class="top"><span><i>.04</i>Itinerario Diario</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>08</span></div>
+  <div class="itin flip" style="top:1.3in"><div class="side"><figure style="top:0.03in"><img src="img/reindeer.jpg"><figcaption>Trineo de renos</figcaption></figure><figure style="top:4.73in"><img src="img/nye.jpg"><figcaption>Noche ártica</figcaption></figure></div>
+  <div class="days"><section class="dayf nh"><p class="dt">Día 4 &nbsp;·&nbsp; Martes 29 de diciembre</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Paseo en trineo en una granja de renos auténtica</p><p class="d">Conozcan la vida de un pastor sámi y deslícense por el bosque nevado en un trineo tradicional; fogata, bebidas calientes e historias en un tipi lapón.</p></div><div class="w"></div><div><p class="t">Almuerzo en un tipi lapón</p><p class="d">Sopa, crepas finlandesas y jugo caliente, servidos por chef junto al fuego.</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 5 &nbsp;·&nbsp; Miércoles 30 de diciembre</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Visita privada a Santa Claus Secret Forest · Magical Toy Factory</p><p class="d">Aprox. 2.5 horas en el taller de juguetes de los duendes, con el gran libro de deseos, encuentro privado con Santa Claus y un regalo especial.</p></div><div class="w"></div><div><p class="t">Cacería de auroras boreales en auto con su anfitrión</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 6 &nbsp;·&nbsp; Jueves 31 de diciembre</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Motos de nieve eléctricas</p><p class="d">Recorrido silencioso por pistas privadas en el bosque, con pausa en una cabaña lapona junto a la chimenea. Niños menores de 140 cm van en trineo.</p></div><div class="w"></div><div><p class="t">Fin de Año en Santa Claus Secret Forest</p><p class="d">Después de la cena, celebración de Año Nuevo con lectura tradicional de la fortuna.</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section></div></div></div>
+<div class="page"><div class="top"><span><i>.04</i>Itinerario Diario</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>09</span></div>
+  <div class="itin" style="top:1.3in"><div class="side"><figure style="top:0.03in"><img src="img/icehotel.jpg"><figcaption>Hotel de hielo</figcaption></figure><figure style="top:4.73in"><img src="img/huskyf.jpg"><figcaption>Trineo de perros</figcaption></figure></div>
+  <div class="days"><section class="dayf nh"><p class="dt">Día 7 &nbsp;·&nbsp; Viernes 1 de enero</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Visita al Arctic Snow Hotel</p><p class="d">Recorrido guiado de 3 horas por el hotel de nieve y hielo: restaurante, capilla, bar y esculturas.</p></div><div class="w"></div><div><p class="t">Sauna de nieve y jacuzzi</p><p class="d">Traigan traje de baño.</p></div><div class="w"></div><div><p class="t">Almuerzo de sopa en el Ice Restaurant</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 8 &nbsp;·&nbsp; Sábado 2 de enero</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Ice karting privado</p><p class="d">Aprox. 2 horas con traslados. Edad mínima 10 años y 150 cm para conducir; peso máximo 100 kg.</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 9 &nbsp;·&nbsp; Domingo 3 de enero</p><h3>Rovaniemi – Muonio</h3><div class="ag"><div class="w"></div><div><p class="t">Traslado privado a Muonio con parada en Levi</p><p class="d">Aprox. 4.5 horas; almuerzo en Levi a pagar directamente.</p></div><div class="w"></div><div><p class="t">Safari privado con huskies bajo las auroras</p><p class="d">2 horas, 4–6 km, con fogata y bebidas calientes en una kota lejos de las luces de la ciudad.</p></div><div class="w"></div><div><p class="t">Alojamiento en Arcora Boutique Hotel &amp; Villas</p><p class="d">2x Junior Suite Kalle comunicadas</p></div></div></section></div></div></div>
+<div class="page"><div class="top"><span><i>.04</i>Itinerario Diario</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>10</span></div>
+  <div class="itin flip" style="top:1.3in"><div class="side"><figure style="top:0.03in"><img src="img/convoy.jpg"><figcaption>Motos de nieve</figcaption></figure><figure style="top:3.55in"><img src="img/saunaf.jpg"><figcaption>Sauna</figcaption></figure></div>
+  <div class="days"><section class="dayf nh"><p class="dt">Día 10 &nbsp;·&nbsp; Lunes 4 de enero</p><h3>Muonio</h3><div class="ag"><div class="w"></div><div><p class="t">Safari privado en moto de nieve</p><p class="d">3 horas, 20–30 km en 2 motos de nieve. Menores de 14 años viajan en trineo.</p></div><div class="w"></div><div><p class="t">Cena privada de 4 tiempos en una kota auténtica</p><p class="d">3.5 horas: un chef privado prepara cada tiempo al fuego con ingredientes del bosque y los lagos de Laponia.</p></div><div class="w"></div><div><p class="t">Alojamiento en Arcora Boutique Hotel &amp; Villas</p></div></div></section><section class="dayf nh"><p class="dt">Día 11 &nbsp;·&nbsp; Martes 5 de enero</p><h3>Muonio</h3><div class="ag"><div class="w"></div><div><p class="t">Caminata privada con raquetas de nieve en el parque nacional</p><p class="d">Aprox. 3.5 horas con traslados.</p></div><div class="w"></div><div><p class="t">Private Shaman Mystery Tour</p><p class="d">Aprox. 2 horas en una cabaña sámi junto a un lago congelado, con cantos joik y relatos de su pueblo.</p></div><div class="w"></div><div><p class="t">Experiencia exclusiva de sauna ártica</p><p class="d">2.5 horas entre cinco saunas temáticas, jacuzzi y la opción de un baño en el hielo. Traigan traje de baño.</p></div><div class="w"></div><div><p class="t">Alojamiento en Arcora Boutique Hotel &amp; Villas</p></div></div></section><section class="dayf nh"><p class="dt">Día 12 &nbsp;·&nbsp; Miércoles 6 de enero</p><h3>Muonio – Laponia Sueca</h3><div class="ag"><div class="w"></div><div><p class="t">Traslado privado a la Laponia Sueca</p><p class="d">Aprox. 3 horas hasta Fjellborg Homestead.</p></div><div class="w"></div><div><p class="t">Trineo de perros privado a Fjellborg Arctic Lodge</p><p class="d">Por la naturaleza invernal hasta el lago Väkkärä.</p></div><div class="w"></div><div><p class="t">Alojamiento en Fjellborg Arctic Lodge</p><p class="d">Master Lodge de uso exclusivo · pensión completa</p></div></div></section></div></div></div>
+<div class="page"><div class="top"><span><i>.04</i>Itinerario Diario</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>11</span></div>
+  <div class="itin" style="top:1.3in"><div class="side"><figure style="top:0.03in"><img src="img/icefish.jpg"><figcaption>Pesca en hielo</figcaption></figure><figure style="top:3.55in"><img src="img/sthlm.jpg"><figcaption>Estocolmo</figcaption></figure></div>
+  <div class="days"><section class="dayf"><p class="dt">Día 13 &nbsp;·&nbsp; Jueves 7 de enero</p><h3>Laponia Sueca</h3><div class="ag"><div class="w"></div><div><p class="t">Raquetas de nieve y pesca en hielo privadas</p><p class="d">Aprox. 2–3 horas desde el lodge; si pescan algo, el chef lo prepara para la cena.</p></div><div class="w"></div><div><p class="t">Clase privada de escultura en hielo en ICEHOTEL</p></div><div class="w"></div><div><p class="t">Ritual de sauna en el lodge</p><p class="d">Traigan traje de baño.</p></div><div class="w"></div><div><p class="t">Alojamiento en Fjellborg Arctic Lodge</p><p class="d">Pensión completa</p></div></div></section><section class="dayf"><p class="dt">Día 14 &nbsp;·&nbsp; Viernes 8 de enero</p><h3>Laponia Sueca – Estocolmo</h3><div class="ag"><div class="w"></div><div><p class="t">Moto de nieve a Fjellborg Homestead y traslado privado al aeropuerto de Kiruna</p></div><div class="w">11:30 AM</div><div><p class="t">Vuelo SK 1047 · Kiruna – Estocolmo</p><p class="d">SAS · Business · llegada a Estocolmo Arlanda a la 1:15 PM</p></div><div class="w">1:15 PM</div><div><p class="t">Traslado privado Aeropuerto de Arlanda – hotel</p><p class="d">Minivan Business (V-Class o similar)</p></div><div class="w"></div><div><p class="t">Caminata privada por Gamla Stan</p><p class="d">Aprox. 2 horas por la Ciudad Vieja de Estocolmo.</p></div><div class="w"></div><div><p class="t">Alojamiento en Grand Hôtel Stockholm</p><p class="d">Superior Suite Harbour View + Deluxe Harbour View</p></div></div></section><section class="dayf"><p class="dt">Día 15 &nbsp;·&nbsp; Sábado 9 de enero</p><h3>Estocolmo – Ciudad de México</h3><div class="ag"><div class="w"></div><div><p class="t">Traslado privado Grand Hôtel – Aeropuerto de Arlanda</p><p class="d">Minivan Business (V-Class o similar)</p></div><div class="w">7:30 AM</div><div><p class="t">Vuelo LH 2421 · Estocolmo – Múnich</p><p class="d">Lufthansa · Business · llegada a Múnich a las 9:40 AM</p></div><div class="w">12:20 PM</div><div><p class="t">Vuelo LH 520 · Múnich – México</p><p class="d">Lufthansa · Business · llegada a México el mismo día a las 6:05 PM</p></div></div></section></div></div></div>
+
+<div class="page stay4" id="s5"><div class="top"><span><i>.05</i>Hotel</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>12</span></div>
+  <div class="head">
+    <h2>Waldorf Astoria Helsinki</h2>
+    <div class="loc"><span class="dot">1</span><p class="sub">Helsinki, Finlandia</p><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg></span></div>
+    <dl><div><dt class="lb">Fechas</dt><dd>27 – 28 dic</dd></div><div><dt class="lb">Noches</dt><dd>1</dd></div>
+        <div><dt class="lb">Habitación</dt><dd>One Bedroom Suite + Grand Deluxe Room</dd></div><div><dt class="lb">Régimen</dt><dd>Desayuno</dd></div></dl>
+    <p class="desc">En el corazón de Helsinki, el Waldorf Astoria ocupa un elegante edificio histórico restaurado del siglo XIX que combina el encanto clásico con el lujo contemporáneo. Habitaciones refinadas con candelabros y baños tipo spa, un patio interior con jardín y fuente, restaurante de autor y centro de bienestar, a pasos de los principales sitios culturales y comerciales de la capital finlandesa: el inicio perfecto para el viaje nórdico.</p>
+  </div>
+  <div class="four"><img src="himg_g/h-000.jpg"><img src="himg_g/h-001.jpg"><img src="himg_g/h-002.jpg"><img src="himg_g/h-003.jpg"></div>
+</div>
+<div class="page stay4" id="s6"><div class="top"><span><i>.06</i>Hotel</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>13</span></div>
+  <div class="head">
+    <h2>Hidden Arctic Cloud Villa</h2>
+    <div class="loc"><span class="dot">2</span><p class="sub">Rovaniemi, Laponia Finlandesa</p></div>
+    <dl><div><dt class="lb">Fechas</dt><dd>28 dic – 03 ene</dd></div><div><dt class="lb">Noches</dt><dd>6</dd></div>
+        <div><dt class="lb">Habitación</dt><dd>Villa privada de 3 recámaras</dd></div><div><dt class="lb">Régimen</dt><dd>Chef privado</dd></div></dl>
+    <p class="desc">Un refugio privado cerca de Rovaniemi que fusiona elegancia moderna y lujo lapón, con grandes ventanales hacia la naturaleza ártica. Incluye chef privado (cena de bienvenida de 5 tiempos, desayunos, comidas y cenas de 3 tiempos), selección diaria de snacks locales, vinos, licores y bebidas, ropa de invierno premium para todos, housekeeping con servicio de cortesía, sauna privada y jacuzzi exterior con vista al norte.</p>
+  </div>
+  <div class="four"><img src="himg_g/h-006.jpg"><img src="himg_g/h-007.jpg"><img src="himg_g/h-008.jpg"><img src="himg_g/h-009.jpg"></div>
+</div>
+<div class="page stay4" id="s7"><div class="top"><span><i>.07</i>Hotel</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>14</span></div>
+  <div class="head">
+    <h2>Arcora Boutique Hotel &amp; Villas</h2>
+    <div class="loc"><span class="dot">3</span><p class="sub">Torassieppi, Muonio · Laponia Finlandesa</p></div>
+    <dl><div><dt class="lb">Fechas</dt><dd>03 – 06 ene</dd></div><div><dt class="lb">Noches</dt><dd>3</dd></div>
+        <div><dt class="lb">Habitación</dt><dd>2x Junior Suite Kalle comunicadas</dd></div><div><dt class="lb">Régimen</dt><dd>Desayuno</dd></div></dl>
+    <p class="desc">En la aldea lacustre de Torassieppi, junto al Parque Nacional Pallas-Yllästunturi, Arcora es un hotel boutique de diseño nórdico construido alrededor de las vistas árticas y el ritmo de las ocho estaciones de Laponia. Sus Junior Suites Kalle, de 30 m², tienen ventanales a ras de piso que llevan el paisaje y el cielo nocturno directo a la cama; cuenta con saunas finlandesas tradicionales y piscina exterior infinita con vista al bosque.</p>
+  </div>
+  <div class="four"><img src="himg_g/h-012.jpg"><img src="himg_g/h-013.jpg"><img src="himg_g/h-015.jpg"><img src="himg_g/h-014.jpg"></div>
+</div>
+<div class="page stay4" id="s8"><div class="top"><span><i>.08</i>Hotel</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>15</span></div>
+  <div class="head">
+    <h2>Fjellborg Arctic Lodge</h2>
+    <div class="loc"><span class="dot">4</span><p class="sub">Lago Väkkärä · Laponia Sueca</p></div>
+    <dl><div><dt class="lb">Fechas</dt><dd>06 – 08 ene</dd></div><div><dt class="lb">Noches</dt><dd>2</dd></div>
+        <div><dt class="lb">Habitación</dt><dd>Master Lodge de 4 recámaras (uso exclusivo)</dd></div><div><dt class="lb">Régimen</dt><dd>Pensión completa</dd></div></dl>
+    <p class="desc">Nueve generaciones de la familia Fjellborg han vivido en armonía con la naturaleza a orillas del río Torne, 200 km al norte del Círculo Polar Ártico. Su Master Lodge de uso exclusivo es una cabaña de troncos rústica y elevada, con estufas de leña, vigas expuestas y vistas al río. La cocina se inspira en el entorno —pescado, reno, bayas y hongos silvestres— e incluye pensión completa y ropa ártica Fjällräven.</p>
+  </div>
+  <div class="four"><img src="himg_g/h-019.jpg"><img src="himg_g/h-032.jpg"><img src="himg_g/h-033.jpg"><img src="himg_g/h-021.jpg"></div>
+</div>
+<div class="page stay4" id="s9"><div class="top"><span><i>.09</i>Hotel</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>16</span></div>
+  <div class="head">
+    <h2>Grand Hôtel Stockholm</h2>
+    <div class="loc"><span class="dot">5</span><p class="sub">Södra Blasieholmshamnen 8, Estocolmo, Suecia</p><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-2.9-5.4 2.9 1.1-6L1.2 7.6l6.1-.8z"/></svg></span></div>
+    <dl><div><dt class="lb">Fechas</dt><dd>08 – 09 ene</dd></div><div><dt class="lb">Noches</dt><dd>1</dd></div>
+        <div><dt class="lb">Habitación</dt><dd>Superior Suite + Deluxe Room Harbour View</dd></div><div><dt class="lb">Régimen</dt><dd>Desayuno</dd></div></dl>
+    <p class="desc">Desde 1874, el Grand Hôtel es la dirección más legendaria de Estocolmo: frente al Palacio Real y Gamla Stan, sobre el agua, ha recibido a premios Nobel, celebridades y viajeros exigentes. Alberga el clásico restaurante Veranda con su tradicional smörgåsbord, los galardonados restaurantes de Mathias Dahlgren, el Cadier Bar y un spa nórdico con saunas: el cierre perfecto para esta aventura invernal.</p>
+  </div>
+  <div class="four"><img src="himg_g/h-030.jpg"><img src="himg_g/h-025.jpg"><img src="himg_g/h-026.jpg"><img src="himg_g/h-031.jpg"></div>
+</div>
+
+<div class="page quote" id="s10">
+  <div class="top"><span><i>.10</i>Cotización</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>17</span></div>
+  <div class="in">
+    <h1>Cotización <i>Opción 2</i></h1>
+    <table>
+      <tr><th>Concepto</th><th>Costo total</th></tr>
+      <tr><td><b>Paquete Terrestre · Laponia Finlandesa &amp; Sueca</b>
+        <span>12 noches: Waldorf Astoria Helsinki · Hidden Arctic Cloud Villa (chef privado) · Arcora · Fjellborg Arctic Lodge (uso exclusivo) · Grand Hôtel Stockholm</span>
+        <span>Traslados privados en V-Class, ropa ártica premium y Fjällräven</span>
+        <span>Actividades privadas: renos y almuerzo en tipi, Santa Claus Secret Forest, motos de nieve, Fin de Año, Arctic Snow Hotel, ice karting, huskies, cena en kota, chamán, sauna ártica, pesca en hielo, escultura en hielo y Gamla Stan</span></td><td>€227,345.00</td></tr>
+      <tr><td><b>Vuelos Internacionales &amp; Regionales · 5 PAX</b>
+        <span>México – Múnich – Helsinki – Rovaniemi · Kiruna – Estocolmo – Múnich – México</span>
+        <span>Lufthansa Business · Finnair Economy (Helsinki – Rovaniemi) · SAS Business (Kiruna – Estocolmo)</span>
+        <span>US$7,885.07 por persona</span></td><td>US$39,425.35</td></tr>
+    </table>
+    <div class="total"><span class="lb">Total del viaje · 5 personas · aprox. en EUR</span><b>≈ €262,408.32</b></div>
+    <p class="fine">Paquete terrestre en euros (EUR) y vuelos en dólares (USD) para 5 personas. El total aproximado en EUR convierte los vuelos al tipo de cambio Nuba del 09 Nov 2026 (USD 18.89 MXN · EUR 21.24 MXN; 1 USD ≈ 0.8894 EUR) y puede variar según el tipo de cambio del día de pago. Precios sujetos a disponibilidad al momento de la reserva; no se ha realizado ninguna reservación.</p>
+  </div>
+</div>
+
+<div class="page notes" id="s11">
+  <div class="top"><span><i>.11</i>Notas</span><span>Laponia · Año Nuevo Ártico</span></div><div class="bot"><a href="#indice"><svg class="logo " viewBox="197 496 684 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M380.8,563c-2.5,11.6-11.3,18.6-26.4,18.6s-21.4-3-28.8-8.6v-11.5h.9c3.7,13.7,15.6,18.1,27.9,18.6,10.8.5,20.8-4.7,22.8-13.9,6.5-29.3-52.9-21.7-45.9-52.8,2.1-9,11.9-15.3,22.7-15.3s16.1,3,23.5,8.7v10h-.9c-3.6-12.2-11.6-17.3-22.6-17.3s-17.5,4.7-19.3,14.5c-4.6,25,51.9,21.3,46.1,48.9Z"/>
+    <path d="M463.4,499.5v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,13.4-7.1,31.6-28.6,31.6s-32.4-11.2-32.4-31.6v-43.4c0-3.9-.2-5.8-3.9-6.1v-1h11.9v1c-3.7.3-3.9,2.2-3.9,6.1v43.4c0,19.1,12.9,29.5,28.9,29.5s26.6-17.3,26.6-29.5v-43.4c0-3.9-.3-5.8-4.1-6.1v-1h9.4Z"/>
+    <path d="M485.8,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M566.8,510.7h-1c-1.7-5.6-4.4-9.7-12.7-9.7h-16.7v72.5c0,3.9.2,5.8,3.9,6v1h-11.9v-1c3.8-.2,4.1-2.1,4.1-6v-72.5h-16.7c-8.3,0-11,4.2-12.7,9.7h-1l2.1-11.2h60.6l2.2,11.2Z"/>
+    <path d="M633.4,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+    <path d="M724.2,569.3l-2.1,11.2h-52.2v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.8.2-4.1,2.1-4.1,6v72.5h32.7c8.3,0,11-4.2,12.7-9.7h1Z"/>
+    <path d="M743.7,506.5v66.8c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h11.9v1c-3.7.2-4.1,2.1-4.1,6Z"/>
+    <path d="M814.1,510.7h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-29.6v39.8h22.3c6.8,0,7.9-2,8.5-5.7h1v12.6h-1c-.6-3.6-1.6-5.6-8.5-5.6h-22.3v31.3c0,3.9.3,5.8,4.1,6.1v1h-11.9v-1c3.7-.3,3.9-2.2,3.9-6.1v-66.8c0-3.9-.2-5.8-3.9-6v-1h49.2l2.1,11.2Z"/>
+    <path d="M880.6,569.3l-2.2,11.2h-52.2v-1c3.8-.3,4.1-2.2,4.1-6.1v-66.8c0-3.9-.2-5.8-4.1-6v-1h50l2.1,11.2h-1c-1.7-5.7-4.4-9.8-12.7-9.8h-30.3v37.5h22.7c6.7,0,7.9-2,8.5-5.6h1v12.6h-1c-.6-3.7-1.7-5.6-8.5-5.6h-22.7v39.1h32.5c8.5,0,11.1-4.2,12.9-9.7h1Z"/>
+  </g>
+  <g>
+    <path d="M205.3,581.7c-1.6,0-3-.6-4.2-1.8-1.2-1.2-1.7-3-1.7-5.5s.5-4.4,1.5-6.9c1-2.5,2.4-5.3,4.2-8.3,1.7-3,3.8-6.2,6.2-9.6,2.4-3.4,4.9-7.1,7.6-11,0,0,0-.1,0-.2h-9.7v-1.2h10.5c2.9-4.3,5.4-8.1,7.6-11.4,2.2-3.3,4.2-6.4,6-9.4h5c-1.8,2.3-3.8,5.2-6.1,8.6-2.3,3.4-5,7.5-8.1,12.2h11.2v1.2h-12c-1.6,2.5-3.3,5.1-5.1,7.9-1.8,2.8-3.7,5.7-5.7,8.9-1.3,2.2-2.6,4.3-3.7,6.4-1.1,2.1-2.1,4-3,5.9-.9,1.9-1.6,3.6-2.1,5.1-.5,1.6-.7,2.9-.7,4.1s.3,2,.8,2.6c.5.6,1.4.9,2.7.9s3.4-.8,5.5-2.4c2.1-1.6,4.3-3.6,6.6-6.1,2.3-2.5,4.6-5.1,6.9-8,2.3-2.9,4.4-5.6,6.4-8.1l1.2.4c-4.1,5.5-7.6,9.9-10.6,13.2-3,3.4-5.5,6-7.6,7.8-2.1,1.9-3.9,3.1-5.4,3.8-1.5.6-2.8,1-4,1Z"/>
+    <path d="M278.4,504.1c-1.4.5-2.8,1.1-4.2,1.7-1.3.6-2.7,1.5-4.2,2.6-1.5,1.1-3.1,2.6-4.8,4.4-1.7,1.8-3.7,4.2-6,7.3-2.3,3-4.9,6.7-7.8,11.2-2.9,4.4-6.3,9.8-10.1,16,4.7-4.5,8.8-7.6,12.4-9.5,3.6-1.8,6.6-2.7,8.9-2.7s2.3.3,3.3,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.6c-1.1,2.2-2.6,4.5-4.3,7-1.7,2.5-3.6,5-5.6,7.6-2,2.6-3.9,5-5.6,7.4-1.7,2.4-3.2,4.5-4.3,6.4-1.1,1.9-1.7,3.5-1.7,4.7s.9,2.1,2.7,2.1,2.1-.4,3.6-1.1c1.5-.7,3.3-2.1,5.4-3.9,2.2-1.9,4.7-4.4,7.6-7.6,2.9-3.2,6.2-7.3,9.9-12.1l1.2.4c-3.8,5.1-7.2,9.4-10.3,12.7-3,3.4-5.7,6-8,7.9-2.3,1.9-4.3,3.3-6,4-1.7.7-3.1,1.1-4.3,1.1s-2.7-.5-3.6-1.6c-.9-1.1-1.3-2.3-1.3-3.8s.6-3.8,1.7-6c1.1-2.2,2.5-4.6,4.2-6.9,1.7-2.4,3.5-4.8,5.5-7.2,2-2.4,3.8-4.7,5.5-6.9,1.7-2.2,3.1-4.2,4.2-6,1.1-1.8,1.7-3.3,1.7-4.4s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.3-.6s-3,.4-4.9,1.3c-1.9.9-3.9,2.1-5.9,3.5-2.1,1.5-4.2,3.2-6.3,5.1-2.1,1.9-4.1,4-5.9,6.1l-17.7,28.9h-4.6c6.8-11.1,12.8-21.1,18.1-30,5.3-8.9,10.4-16.7,15.2-23.3,4.8-6.6,9.5-12,14.1-16.3,4.6-4.2,9.6-7.2,14.9-8.8l.3,1Z"/>
+    <path d="M309.8,555.9c-.8,1.2-2,2.6-3.4,4.4-1.4,1.7-3,3.6-4.8,5.5-1.8,1.9-3.8,3.8-5.9,5.7-2.1,1.9-4.2,3.6-6.4,5.1-2.1,1.5-4.3,2.8-6.4,3.7-2.1.9-4.1,1.4-6,1.4-3.4,0-5.9-.8-7.3-2.5-1.5-1.7-2.2-3.9-2.2-6.5s.5-4.8,1.4-7.5c.9-2.7,2.2-5.4,3.7-8.2,1.6-2.7,3.4-5.4,5.5-8,2.1-2.6,4.3-4.9,6.7-6.9,2.4-2,4.8-3.6,7.3-4.9,2.5-1.2,4.9-1.8,7.3-1.8s3.7.4,4.7,1.2c1,.8,1.5,2,1.5,3.4s-.8,3.9-2.3,6.3c-1.5,2.4-3.6,4.7-6.4,6.9-2.7,2.2-5.9,4.2-9.7,5.9-3.7,1.7-7.8,2.8-12.2,3.3-1.2,2.3-2.2,4.6-2.9,6.7-.7,2.2-1.1,4-1.1,5.6s.4,3.1,1.3,4.1c.9,1,2.3,1.5,4.2,1.5s4.1-.5,6.2-1.5c2.2-1,4.3-2.2,6.5-3.8,2.2-1.5,4.2-3.3,6.2-5.1,2-1.9,3.8-3.8,5.6-5.6,1.7-1.9,3.2-3.6,4.5-5.2,1.3-1.6,2.3-2.9,3-3.8l1.2.4ZM300.3,536.8c-1.7,0-3.6.7-5.7,2.1-2.2,1.4-4.4,3.3-6.6,5.6-2.2,2.3-4.4,4.9-6.5,7.7-2.1,2.9-4,5.7-5.6,8.6,4.2-.4,8-1.5,11.5-3.1,3.5-1.6,6.5-3.5,9-5.6,2.5-2.1,4.4-4.2,5.8-6.4,1.4-2.2,2.1-4.1,2.1-5.6s-.3-1.8-1-2.4c-.6-.6-1.6-.9-2.9-.9Z"/>
+  </g>
+</svg></a><span>18</span></div>
+  <div class="in">
+    <h1 style="font-size:34pt">Notas &amp; Políticas de Cancelación</h1>
+    <div class="cols">
+      <div><h4>El precio incluye</h4><ul><li>Vuelos según el itinerario (tarifas en USD).</li><li>Alojamiento según el itinerario con desayuno; chef privado con todas las comidas y bebidas en Hidden Arctic Cloud Villa y pensión completa en Fjellborg.</li><li>Traslados privados en minivan Business (V-Class o similar).</li><li>Ropa de invierno premium en la villa y ropa ártica Fjällräven en Fjellborg.</li><li>Actividades privadas indicadas en el itinerario.</li></ul>
+        <h4>El precio excluye</h4><ul><li>Almuerzo en Levi durante el traslado a Muonio.</li><li>Comidas y bebidas no especificadas en el itinerario.</li><li>Seguro de viaje (muy recomendado).</li><li>Gastos personales y propinas.</li></ul>
+        <h4>Para reservar</h4><p>Se requiere un depósito no reembolsable del 30% al momento de reservar para confirmar. El saldo restante vence 60 días antes de la salida. Los pagos tardíos pueden resultar en la cancelación de la reserva y la pérdida del depósito.</p></div>
+      <div><h4>Información general</h4><ul><li>Los precios, disponibilidad e inclusiones están sujetos a cambios según las políticas de los proveedores y las fluctuaciones del mercado.</li><li>El precio puede variar dependiendo del tipo de cambio.</li><li>El cliente es responsable de contar con todos los documentos de viaje (pasaportes, visas, permisos) vigentes antes de la salida.</li><li>Se recomienda ampliamente contratar un seguro de viaje que cubra emergencias médicas, cancelaciones y demoras.</li><li>Las auroras boreales son un fenómeno natural y no pueden garantizarse. Las actividades al aire libre dependen de las condiciones climáticas.</li><li>Para conducir motos de nieve se requiere licencia de manejo vigente y edad mínima; aplican restricciones de edad, estatura y peso en algunas actividades.</li></ul>
+        <h4>Políticas de cancelación</h4>
+        <table>
+          <tr><th>Periodo de aviso</th><th>Cargo por cancelación</th></tr>
+          <tr><td>61 días o más</td><td>30% del valor total</td></tr>
+          <tr><td>60 días o menos</td><td>100% del valor total</td></tr>
+          <tr><td>No Show</td><td>100% del valor total</td></tr>
+        </table></div>
+    </div>
+  </div>
+</div>
+
+<div class="page end">
+  <svg class="logo " viewBox="203 464 673 152" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M337.8,609.8v-11.9h1.7v10.4h6.4v1.5h-8.1Z"/>
+    <path d="M362.7,610c-1.6,0-2.8-.4-3.7-1.3s-1.3-2.2-1.3-3.9v-6.7h1.7v6.7c0,1.3.3,2.3.9,2.9s1.4.9,2.5.9,1.9-.3,2.5-.9.9-1.6.9-2.9v-6.7h1.6v6.7c0,1.7-.4,3-1.3,3.9-.9.9-2.1,1.3-3.7,1.3Z"/>
+    <path d="M379.6,609.8l4.9-6.7v1.3l-4.7-6.4h1.9l3.7,5.1h-.8s3.7-5.1,3.7-5.1h1.8l-4.6,6.3v-1.2l4.9,6.7h-1.9l-3.9-5.4h.7l-3.9,5.4h-1.9Z"/>
+    <path d="M407.4,610c-1.6,0-2.8-.4-3.7-1.3s-1.3-2.2-1.3-3.9v-6.7h1.7v6.7c0,1.3.3,2.3.9,2.9s1.4.9,2.5.9,1.9-.3,2.5-.9.9-1.6.9-2.9v-6.7h1.6v6.7c0,1.7-.4,3-1.3,3.9-.9.9-2.1,1.3-3.7,1.3Z"/>
+    <path d="M426.1,609.8v-11.9h4.6c1,0,1.9.2,2.7.5.7.3,1.3.8,1.7,1.4.4.6.6,1.4.6,2.2s-.2,1.6-.6,2.2c-.4.6-1,1.1-1.7,1.4-.7.3-1.6.5-2.7.5h-3.7l.8-.8v4.4h-1.7ZM427.8,605.6l-.8-.8h3.6c1.1,0,1.9-.2,2.5-.7.6-.5.8-1.1.8-2s-.3-1.5-.8-2c-.6-.5-1.4-.7-2.5-.7h-3.6l.8-.8v7ZM434,609.8l-3-4.3h1.8l3,4.3h-1.8Z"/>
+    <path d="M451.2,609.8v-4.5l.4,1-5.1-8.4h1.8l4.3,7.1h-1l4.3-7.1h1.7l-5.1,8.4.4-1v4.5h-1.7Z"/>
+    <path d="M486.6,609.8v-10.4h-4.1v-1.5h9.8v1.5h-4.1v10.4h-1.7Z"/>
+    <path d="M504.3,609.8v-11.9h4.6c1,0,1.9.2,2.7.5.7.3,1.3.8,1.7,1.4.4.6.6,1.4.6,2.2s-.2,1.6-.6,2.2c-.4.6-1,1.1-1.7,1.4-.7.3-1.6.5-2.7.5h-3.7l.8-.8v4.4h-1.7ZM506,605.6l-.8-.8h3.6c1.1,0,1.9-.2,2.5-.7.6-.5.8-1.1.8-2s-.3-1.5-.8-2c-.6-.5-1.4-.7-2.5-.7h-3.6l.8-.8v7ZM512.2,609.8l-3-4.3h1.8l3,4.3h-1.8Z"/>
+    <path d="M525,609.8l5.4-11.9h1.7l5.4,11.9h-1.8l-4.8-10.9h.7l-4.8,10.9h-1.7ZM527.3,606.9l.5-1.4h6.7l.5,1.4h-7.6Z"/>
+    <path d="M552.1,609.8l-5.2-11.9h1.8l4.8,10.9h-1l4.8-10.9h1.7l-5.2,11.9h-1.7Z"/>
+    <path d="M572.4,608.4h6.9v1.5h-8.6v-11.9h8.4v1.5h-6.7v8.9ZM572.2,603.1h6.1v1.4h-6.1v-1.4Z"/>
+    <path d="M592.2,609.8v-11.9h1.7v10.4h6.4v1.5h-8.1Z"/>
+    <path d="M627.1,609.8v-11.9h5c1.3,0,2.4.2,3.3.7,1,.5,1.7,1.2,2.3,2.1.5.9.8,1.9.8,3.1s-.3,2.2-.8,3.1-1.3,1.6-2.3,2.1c-1,.5-2.1.7-3.3.7h-5ZM628.8,608.4h3.2c1,0,1.8-.2,2.5-.6.7-.4,1.3-.9,1.7-1.6.4-.7.6-1.4.6-2.3s-.2-1.7-.6-2.3-1-1.2-1.7-1.6c-.7-.4-1.6-.6-2.5-.6h-3.2v8.9Z"/>
+    <path d="M652.9,608.4h6.9v1.5h-8.6v-11.9h8.4v1.5h-6.7v8.9ZM652.8,603.1h6.1v1.4h-6.1v-1.4Z"/>
+    <path d="M676.2,610c-.9,0-1.8-.1-2.6-.4s-1.5-.6-1.9-1.1l.6-1.3c.5.4,1,.7,1.7,1,.7.3,1.4.4,2.2.4s1.2,0,1.7-.2c.4-.2.7-.4.9-.7.2-.3.3-.6.3-.9s-.1-.7-.4-1c-.3-.2-.6-.4-1-.6-.4-.2-.9-.3-1.4-.4s-1-.2-1.5-.4c-.5-.2-1-.3-1.4-.6-.4-.2-.8-.6-1-1-.3-.4-.4-.9-.4-1.5s.2-1.2.5-1.7c.3-.5.8-.9,1.5-1.2.7-.3,1.5-.5,2.6-.5s1.4,0,2,.3c.7.2,1.3.4,1.8.8l-.6,1.4c-.5-.3-1-.6-1.6-.7-.6-.2-1.1-.2-1.6-.2s-1.2,0-1.6.3-.7.4-.9.7c-.2.3-.3.6-.3.9s.1.8.4,1c.3.2.6.4,1,.6.4.1.9.3,1.4.4.5.1,1,.3,1.5.4.5.1,1,.3,1.4.6.4.2.8.6,1,.9.3.4.4.9.4,1.5s-.2,1.2-.5,1.7c-.3.5-.8.9-1.5,1.2s-1.5.5-2.6.5Z"/>
+    <path d="M693.4,609.8v-11.9h1.7v11.9h-1.7Z"/>
+    <path d="M714.2,610c-.9,0-1.8-.1-2.5-.4-.8-.3-1.4-.7-2-1.3-.6-.5-1-1.2-1.3-1.9-.3-.7-.5-1.5-.5-2.4s.2-1.7.5-2.4c.3-.7.8-1.4,1.3-1.9.6-.5,1.2-1,2-1.3.8-.3,1.6-.4,2.5-.4s1.8.2,2.6.5c.8.3,1.4.8,2,1.4l-1,1c-.5-.5-1-.8-1.6-1-.6-.2-1.2-.3-1.9-.3s-1.3.1-1.9.3c-.6.2-1.1.5-1.5.9s-.8.9-1,1.4c-.2.6-.3,1.2-.3,1.8s.1,1.2.3,1.8c.2.6.6,1,1,1.5s.9.7,1.5,1,1.2.3,1.9.3,1.2,0,1.8-.3,1.1-.5,1.6-1l1,1.3c-.6.5-1.3.9-2.1,1.1-.8.3-1.6.4-2.4.4ZM717,608.2v-4.4h1.6v4.6l-1.6-.2Z"/>
+    <path d="M732,609.8v-11.9h1.4l7.8,9.7h-.7v-9.7h1.7v11.9h-1.4l-7.8-9.7h.7v9.7h-1.7Z"/>
+  </g>
+  <g>
+    <g>
+      <path d="M383.2,533.8c-2.5,11.4-11.2,18.4-26,18.4s-21.1-3-28.4-8.4v-11.3h.9c3.6,13.5,15.4,17.8,27.5,18.4,10.6.5,20.5-4.7,22.5-13.7,6.4-28.8-52.1-21.3-45.1-52,2.1-8.9,11.7-15,22.3-15s15.8,3,23.1,8.5v9.8h-.9c-3.5-12-11.4-17-22.2-17s-17.2,4.7-19,14.3c-4.6,24.6,51.1,21,45.4,48.1Z"/>
+      <path d="M464.6,471.2v1c-3.6.3-3.9,2.2-3.9,6v42.8c0,13.2-7,31.1-28.2,31.1s-31.9-11.1-31.9-31.1v-42.8c0-3.9-.2-5.7-3.9-6v-1h11.7v1c-3.6.3-3.9,2.2-3.9,6v42.8c0,18.8,12.7,29.1,28.5,29.1s26.2-17,26.2-29.1v-42.8c0-3.9-.3-5.7-4-6v-1h9.2Z"/>
+      <path d="M486.6,478.1v65.8c0,3.9.3,5.7,4,6v1h-11.7v-1c3.6-.3,3.9-2.2,3.9-6v-65.8c0-3.9-.2-5.7-3.9-5.9v-1h11.7v1c-3.6.2-4,2.1-4,5.9Z"/>
+      <path d="M566.4,482.2h-1c-1.7-5.5-4.3-9.6-12.5-9.6h-16.4v71.4c0,3.9.2,5.7,3.9,5.9v1h-11.7v-1c3.8-.2,4-2.1,4-5.9v-71.4h-16.4c-8.2,0-10.8,4.1-12.5,9.6h-1l2.1-11.1h59.6l2.2,11.1Z"/>
+      <path d="M632,539.9l-2.2,11.1h-51.4v-1c3.8-.3,4-2.2,4-6v-65.8c0-3.9-.2-5.7-4-5.9v-1h49.2l2.1,11.1h-1c-1.7-5.6-4.3-9.7-12.5-9.7h-29.9v36.9h22.3c6.6,0,7.8-1.9,8.3-5.5h1v12.4h-1c-.6-3.6-1.7-5.5-8.3-5.5h-22.3v38.5h32c8.3,0,10.9-4.1,12.7-9.6h1Z"/>
+      <path d="M721.4,539.9l-2.1,11.1h-51.4v-1c3.6-.3,3.9-2.2,3.9-6v-65.8c0-3.9-.2-5.7-3.9-5.9v-1h11.7v1c-3.8.2-4,2.1-4,5.9v71.4h32.1c8.2,0,10.8-4.1,12.5-9.6h1Z"/>
+      <path d="M740.5,478.1v65.8c0,3.9.3,5.7,4,6v1h-11.7v-1c3.6-.3,3.9-2.2,3.9-6v-65.8c0-3.9-.2-5.7-3.9-5.9v-1h11.7v1c-3.6.2-4,2.1-4,5.9Z"/>
+      <path d="M809.8,482.2h-1c-1.7-5.6-4.3-9.7-12.5-9.7h-29.2v39.2h22c6.7,0,7.8-1.9,8.3-5.6h1v12.4h-1c-.6-3.5-1.6-5.5-8.3-5.5h-22v30.8c0,3.9.3,5.7,4,6v1h-11.7v-1c3.6-.3,3.9-2.2,3.9-6v-65.8c0-3.9-.2-5.7-3.9-5.9v-1h48.5l2.1,11.1Z"/>
+      <path d="M875.4,539.9l-2.2,11.1h-51.4v-1c3.8-.3,4-2.2,4-6v-65.8c0-3.9-.2-5.7-4-5.9v-1h49.2l2.1,11.1h-1c-1.7-5.6-4.3-9.7-12.5-9.7h-29.9v36.9h22.3c6.6,0,7.8-1.9,8.3-5.5h1v12.4h-1c-.6-3.6-1.7-5.5-8.3-5.5h-22.3v38.5h32c8.3,0,10.9-4.1,12.7-9.6h1Z"/>
+    </g>
+    <g>
+      <path d="M210.4,552.1c-1.6,0-2.9-.6-4.1-1.8-1.1-1.2-1.7-3-1.7-5.4s.5-4.3,1.5-6.8c1-2.5,2.4-5.2,4.1-8.1,1.7-2.9,3.7-6.1,6.1-9.5,2.3-3.4,4.8-7,7.4-10.9,0,0,0-.1,0-.2h-9.6v-1.1h10.3c2.8-4.3,5.3-8,7.5-11.2,2.2-3.2,4.1-6.3,5.9-9.2h4.9c-1.7,2.3-3.8,5.1-6.1,8.5-2.3,3.4-4.9,7.3-7.9,12h11v1.1h-11.8c-1.6,2.5-3.3,5-5,7.8-1.8,2.7-3.6,5.6-5.6,8.7-1.3,2.1-2.5,4.2-3.6,6.3-1.1,2-2.1,4-3,5.8-.9,1.8-1.6,3.5-2,5.1-.5,1.6-.7,2.9-.7,4s.3,1.9.8,2.5c.5.6,1.4.9,2.7.9s3.3-.8,5.4-2.4c2.1-1.6,4.2-3.6,6.5-6,2.3-2.4,4.5-5.1,6.8-7.9,2.3-2.8,4.3-5.5,6.3-8l1.1.4c-4,5.4-7.5,9.7-10.4,13-2.9,3.3-5.4,5.9-7.5,7.7-2.1,1.9-3.9,3.1-5.4,3.7-1.5.6-2.8.9-3.9.9Z"/>
+      <path d="M282.5,475.7c-1.4.5-2.8,1-4.1,1.6-1.3.6-2.7,1.4-4.1,2.5-1.4,1.1-3,2.5-4.7,4.3-1.7,1.8-3.7,4.2-5.9,7.2-2.2,3-4.8,6.6-7.7,11-2.9,4.4-6.2,9.6-10,15.8,4.6-4.4,8.7-7.5,12.2-9.3,3.6-1.8,6.5-2.7,8.8-2.7s2.2.3,3.2,1c1,.7,1.5,1.8,1.5,3.4s-.6,3.4-1.7,5.5c-1.1,2.2-2.5,4.5-4.3,6.9-1.7,2.5-3.6,4.9-5.5,7.5-2,2.5-3.8,5-5.5,7.3-1.7,2.3-3.1,4.4-4.3,6.3-1.1,1.9-1.7,3.4-1.7,4.6s.9,2,2.7,2,2.1-.4,3.6-1.1c1.4-.7,3.2-2,5.4-3.9,2.1-1.9,4.6-4.4,7.4-7.5,2.8-3.2,6.1-7.1,9.7-11.9l1.1.4c-3.8,5.1-7.1,9.3-10.1,12.6-3,3.3-5.6,5.9-7.8,7.8-2.3,1.9-4.2,3.2-5.9,4-1.7.7-3.1,1.1-4.2,1.1s-2.6-.5-3.5-1.6c-.9-1-1.3-2.3-1.3-3.8s.5-3.7,1.6-5.9c1.1-2.2,2.5-4.5,4.1-6.8,1.7-2.3,3.5-4.7,5.4-7.1,1.9-2.4,3.7-4.7,5.4-6.8,1.7-2.2,3-4.1,4.1-5.9,1.1-1.8,1.6-3.2,1.6-4.3s-.2-1.1-.7-1.5c-.5-.4-1.2-.6-2.2-.6s-3,.4-4.8,1.3c-1.9.9-3.8,2-5.8,3.5-2,1.4-4.1,3.1-6.2,5-2.1,1.9-4,3.9-5.8,6l-17.4,28.5h-4.5c6.7-10.9,12.6-20.8,17.9-29.6,5.3-8.8,10.2-16.5,15-23,4.7-6.5,9.3-11.9,13.9-16,4.6-4.2,9.4-7.1,14.7-8.7l.3,1Z"/>
+      <path d="M313.4,526.7c-.8,1.1-1.9,2.6-3.3,4.3-1.4,1.7-3,3.5-4.7,5.4-1.8,1.9-3.7,3.8-5.8,5.6-2.1,1.9-4.2,3.6-6.3,5.1-2.1,1.5-4.2,2.7-6.3,3.6-2.1.9-4.1,1.4-5.9,1.4-3.4,0-5.8-.8-7.2-2.5-1.4-1.7-2.2-3.8-2.2-6.4s.4-4.7,1.3-7.4c.9-2.7,2.1-5.4,3.7-8.1,1.6-2.7,3.4-5.3,5.4-7.9,2.1-2.6,4.3-4.8,6.6-6.8,2.3-2,4.7-3.6,7.2-4.8,2.5-1.2,4.9-1.8,7.2-1.8s3.6.4,4.6,1.2c1,.8,1.5,1.9,1.5,3.4s-.7,3.9-2.2,6.2c-1.5,2.3-3.6,4.6-6.3,6.8-2.7,2.2-5.8,4.1-9.5,5.8-3.7,1.7-7.7,2.7-12.1,3.2-1.2,2.3-2.2,4.5-2.9,6.6-.7,2.1-1.1,4-1.1,5.6s.4,3,1.3,4c.9,1,2.3,1.5,4.2,1.5s4-.5,6.1-1.4c2.1-1,4.3-2.2,6.4-3.7,2.1-1.5,4.2-3.2,6.1-5.1,2-1.9,3.8-3.7,5.5-5.5,1.7-1.8,3.2-3.5,4.5-5.1,1.3-1.6,2.3-2.8,3-3.8l1.1.4ZM304,508c-1.6,0-3.5.7-5.6,2.1-2.1,1.4-4.3,3.2-6.5,5.5-2.2,2.3-4.3,4.8-6.4,7.6-2.1,2.8-3.9,5.6-5.5,8.5,4.1-.4,7.8-1.5,11.3-3.1,3.4-1.6,6.4-3.4,8.8-5.5,2.5-2.1,4.4-4.2,5.7-6.3,1.4-2.2,2-4,2-5.5s-.3-1.8-.9-2.3c-.6-.6-1.6-.9-2.9-.9Z"/>
+    </g>
+  </g>
+</svg>
+  <div class="follow">
+    <span class="lb">Síguenos en Instagram</span>
+    <a class="h" href="https://instagram.com/thesuitelife.mx">@thesuitelife.mx</a>
+    <a class="u" href="https://thesuitelife.com.mx">thesuitelife.com.mx</a>
+  </div>
+  <div class="who"><b>Mariana Medina</b><p>Luxury Travel Designer</p>
+    <p class="ct"><a href="tel:+525518500549">55 1850 0549</a> &nbsp;·&nbsp; <a href="mailto:mariana.medina@nuba.com">mariana.medina@nuba.com</a></p></div>
+  <p class="cred">Fotografías de hoteles: las de la cotización original y los sitios oficiales de Grand Hôtel Stockholm y Fjellborg Arctic Lodge. Portada, apertura e itinerario, vía Unsplash: @hendrikmorkel, @tanelah, @saidaqqa, @thejohnnyme, @judithprins, @seancdavis, @earthwandering, @windagh, @skyhung1228, @claybanks, @grury y @jonflobrant.</p>
+</div>
+</body></html>

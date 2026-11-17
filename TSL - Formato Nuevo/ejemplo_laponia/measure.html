@@ -1,0 +1,311 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'IvyOra';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/IvyOra/IvyOraDisplay-Thin.ttf');font-weight:200;font-style:normal;}
+@font-face{font-family:'IvyOra';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/IvyOra/IvyOraDisplay-ThinItalic.ttf');font-weight:200;font-style:italic;}
+@font-face{font-family:'IvyOra';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/IvyOra/IvyOraDisplay-Light.ttf');font-weight:300;font-style:normal;}
+@font-face{font-family:'Karla';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/Karla/static/Karla-Light.ttf');font-weight:300;font-style:normal;}
+@font-face{font-family:'Karla';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/Karla/static/Karla-Regular.ttf');font-weight:400;font-style:normal;}
+@font-face{font-family:'Karla';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/Karla/static/Karla-Medium.ttf');font-weight:500;font-style:normal;}
+@font-face{font-family:'Karla';src:url('file:///mnt/user-data/uploads/Travel Agent Portal/TSL - Brand Files/Fonts/Karla/static/Karla-Bold.ttf');font-weight:700;font-style:normal;}
+@page { size: 8.5in 11in; margin: 0; }
+:root { --paper:#FCF9F5; --almond:#F0EDE8; --oat:#DFD3C5; --stone:#7D766C; --ink:#232323; --soft:#55504A; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html,body { background:var(--paper); color:var(--ink); font:300 8.8pt/1.6 'Karla';
+  -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+.page { position:relative; width:8.5in; height:11in; overflow:hidden; page-break-after:always; background:var(--paper); }
+.page:last-child { page-break-after:auto; }
+img { display:block; width:100%; height:100%; object-fit:cover; }
+.logo { display:block; }
+.lb { font:400 6.3pt/1.4 'Karla'; letter-spacing:.3em; text-transform:uppercase; color:var(--stone); }
+h1 { font:200 43pt/1 'IvyOra'; letter-spacing:-.01em; }
+.sub { font:italic 200 13.5pt/1.3 'IvyOra'; color:var(--stone); margin-top:.1in; }
+.top { position:absolute; left:.7in; right:.7in; top:.5in; border-top:.5pt solid var(--stone); padding-top:.09in;
+  display:flex; justify-content:space-between; font:400 6pt 'Karla'; letter-spacing:.3em; text-transform:uppercase; color:var(--stone); }
+.top i { font-style:normal; margin-right:.14in; color:var(--ink); }
+.bot { position:absolute; left:.7in; right:.7in; bottom:.42in; border-top:.5pt solid var(--oat); padding-top:.11in;
+  display:flex; justify-content:space-between; align-items:center; color:var(--stone);
+  font:400 6pt 'Karla'; letter-spacing:.3em; }
+.bot .logo { width:.92in; }
+.in { position:absolute; left:.7in; right:.7in; top:1.2in; }
+
+/* portada */
+.cover > img { position:absolute; inset:0; }
+.cover .card { position:absolute; left:.7in; bottom:.95in; width:3.75in; padding:.38in .4in .36in; background:rgba(223,211,197,.82); color:var(--ink); }
+.cover .card .logo { width:1.25in; }
+.cover .card h1 { font-size:47pt; margin:.5in 0 .04in -.02in; }
+.cover .card .sub { color:var(--ink); opacity:.78; margin:0 0 .26in; }
+.cover .card dl { border-top:.5pt solid rgba(35,35,35,.4); padding-top:.17in; display:grid; grid-template-columns:.78in 1fr; row-gap:.05in; }
+.cover .card dt { font:400 5.8pt/1.9 'Karla'; letter-spacing:.3em; text-transform:uppercase; color:var(--stone); }
+.cover .card dd { font:300 8.6pt/1.45 'Karla'; }
+.cover .side { position:absolute; right:.52in; bottom:.95in; writing-mode:vertical-rl; transform:rotate(180deg);
+  font:400 6pt 'Karla'; letter-spacing:.42em; text-transform:uppercase; color:var(--ink); opacity:.6; }
+
+/* índice */
+.index .panel { position:absolute; left:0; top:0; bottom:0; width:2.95in; background:var(--oat); }
+.index .panel h1 { position:absolute; left:.7in; top:1.2in; }
+.index .panel span { position:absolute; left:.7in; bottom:1.05in; writing-mode:vertical-rl; transform:rotate(180deg);
+  font:400 6pt 'Karla'; letter-spacing:.42em; text-transform:uppercase; color:var(--stone); }
+.index .list { position:absolute; left:3.75in; right:.7in; top:1.2in; }
+.index ol { list-style:none; margin-top:.1in; }
+.index li { display:grid; grid-template-columns:.62in 1fr auto; align-items:baseline; padding:.165in 0 .15in; border-bottom:.5pt solid var(--oat); }
+.index li:first-child { border-top:.5pt solid var(--oat); }
+.index li i { font:200 15pt 'IvyOra'; font-style:normal; color:var(--stone); }
+.index li b { font:300 13.5pt 'IvyOra'; }
+.index li span { font:400 7pt 'Karla'; letter-spacing:.2em; color:var(--stone); }
+.index .meta { position:absolute; left:3.75in; right:.7in; bottom:1.05in; display:grid; grid-template-columns:1fr 1fr; gap:.3in; }
+.index .meta p { font:300 8.6pt/1.55 'Karla'; margin-top:.05in; }
+
+/* resumen */
+.map { width:5.9in; height:auto; display:block; margin:.35in auto 0; }
+.map .rt { fill:none; stroke:#232323; stroke-width:.55; stroke-dasharray:2 2.6; }
+.map .rg { font:400 5px 'Karla'; letter-spacing:.34em; fill:#7D766C; }
+.map .ct { font:300 7.4px 'Karla'; fill:#232323; }
+.map .ct.b { font:300 10.5px 'IvyOra'; }
+.map .it { font:italic 200 8px 'IvyOra'; fill:#7D766C; }
+.kv { display:grid; row-gap:.21in; align-content:start; padding-top:.04in; }
+.kv p { font:300 13pt/1.25 'IvyOra'; margin-top:.035in; }
+.kv small { display:block; font:300 8pt/1.5 'Karla'; color:var(--stone); margin-top:.02in; }
+table { width:100%; border-collapse:collapse; }
+th { font:400 6pt 'Karla'; letter-spacing:.26em; text-transform:uppercase; color:var(--stone); text-align:left;
+  padding:0 .1in .1in 0; border-bottom:.5pt solid var(--stone); }
+td { padding:.125in .1in .115in 0; border-bottom:.5pt solid var(--oat); font:300 8.6pt/1.35 'Karla'; vertical-align:baseline; }
+td:last-child, th:last-child { padding-right:0; }
+.stages { margin-top:.4in; }
+.stages td.s { font:300 12.5pt/1.2 'IvyOra'; }
+.band { margin-top:.55in; background:var(--stone); color:#FCF9F5;
+  display:flex; justify-content:space-between; align-items:center; padding:.2in .3in; }
+.band .lb { color:#FCF9F5; opacity:.8; }
+.band p { font:300 9.2pt 'Karla'; letter-spacing:.02em; }
+
+/* vuelos */
+.pax { display:flex; align-items:baseline; gap:.3in; margin-top:.55in; padding-bottom:.16in; }
+.pax p { font:300 14pt/1.2 'IvyOra'; }
+.flights td:nth-child(1), .flights td:nth-child(6) { color:var(--stone); }
+.flights td:nth-child(3) { font-weight:500; }
+.fnotes { display:grid; grid-template-columns:1fr 1fr; column-gap:.55in; margin-top:.6in; }
+.fnotes h4 { font:italic 200 14pt/1.2 'IvyOra'; margin-bottom:.1in; }
+.fnotes ul { list-style:none; }
+.fnotes li { font:300 8.3pt/1.56 'Karla'; color:var(--soft); padding-left:.15in; text-indent:-.15in; margin-bottom:.05in; }
+.fnotes li::before { content:'–'; display:inline-block; width:.15in; text-indent:0; color:var(--stone); }
+
+/* hotel */
+.stay .mos { position:absolute; left:.7in; right:.7in; top:1.2in; }
+.stay .r1 { display:grid; grid-template-columns:4.6in 2.4in; column-gap:.1in; height:3.55in; }
+.stay .r2 { display:grid; grid-template-columns:2.9in 1.75in 2.25in; column-gap:.1in; height:2.35in; margin-top:.1in; }
+.stay .r3 { display:grid; grid-template-columns:1fr 1.75in 1.75in; column-gap:.1in; height:2.6in; margin-top:.1in; }
+.stay .mos img { height:100%; }
+.stay .r1 img { height:3.55in; } .stay .r2 img { height:2.35in; } .stay .r3 img { height:2.6in; }
+.stay .name { padding:.16in .3in 0 0; }
+.stay .name h2 { font:200 31pt/1 'IvyOra'; margin-top:.1in; }
+.stay .name .sub { margin-top:.05in; }
+.stay .name dl { display:grid; grid-template-columns:1fr 1fr; column-gap:.2in; row-gap:.13in; margin-top:.24in; }
+.stay .name dd { font:300 10.5pt/1.25 'IvyOra'; margin-top:.02in; }
+.stay .name dd small { display:block; font:300 7.4pt/1.4 'Karla'; color:var(--stone); }
+
+/* itinerario */
+.day { position:absolute; left:.7in; right:.7in; display:grid; grid-template-columns:1.9in 1fr; column-gap:.5in; }
+.day.flip { grid-template-columns:1fr 1.9in; }
+.day.solo { grid-template-columns:1fr; }
+.day figure { height:2.52in; position:relative; }
+.day figcaption { position:absolute; left:0; bottom:-.21in; font:italic 200 8.5pt 'IvyOra'; color:var(--stone); }
+.day.flip figcaption { left:auto; right:0; }
+.day .dt { font:italic 200 12.5pt/1.2 'IvyOra'; color:#A8937B; }
+.day h3 { font:200 25pt/1.08 'IvyOra'; margin:.05in 0 .2in; }
+.ag { display:grid; grid-template-columns:.68in 1fr; row-gap:.1in; }
+.ag .w { font:700 8pt/1.62 'Karla'; letter-spacing:.02em; color:var(--ink); }
+.ag .t { font:400 9pt/1.4 'Karla'; }
+.ag .d { font:300 8.3pt/1.48 'Karla'; color:var(--soft); margin-top:.01in; }
+.ag .d em { font:italic 200 9.5pt 'IvyOra'; color:var(--stone); white-space:nowrap; }
+.rule { position:absolute; left:.7in; right:.7in; border-top:.5pt solid var(--oat); }
+
+/* cotización */
+.quote table { margin-top:.5in; }
+.quote th:last-child, .quote td:last-child { text-align:right; white-space:nowrap; }
+.quote td { padding:.22in .1in .2in 0; vertical-align:top; }
+.quote td b { display:block; font:300 14.5pt/1.2 'IvyOra'; }
+.quote td span { display:block; color:var(--soft); margin-top:.04in; font-size:8.4pt; }
+.quote td:last-child { font:300 14.5pt/1.2 'IvyOra'; padding-right:0; }
+.quote .total { display:flex; justify-content:space-between; align-items:baseline; background:var(--oat); color:var(--ink);
+  padding:.2in .3in .19in; margin-top:.3in; }
+.quote .total .lb { color:var(--soft); }
+.quote .total b { font:200 24pt/1 'IvyOra'; }
+.quote .opt { display:grid; grid-template-columns:1.05in 1fr auto; column-gap:.2in; align-items:baseline; margin-top:.34in;
+  padding-bottom:.2in; border-bottom:.5pt solid var(--oat); }
+.quote .opt p { color:var(--soft); font-size:8.4pt; }
+.quote .opt p b { display:block; font:300 12pt/1.3 'IvyOra'; color:var(--ink); }
+.quote .opt i { font:300 12pt 'IvyOra'; font-style:normal; }
+.quote .fine { margin-top:.24in; color:var(--soft); font-size:7.9pt; line-height:1.62; }
+.quote .valid { position:absolute; left:.7in; right:.7in; bottom:1.0in; background:var(--almond); padding:.26in .3in .24in;
+  display:grid; grid-template-columns:1.5in 1fr; column-gap:.3in; }
+.quote .valid p { font-size:8.5pt; color:var(--soft); }
+
+/* notas */
+.notes .cols { display:grid; grid-template-columns:1fr 1fr; column-gap:.55in; margin-top:.45in; }
+.notes h4 { font:italic 200 14pt/1.2 'IvyOra'; margin:0 0 .09in; }
+.notes ul { list-style:none; margin-bottom:.3in; }
+.notes li, .notes .cols p { font:300 8.1pt/1.56 'Karla'; color:var(--soft); }
+.notes li { padding-left:.15in; text-indent:-.15in; margin-bottom:.045in; }
+.notes li::before { content:'–'; display:inline-block; width:.15in; text-indent:0; color:var(--stone); }
+.notes .cols p { margin-bottom:.3in; }
+.notes td, .notes th { font-size:7.9pt; }
+.notes td { padding:.085in .1in .075in 0; color:var(--soft); }
+.notes th { font-size:5.8pt; }
+
+/* cierre */
+.end { background:var(--stone); color:#FCF9F5; }
+.end .logo { position:absolute; left:50%; top:46%; width:3.1in; transform:translate(-50%,-50%); }
+.end .who { position:absolute; left:.7in; right:.7in; bottom:1.25in; text-align:center; }
+.end .who b { display:block; font:200 17pt 'IvyOra'; }
+.end .who p { font:300 8.6pt/1.7 'Karla'; opacity:.88; margin-top:.05in; }
+.end .cred { position:absolute; left:1.4in; right:1.4in; bottom:.5in; text-align:center; font:300 6.2pt/1.6 'Karla'; opacity:.62; }
+
+/* hoteles (tabla) */
+.hot table { margin-top:.55in; }
+.hot td { padding:.17in .12in .16in 0; vertical-align:middle; }
+.hot td.h { font:300 13pt/1.2 'IvyOra'; }
+.hot td.r b { display:block; font:400 8.8pt/1.4 'Karla'; }
+.hot td.r span { display:block; color:var(--stone); font-size:8pt; margin-top:.02in; }
+.hot td.g { color:var(--stone); }
+/* resumen */
+.map { display:block; width:4.55in; margin:0 auto; }
+.map .ct.b { font:300 9.5px 'IvyOra'; }
+.map .it { font:italic 200 7px 'IvyOra'; }
+.stages { margin-top:.22in; }
+.stages td { padding:.1in .1in .09in 0; }
+.stages td { font:300 8.8pt/1.35 'Karla'; }
+.stages td.f { font-weight:700; }
+/* banda beige en encabezados de Vuelos y Hoteles */
+.flights th, .hot th { background:var(--oat); color:var(--ink); border-bottom:0; padding:.1in .1in .09in 0; }
+.flights th:first-child, .hot th:first-child, .flights td:first-child, .hot td:first-child { padding-left:.14in; }
+.flights th:last-child, .hot th:last-child, .flights td:last-child, .hot td:last-child { padding-right:.14in; }
+/* vuelos */
+.fly .fnotes { position:absolute; left:.7in; right:.7in; bottom:1.0in; margin:0; border-top:.5pt solid var(--oat); padding-top:.16in; column-gap:.5in; }
+.fly .fnotes h4 { font:400 6pt 'Karla'; letter-spacing:.26em; text-transform:uppercase; color:var(--stone); margin-bottom:.07in; }
+.fly .fnotes li { font:300 7pt/1.5 'Karla'; color:var(--stone); margin-bottom:.02in; padding-left:.12in; text-indent:-.12in; }
+.fly .fnotes li::before { width:.12in; }
+.pax p { font:300 11.5pt/1.45 'IvyOra'; }
+.pax { align-items:flex-start; }
+.pax .lb { padding-top:.05in; white-space:nowrap; }
+/* itinerario en flujo */
+.itin { position:absolute; left:.7in; right:.7in; display:grid; grid-template-columns:1.9in 1fr; column-gap:.5in; }
+.itin.flip { grid-template-columns:1fr 1.9in; }
+.itin.flip .side { order:2; }
+.side { position:relative; }
+.side figure { height:2.52in; width:1.9in; position:absolute; left:0; }
+.side figcaption { position:absolute; left:0; bottom:-.21in; font:italic 200 8.5pt 'IvyOra'; color:var(--stone); }
+.itin.flip .side figcaption { left:auto; right:0; }
+.dayf { padding-bottom:.24in; margin-bottom:.24in; border-bottom:.5pt solid var(--oat); }
+.dayf:last-child { border-bottom:0; margin-bottom:0; padding-bottom:0; }
+.dayf .dt { font:700 7.3pt/1.2 'Karla'; letter-spacing:.2em; text-transform:uppercase; color:#B9A791; }
+.dayf h3 { font:200 23pt/1.08 'IvyOra'; margin:.07in 0 .17in; }
+.dayf .ag { grid-template-columns:.7in 1fr; row-gap:.09in; }
+/* hotel: texto arriba, 4 fotos grandes */
+.stay4 .head { position:absolute; left:.7in; right:.7in; top:1.2in; }
+.stay4 h2 { font:200 34pt/1.05 'IvyOra'; }
+.stay4 .loc { display:flex; align-items:center; gap:.16in; margin-top:.09in; }
+.stay4 .loc .sub { font-size:12.5pt; margin:0; }
+.stay4 .stars { display:inline-flex; gap:.035in; }
+.stay4 .stars svg { width:.125in; height:.125in; fill:#A8937B; }
+.stay4 dl { display:grid; grid-template-columns:1.25in .8in 3.2in 1fr; column-gap:.2in; margin-top:.26in;
+  border-top:.5pt solid var(--stone); border-bottom:.5pt solid var(--oat); padding:.12in 0 .11in; }
+.stay4 dd { font:300 10.5pt/1.25 'IvyOra'; margin-top:.03in; }
+.stay4 .desc { font:300 8.7pt/1.62 'Karla'; color:var(--soft); margin-top:.2in; }
+.stay4 .four { position:absolute; left:.7in; right:.7in; bottom:.95in; display:grid; grid-template-columns:1fr 1fr; gap:.1in; }
+.stay4 .four img { height:2.8in; }
+/* cierre: minimalista, tono sobre tono */
+.end { background:var(--oat); color:var(--ink); }
+.end .logo { top:3.75in; width:2.85in; color:var(--stone); }
+.end .follow { position:absolute; left:0; right:0; top:5.25in; text-align:center; }
+.end .follow::before { content:''; display:block; width:.42in; border-top:.5pt solid var(--stone); margin:0 auto .42in; }
+.end .follow a { color:inherit; text-decoration:none; display:block; }
+.end .follow .lb { color:var(--stone); }
+.end .follow .h { font:200 27pt/1.1 'IvyOra'; margin-top:.1in; }
+.end .follow .u { font:italic 200 14pt/1.2 'IvyOra'; margin-top:.2in; color:var(--soft); }
+.end .who { bottom:1.2in; }
+.end .who b { font:300 12.5pt 'IvyOra'; }
+.end .who p { font:300 7.6pt/1.7 'Karla'; color:var(--stone); opacity:1; letter-spacing:.04em; margin-top:.04in; }
+.end .cred { left:1.7in; right:1.7in; bottom:.48in; font-size:5.6pt; color:var(--stone); opacity:.75; }
+/* cotización */
+.quote .sums { margin-top:.3in; }
+.quote .sums div { display:flex; justify-content:space-between; align-items:baseline; padding:.13in 0 .12in; border-bottom:.5pt solid var(--oat); }
+.quote .sums div b { font:300 13pt 'IvyOra'; }
+.quote .total { margin-top:.22in; }
+.index li { padding:.125in 0 .115in; }
+.index li b { font-size:12.5pt; }
+.cover .card h1 { font-size:50pt; margin-top:.45in; }
+.cover .card .t2 { font:200 19pt/1.1 'IvyOra'; margin:.02in 0 .1in; }
+
+/* ── cambios del consejo de diseño ── */
+.lb { font-size:6.8pt; letter-spacing:.22em; }
+th { font-size:6.8pt; letter-spacing:.2em; }
+.top, .bot { font-size:6.6pt; letter-spacing:.24em; }
+.bot a { display:block; color:inherit; }
+td { font-size:9pt; }
+.cover .card { bottom:.7in; width:3.9in; padding:.34in .4in .32in; background:rgba(223,211,197,.9); }
+.cover .card .logo { width:1.75in; }
+.cover .card h1 { margin-top:.3in; }
+.cover .card .sub { color:var(--stone); opacity:1; }
+.cover .card dl { grid-template-columns:.9in 1fr; }
+.cover .card dt { font-size:6.4pt; letter-spacing:.24em; }
+.open .card { width:4.6in; padding:.3in .4in .32in; }
+.hot td:nth-child(4) { white-space:nowrap; }
+.open .card h1 { font-size:36pt; margin:.14in 0 0; }
+.index li { display:block; padding:0; }
+.index li a { display:grid; grid-template-columns:.62in 1fr auto; align-items:baseline; padding:.125in 0 .115in; color:inherit; text-decoration:none; }
+.dot { display:inline-flex; align-items:center; justify-content:center; width:11pt; height:11pt; border-radius:50%;
+  background:var(--ink); color:var(--paper); font:500 6.6pt 'Karla'; letter-spacing:0; }
+.stages th, .notes table th { background:var(--oat); color:var(--ink); border-bottom:0; padding:.1in .1in .09in 0; }
+.stages th:first-child, .stages td:first-child, .notes table th:first-child, .notes table td:first-child { padding-left:.14in; }
+.stages td { font-size:9pt; }
+.fly .pax { display:block; margin-top:.5in; }
+.fly .pax .lb { display:block; padding:0; }
+.fly .pax .names { display:grid; grid-template-columns:repeat(3, auto); justify-content:start; column-gap:.45in; row-gap:.02in; margin-top:.07in; }
+.fly .pax .names span { font:300 9pt/1.5 'Karla'; color:var(--ink); white-space:nowrap; }
+.flights td { font-size:8.8pt; }
+.flights td:nth-child(1) { color:var(--ink); font-weight:700; }
+.flights td:nth-child(6) { color:var(--ink); }
+.flights td:nth-child(6) b { font-weight:500; }
+.flights th:nth-child(9), .flights td:nth-child(9) { text-align:right; }
+.flights tr.grp td { font:400 6.6pt 'Karla'; letter-spacing:.22em; text-transform:uppercase; color:var(--soft); padding:.2in 0 .07in .14in; border-bottom:.5pt solid var(--stone); }
+.flights sup { font:500 6.5pt 'Karla'; vertical-align:2pt; margin-left:.03in; }
+.fly .fnotes h4 { font-size:6.8pt; letter-spacing:.22em; }
+.fly .fnotes li { font-size:8pt; color:var(--soft); }
+.hot td.g { color:var(--ink); font-weight:700; white-space:nowrap; }
+.hot td.h { font-size:11.5pt; white-space:nowrap; }
+.hot td.r b { font-size:9pt; text-wrap:balance; }
+.hot td.r span { color:var(--soft); font-size:8.4pt; }
+.itin { grid-template-columns:2.35in 1fr; column-gap:.3in; }
+.itin.flip { grid-template-columns:1fr 2.35in; }
+.side figure { height:3.1in; width:2.35in; }
+.side figcaption { font-size:10pt; color:var(--soft); bottom:-.24in; }
+.dayf .dt { font-size:7.8pt; letter-spacing:.16em; color:#927F68; }
+.dayf.nh .ag { grid-template-columns:0 1fr; }
+.ag .t, .ag .d { max-width:4.3in; text-wrap:pretty; }
+.stay4 .desc { column-count:2; column-gap:.3in; font-size:9pt; }
+.stay4 .loc .dot { margin-right:-.04in; }
+.quote h1 i { font:italic 200 19pt 'IvyOra'; color:var(--stone); margin-left:.12in; }
+.quote td:last-child { font-size:16pt; }
+.quote .total { margin:.3in -.3in 0; align-items:center; padding:.22in .3in; }
+.quote .total .lb { font-size:7pt; letter-spacing:.2em; color:var(--ink); }
+.quote .fine { font-size:8.3pt; }
+.notes .cols { row-gap:.04in; }
+.notes li, .notes .cols p { font-size:8.5pt; }
+.notes td { font-size:8.5pt; }
+.notes th { font-size:6.4pt; }
+.end .who b { font-size:16pt; }
+.end .who p { font-size:8pt; }
+.end .who p.ct { margin-top:.09in; font:400 10pt/1.6 'Karla'; color:var(--ink); letter-spacing:.02em; }
+.end .who a { color:inherit; text-decoration:none; }
+.end .cred { font-size:6.5pt; opacity:1; }
+
+.logo { overflow:visible; }
+.fly .pax .names { display:block; margin-top:.07in; font:300 7pt/1.5 'Karla'; color:var(--ink); white-space:nowrap; }
+.fly .pax .names i { display:inline-block; width:2.4pt; height:2.4pt; border:.5pt solid var(--stone); border-radius:50%; margin:0 .045in; vertical-align:.08em; }
+.notes h4 { font:700 9pt/1.3 'Karla'; color:var(--soft); letter-spacing:.01em; margin:0 0 .08in; }
+.notes ul { margin-bottom:.26in; }
+.notes .cols p { margin-bottom:.26in; }
+
+.fly .fnotes { display:block; padding-top:.12in; }
+.fly .fnotes h4 { font-size:5.6pt; letter-spacing:.24em; margin:0 0 .03in; }
+.fly .fnotes p { font:300 6.4pt/1.5 'Karla'; color:var(--soft); max-width:5.6in; margin:0 0 .09in; }
+.fly .fnotes p:last-child { margin-bottom:0; }
+</style></head><body><div id="c" style="width:4.45in"><section class="dayf"><p class="dt">Día 1 &nbsp;·&nbsp; Sábado 26 de diciembre</p><h3>Ciudad de México</h3><div class="ag"><div class="w">7:45 PM</div><div><p class="t">Vuelo LH 521 · México – Múnich</p><p class="d">Lufthansa · Business · llegada a Múnich el 27 Dic a la 1:45 PM</p></div></div></section><section class="dayf"><p class="dt">Día 2 &nbsp;·&nbsp; Domingo 27 de diciembre</p><h3>Helsinki</h3><div class="ag"><div class="w">3:10 PM</div><div><p class="t">Vuelo LH 2462 · Múnich – Helsinki</p><p class="d">Lufthansa · Business · llegada a Helsinki a las 6:45 PM</p></div><div class="w">6:45 PM</div><div><p class="t">Traslado privado Aeropuerto de Helsinki – hotel</p><p class="d">Minivan Business (V-Class o similar)</p></div><div class="w"></div><div><p class="t">Alojamiento en Waldorf Astoria Helsinki</p><p class="d">One Bedroom Suite con cama extra comunicada con Grand Deluxe Room</p></div></div></section><section class="dayf"><p class="dt">Día 3 &nbsp;·&nbsp; Lunes 28 de diciembre</p><h3>Helsinki – Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Traslado privado hotel – Aeropuerto de Helsinki</p><p class="d">Minivan Business (V-Class o similar)</p></div><div class="w">7:10 AM</div><div><p class="t">Vuelo AY 541 · Helsinki – Rovaniemi</p><p class="d">Finnair · Economy · llegada a Rovaniemi a las 8:40 AM</p></div><div class="w"></div><div><p class="t">Check-in en Hidden Arctic Cloud Villa</p><p class="d">Cena de bienvenida de 5 tiempos preparada por su chef privado.</p></div><div class="w"></div><div><p class="t">Cacería de auroras boreales en auto con su anfitrión</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p><p class="d">Chef privado · todas las comidas</p></div></div></section><section class="dayf nh"><p class="dt">Día 4 &nbsp;·&nbsp; Martes 29 de diciembre</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Paseo en trineo en una granja de renos auténtica</p><p class="d">Conozcan la vida de un pastor sámi y deslícense por el bosque nevado en un trineo tradicional; fogata, bebidas calientes e historias en un tipi lapón.</p></div><div class="w"></div><div><p class="t">Almuerzo en un tipi lapón</p><p class="d">Sopa, crepas finlandesas y jugo caliente, servidos por chef junto al fuego.</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 5 &nbsp;·&nbsp; Miércoles 30 de diciembre</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Visita privada a Santa Claus Secret Forest · Magical Toy Factory</p><p class="d">Aprox. 2.5 horas en el taller de juguetes de los duendes, con el gran libro de deseos, encuentro privado con Santa Claus y un regalo especial.</p></div><div class="w"></div><div><p class="t">Cacería de auroras boreales en auto con su anfitrión</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 6 &nbsp;·&nbsp; Jueves 31 de diciembre</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Motos de nieve eléctricas</p><p class="d">Recorrido silencioso por pistas privadas en el bosque, con pausa en una cabaña lapona junto a la chimenea. Niños menores de 140 cm van en trineo.</p></div><div class="w"></div><div><p class="t">Fin de Año en Santa Claus Secret Forest</p><p class="d">Después de la cena, celebración de Año Nuevo con lectura tradicional de la fortuna.</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 7 &nbsp;·&nbsp; Viernes 1 de enero</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Visita al Arctic Snow Hotel</p><p class="d">Recorrido guiado de 3 horas por el hotel de nieve y hielo: restaurante, capilla, bar y esculturas.</p></div><div class="w"></div><div><p class="t">Sauna de nieve y jacuzzi</p><p class="d">Traigan traje de baño.</p></div><div class="w"></div><div><p class="t">Almuerzo de sopa en el Ice Restaurant</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 8 &nbsp;·&nbsp; Sábado 2 de enero</p><h3>Rovaniemi</h3><div class="ag"><div class="w"></div><div><p class="t">Ice karting privado</p><p class="d">Aprox. 2 horas con traslados. Edad mínima 10 años y 150 cm para conducir; peso máximo 100 kg.</p></div><div class="w"></div><div><p class="t">Alojamiento en Hidden Arctic Cloud Villa</p></div></div></section><section class="dayf nh"><p class="dt">Día 9 &nbsp;·&nbsp; Domingo 3 de enero</p><h3>Rovaniemi – Muonio</h3><div class="ag"><div class="w"></div><div><p class="t">Traslado privado a Muonio con parada en Levi</p><p class="d">Aprox. 4.5 horas; almuerzo en Levi a pagar directamente.</p></div><div class="w"></div><div><p class="t">Safari privado con huskies bajo las auroras</p><p class="d">2 horas, 4–6 km, con fogata y bebidas calientes en una kota lejos de las luces de la ciudad.</p></div><div class="w"></div><div><p class="t">Alojamiento en Arcora Boutique Hotel &amp; Villas</p><p class="d">2x Junior Suite Kalle comunicadas</p></div></div></section><section class="dayf nh"><p class="dt">Día 10 &nbsp;·&nbsp; Lunes 4 de enero</p><h3>Muonio</h3><div class="ag"><div class="w"></div><div><p class="t">Safari privado en moto de nieve</p><p class="d">3 horas, 20–30 km en 2 motos de nieve. Menores de 14 años viajan en trineo.</p></div><div class="w"></div><div><p class="t">Cena privada de 4 tiempos en una kota auténtica</p><p class="d">3.5 horas: un chef privado prepara cada tiempo al fuego con ingredientes del bosque y los lagos de Laponia.</p></div><div class="w"></div><div><p class="t">Alojamiento en Arcora Boutique Hotel &amp; Villas</p></div></div></section><section class="dayf nh"><p class="dt">Día 11 &nbsp;·&nbsp; Martes 5 de enero</p><h3>Muonio</h3><div class="ag"><div class="w"></div><div><p class="t">Caminata privada con raquetas de nieve en el parque nacional</p><p class="d">Aprox. 3.5 horas con traslados.</p></div><div class="w"></div><div><p class="t">Private Shaman Mystery Tour</p><p class="d">Aprox. 2 horas en una cabaña sámi junto a un lago congelado, con cantos joik y relatos de su pueblo.</p></div><div class="w"></div><div><p class="t">Experiencia exclusiva de sauna ártica</p><p class="d">2.5 horas entre cinco saunas temáticas, jacuzzi y la opción de un baño en el hielo. Traigan traje de baño.</p></div><div class="w"></div><div><p class="t">Alojamiento en Arcora Boutique Hotel &amp; Villas</p></div></div></section><section class="dayf nh"><p class="dt">Día 12 &nbsp;·&nbsp; Miércoles 6 de enero</p><h3>Muonio – Laponia Sueca</h3><div class="ag"><div class="w"></div><div><p class="t">Traslado privado a la Laponia Sueca</p><p class="d">Aprox. 3 horas hasta Fjellborg Homestead.</p></div><div class="w"></div><div><p class="t">Trineo de perros privado a Fjellborg Arctic Lodge</p><p class="d">Por la naturaleza invernal hasta el lago Väkkärä.</p></div><div class="w"></div><div><p class="t">Alojamiento en Fjellborg Arctic Lodge</p><p class="d">Master Lodge de uso exclusivo · pensión completa</p></div></div></section><section class="dayf nh"><p class="dt">Día 13 &nbsp;·&nbsp; Jueves 7 de enero</p><h3>Laponia Sueca</h3><div class="ag"><div class="w"></div><div><p class="t">Raquetas de nieve y pesca en hielo privadas</p><p class="d">Aprox. 2–3 horas desde el lodge; si pescan algo, el chef lo prepara para la cena.</p></div><div class="w"></div><div><p class="t">Clase privada de escultura en hielo en ICEHOTEL</p></div><div class="w"></div><div><p class="t">Ritual de sauna en el lodge</p><p class="d">Traigan traje de baño.</p></div><div class="w"></div><div><p class="t">Alojamiento en Fjellborg Arctic Lodge</p><p class="d">Pensión completa</p></div></div></section><section class="dayf"><p class="dt">Día 14 &nbsp;·&nbsp; Viernes 8 de enero</p><h3>Laponia Sueca – Estocolmo</h3><div class="ag"><div class="w"></div><div><p class="t">Moto de nieve a Fjellborg Homestead y traslado privado al aeropuerto de Kiruna</p></div><div class="w">11:30 AM</div><div><p class="t">Vuelo SK 1047 · Kiruna – Estocolmo</p><p class="d">SAS · Business · llegada a Estocolmo Arlanda a la 1:15 PM</p></div><div class="w">1:15 PM</div><div><p class="t">Traslado privado Aeropuerto de Arlanda – hotel</p><p class="d">Minivan Business (V-Class o similar)</p></div><div class="w"></div><div><p class="t">Caminata privada por Gamla Stan</p><p class="d">Aprox. 2 horas por la Ciudad Vieja de Estocolmo.</p></div><div class="w"></div><div><p class="t">Alojamiento en Grand Hôtel Stockholm</p><p class="d">Superior Suite Harbour View + Deluxe Harbour View</p></div></div></section><section class="dayf"><p class="dt">Día 15 &nbsp;·&nbsp; Sábado 9 de enero</p><h3>Estocolmo – Ciudad de México</h3><div class="ag"><div class="w"></div><div><p class="t">Traslado privado Grand Hôtel – Aeropuerto de Arlanda</p><p class="d">Minivan Business (V-Class o similar)</p></div><div class="w">7:30 AM</div><div><p class="t">Vuelo LH 2421 · Estocolmo – Múnich</p><p class="d">Lufthansa · Business · llegada a Múnich a las 9:40 AM</p></div><div class="w">12:20 PM</div><div><p class="t">Vuelo LH 520 · Múnich – México</p><p class="d">Lufthansa · Business · llegada a México el mismo día a las 6:05 PM</p></div></div></section></div></body></html>
