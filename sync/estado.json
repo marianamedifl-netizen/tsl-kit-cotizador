@@ -3,7 +3,7 @@
   "nuba-core-cobro": {
    "base": "097223fa3080",
    "visto": {
-    "instalada": null,
+    "instalada": "097223fa3080",
     "luis": "097223fa3080",
     "mariana": null
    }
@@ -57,17 +57,17 @@
    }
   },
   "tsl-cotizacion-vuelos": {
-   "base": "6dfe11cae15c",
+   "base": "21b13043ddc8",
    "visto": {
-    "instalada": "6dfe11cae15c",
+    "instalada": "21b13043ddc8",
     "luis": "f2475025955e",
-    "mariana": "6dfe11cae15c"
+    "mariana": "21b13043ddc8"
    }
   },
   "tsl-cotizar-hoteles-sabre": {
    "base": "dd96e0fa8d6a",
    "visto": {
-    "instalada": "928b3f5a1566",
+    "instalada": "dd96e0fa8d6a",
     "luis": "819ad9b0b3af",
     "mariana": "dd96e0fa8d6a"
    }
@@ -105,5 +105,5 @@
    }
   }
  },
- "ultima_revision": "2026-11-23 13:23"
+ "ultima_revision": "2026-11-23 14:02"
 }

@@ -21,12 +21,39 @@ Las fuentes están en `TSL - Brand Files/Fonts` (IvyOra y Karla). Si la computad
 
 ## Flujo
 
-1. Reúne las opciones (Sabre, sitio de la aerolínea). La preferencia de Mariana al buscar: minimizar molestias (pocas escalas, buenos horarios) al precio razonable más bajo. Cuando dos o más vuelos sean de la misma aerolínea, cotízalos siempre primero juntos, como un solo boleto, y compara contra los tramos sueltos (detalle en `tsl-cotizar-hoteles-sabre`, sección 4 bis). **No inventes precios, horarios, reglas de tarifa ni vigencias**; lo que falte se marca como pendiente de verificar y se le dice a Mariana.
+1. Reúne las opciones (Sabre, sitio de la aerolínea) siguiendo la sección «Cómo buscar y cotizar en Sabre». La preferencia de Mariana al buscar: minimizar molestias (pocas escalas, buenos horarios) al precio razonable más bajo. Cuando dos o más vuelos sean de la misma aerolínea, cotízalos siempre primero juntos, como un solo boleto, y compara contra los tramos sueltos (detalle en `tsl-cotizar-hoteles-sabre`, sección 4 bis). **No inventes precios, horarios, reglas de tarifa ni vigencias**; lo que falte se marca como pendiente de verificar y se le dice a Mariana.
 2. En Sabre, los vuelos que se carguen al área de trabajo para cotizar se descartan siempre con `I`. Nunca se reserva, se guarda un PNR ni se emite sin que Mariana lo confirme en el chat.
 3. Copia `ejemplo_vuelos/` y cambia **solo los bloques de datos** (portada, `OPCIONES`, notas) y la foto de `img/`.
 4. Genera: `python3 cotizacion_vuelos.py salida.pdf`.
 5. Revisa: renderiza cada hoja a PNG y mírala; compara cifras, vuelos, horarios y fechas contra la fuente con `pdftotext -layout`; `pdffonts` debe listar solo IvyOra y Karla.
 6. Entrega el PDF y guárdalo en la carpeta del cliente: `Claude/CLIENTES/<Cliente>/<Año del viaje>/<Viaje>/`, con el nombre `OpcionesVuelo_<Cliente>_<Fecha>.pdf` (ejemplo: `CLIENTES/Francisco Medina/2027/Europa y Sudáfrica/OpcionesVuelo_FranciscoMedina_17Nov2026.pdf`). La fecha es la del día en que se cotizó, para distinguir versiones. Si no se sabe quién es el cliente o cómo se llama el viaje, preguntarle a Mariana antes de guardar. Nunca lo envíes a un cliente sin que Mariana lo confirme.
+
+## Cómo buscar y cotizar en Sabre (comprobado en nov 2026)
+
+Detalle, ejemplos y fuentes: documento del proyecto `claude/Guia_Sabre_Vuelos_Avanzada.md` (copia en `Travel Agent Portal/Sabre/`). Aquí va solo lo confirmado en Finder de Sabre o en vivo en 6FK2. El separador cruz de Lorena se escribe `¥`.
+
+**Orden de trabajo**
+1. **Tarifario antes que vuelos.** `FQ<par><fecha>BB-<aer>¥SA` lista las tarifas business de menor a mayor (`FB` first, `SB` premium economy, `JB` premium business; se pueden pegar varios códigos). Sirve para saber cuál es la más baja, en qué clase de reserva y con qué anticipación. Útiles: `¥R<fecha>` regreso, `<f1>*<f2>` rango de fechas, `/USD` moneda, `PM` promocionales, `¥FL` base con impuestos.
+2. **Condiciones de esa tarifa.** `RD<línea>*5/15/16` da compra anticipada, restricciones de venta y penalidades en una sola entrada. `RB<línea>` da la clase de reserva que exige.
+3. **¿Hay lugar en esa clase?** En la disponibilidad, un `0` junto a la letra (`I0`) significa que la tarifa existe pero ya no se vende ese día: probar otra fecha u otro vuelo antes de subir de clase. Filtros: `¥/*S` SkyTeam, `¥/*A` Star Alliance, `¥/*O` oneworld, `¥<aer>` aerolínea, `/D` directos. Pedir siempre el origen-destino completo, no tramo por tramo.
+4. **Cotizar sin tocar inventario cuando se pueda.**
+   - `WQ<orig><fecha>/A<aer>/C<clase><dest><fecha>/A<aer>/C<clase><orig>-V<validadora>/MUSD` cotiza sin PNR ni segmentos y lista las tarifas con impuestos. Ejemplo comprobado: `WQMEX15MAR/AIB/CIMAD29MAR/AIB/CIMEX-VIB/MUSD`.
+   - **Shop Fares** del Air Module (pantalla gráfica): cabina «solo» o «al menos en el vuelo principal», escalas, tipo de asiento, tiempo total, excluir conexiones nocturnas, alianza, calendario de ±3 días, multi-ticket y fuente del contenido (NDC, Sabre, LCC). Devuelve hasta 200 opciones de barata a cara.
+5. **Precio exacto con venta larga**, que siempre se descarta con `I`:
+   - Familias: cotizar a los menores como niños, no como adultos. `WPNC¥P2ADT/C09/C08/C06¥TC-BB¥MUSD` (cantidad + tipo, edad a dos dígitos, el total igual a los asientos vendidos). Comparar contra todos adultos y decir la diferencia.
+   - Un boleto contra dos: agregar `¥MT`. Si dos sencillos salen más baratos, Sabre muestra ambos precios. Requiere que la agencia lo tenga activo y un solo stopover; si responde error, comparar a mano con `WPS<segs>`.
+   - Reembolso y cambios sin leer toda la regla: `¥MP-I` los muestra; `¥MPR-ANY` deja solo reembolsables, `¥MPC-ANY` solo cambiables, `¥MP-0` sin ninguna penalidad.
+   - Origen del ahorro: `¥PV` solo privadas, `¥PL` solo públicas.
+   - Después de `WP`, `WPNC` o `WPNCS`, revisar «More Fares Available»: ahí salen las ofertas NDC del mismo itinerario.
+6. **Alternativas al itinerario cargado:** `WPNI` con `/D` directos, `/K1` máximo una conexión, `/A<aer>` o `/X<aer>` incluir o excluir, `/T3` ±3 horas, `/P2` y `/M2` días después o antes, `/*AC-MEX*100` aeropuertos alternos, `/EO-T2200-0500` sin conexiones de madrugada, `¥TC-BB` cabina con `/XJ` para no cambiarla, `¥Z19` hasta 19 opciones. Los calificadores con `/` van antes que los de `¥`.
+
+**Tarifas privadas en el tarifario.** En el `FQ` las privadas llevan `¤` y un designador después de la base (por ejemplo `/CNTN` o `/MXTO`). Si la más baja es privada, se trata como dice la sección «Tarifas promocionales y netas de la agencia» y se le avisa a Mariana antes de usarla.
+
+**Lo que nunca se teclea ni se pulsa sin el OK de Mariana:** `WC¥<n>` y `JR01` (venden la opción), `WPNCB` (re-reserva), `WPRQ` (guarda PQ), y los botones «SELL & SAVE PRICE» y «CREATE ORDER» de Shop Fares. Tampoco `¥TE` ni `¥TX`: son overrides de impuestos sujetos a nota de débito.
+
+**Ideas para bajar el precio que sí se pueden proponer:** redondo u open jaw antes que dos sencillos; business en el tramo largo y cabina menor en el corto; mover un día para cumplir estancia mínima o compra anticipada; stopover de Turkish, Iberia, TAP o Copa como valor agregado; vuelta al mundo cuando el viaje toca tres o más continentes. Si la web de la aerolínea sale más barata que Sabre, revisar si es por recargo de canal o por una tarifa NDC, y decirlo en el comparativo.
+
+**Lo que no se propone ni se hace** (genera notas de débito): destino más lejano para no volarlo, boletos cruzados para saltarse la estancia mínima, armar una conexión con disponibilidad de tramos sueltos, punto de venta distinto al real, reservas duplicadas o de prueba, y vender y descartar el mismo vuelo una y otra vez.
 
 ## Tarifas promocionales y netas de la agencia
 
