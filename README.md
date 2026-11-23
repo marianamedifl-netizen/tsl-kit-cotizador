@@ -10,7 +10,7 @@ Todo lo necesario para trabajar con el mismo flujo de cotización de The Suite L
 | `skills` | El texto de cada skill (`SKILL.md`), para leerlo y ver cambios |
 | `TSL - Formato Nuevo` | Generadores y ejemplos de cada documento |
 | `TSL - Brand Files` | Tipografías (IvyOra y Karla), logos y guía de marca |
-| `4 Guias` | `Guia_Sabre_TSL.md` e instrucciones para el proyecto |
+| `4 Guias` | `Guia_Sabre_TSL.md`, `Guia_Sabre_Vuelos_Avanzada.md` e instrucciones para el proyecto |
 | `sync` | Registro de sincronización de skills (`registro.md`), estado (`estado.json`) y el comparador (`comparar.py`) |
 
 ## Instalación (una sola vez)
@@ -21,7 +21,7 @@ Todo lo necesario para trabajar con el mismo flujo de cotización de The Suite L
    
    Los nombres deben quedar idénticos: las skills buscan las plantillas y las tipografías en esas rutas.
 4. **Conecta la carpeta.** En la app de escritorio de Claude, conecta `Travel Agent Portal` a tu proyecto.
-5. **Proyecto.** Crea un proyecto en Claude y pega en sus instrucciones el texto de `4 Guias/Instrucciones del proyecto.md`. Sube `Guia_Sabre_TSL.md` a los documentos del proyecto.
+5. **Proyecto.** Crea un proyecto en Claude y pega en sus instrucciones el texto de `4 Guias/Instrucciones del proyecto.md`. Sube `Guia_Sabre_TSL.md` y `Guia_Sabre_Vuelos_Avanzada.md` a los documentos del proyecto (la skill de vuelos busca la segunda como `claude/Guia_Sabre_Vuelos_Avanzada.md`).
 6. **Accesos que se piden aparte a Mariana.** Usuario de Sabre, acceso a Expedia TAAP, Virtuoso y Four Seasons Preferred Partner, y el conector de traslados Rolzo. Ninguna contraseña ni enlace privado viene en este repositorio.
 7. **Conectores.** Unsplash (fotos de ambiente) y la extensión de Claude en Chrome.
 
