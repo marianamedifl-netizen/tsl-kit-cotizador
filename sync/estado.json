@@ -1,0 +1,109 @@
+{
+ "skills": {
+  "nuba-core-cobro": {
+   "base": "097223fa3080",
+   "visto": {
+    "instalada": null,
+    "luis": "097223fa3080",
+    "mariana": null
+   }
+  },
+  "nuba-core-expediente": {
+   "base": "dd9c91267e2a",
+   "visto": {
+    "instalada": "dd9c91267e2a",
+    "luis": "dd9c91267e2a",
+    "mariana": null
+   }
+  },
+  "tsl-ads-instagram": {
+   "base": "5c7ec783d2a3",
+   "visto": {
+    "instalada": "5c7ec783d2a3",
+    "luis": "d5eed2ecd556",
+    "mariana": "5c7ec783d2a3"
+   }
+  },
+  "tsl-buscar-ofertas-hoteles": {
+   "base": "a27d098307b8",
+   "visto": {
+    "instalada": "a27d098307b8",
+    "luis": "a27d098307b8",
+    "mariana": "a27d098307b8"
+   }
+  },
+  "tsl-cotizacion-completa": {
+   "base": "3ac8257d1e56",
+   "visto": {
+    "instalada": "3ac8257d1e56",
+    "luis": "3ac8257d1e56",
+    "mariana": "3ac8257d1e56"
+   }
+  },
+  "tsl-cotizacion-hoteles": {
+   "base": "5a5cafe695cc",
+   "visto": {
+    "instalada": "5a5cafe695cc",
+    "luis": "5a5cafe695cc",
+    "mariana": "5a5cafe695cc"
+   }
+  },
+  "tsl-cotizacion-rapida": {
+   "base": "12a4eb21e262",
+   "visto": {
+    "instalada": "12a4eb21e262",
+    "luis": "12a4eb21e262",
+    "mariana": "12a4eb21e262"
+   }
+  },
+  "tsl-cotizacion-vuelos": {
+   "base": "6dfe11cae15c",
+   "visto": {
+    "instalada": "6dfe11cae15c",
+    "luis": "f2475025955e",
+    "mariana": "6dfe11cae15c"
+   }
+  },
+  "tsl-cotizar-hoteles-sabre": {
+   "base": "dd96e0fa8d6a",
+   "visto": {
+    "instalada": "928b3f5a1566",
+    "luis": "819ad9b0b3af",
+    "mariana": "dd96e0fa8d6a"
+   }
+  },
+  "tsl-cotizar-traslados-rolzo": {
+   "base": "1f793e87d8f6",
+   "visto": {
+    "instalada": "1f793e87d8f6",
+    "luis": "1f793e87d8f6",
+    "mariana": "1f793e87d8f6"
+   }
+  },
+  "tsl-entrega-final-formato-nuevo": {
+   "base": "bca8f10e9d99",
+   "visto": {
+    "instalada": "bca8f10e9d99",
+    "luis": "bca8f10e9d99",
+    "mariana": "bca8f10e9d99"
+   }
+  },
+  "tsl-guia-viaje-formato-nuevo": {
+   "base": "1776f6a5d2a0",
+   "visto": {
+    "instalada": "1776f6a5d2a0",
+    "luis": "1776f6a5d2a0",
+    "mariana": "1776f6a5d2a0"
+   }
+  },
+  "tsl-portal": {
+   "base": "2c2935a99deb",
+   "visto": {
+    "instalada": "2c2935a99deb",
+    "luis": null,
+    "mariana": null
+   }
+  }
+ },
+ "ultima_revision": "2026-11-23 13:23"
+}

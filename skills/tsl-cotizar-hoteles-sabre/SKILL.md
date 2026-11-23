@@ -168,6 +168,35 @@ Cuando la cotización lleva vuelos, se compara **el mismo itinerario** (mismos v
 
 Por cada fuente: total por persona y para todos, moneda, equipaje incluido, cambios, reembolso y selección de asiento. Si una fuente no ofrece el mismo itinerario o la misma tarifa, se dice y se muestra la más cercana, marcada como distinta. La preferencia de Mariana al buscar: minimizar molestias (pocas escalas, buenos horarios) al precio razonable más bajo.
 
+### Vuelos en Sabre: procedimiento comprobado (nov 2026)
+
+1. **Área de trabajo vacía:** `*A` debe responder `NO DATA` antes de empezar.
+2. **Revisar desde qué países se puede emitir cada aerolínea:** `WETP*<aerolínea>` (ej. `WETP*MS`). Muestra la lista POINT OF SALE COUNTRY.
+   - **Si aparece MX:** se cotiza normal desde México (PCC 6FK2).
+   - **Si no aparece MX:** se cotiza con punto de venta US, que es la oficina de **Brickell Travel (PCC V60H)** en Miami. En nov 2026 EgyptAir (MS) no tenía MX.
+3. **Cargar cada segmento con venta larga**, con la misma clase del itinerario de Mariana: `0<aerolínea><vuelo><clase><fecha><origen><destino>NN<pax>`. Ej.: `0AM107D14JANTRCMEXNN2`, `0AF179I14JANMEXCDGNN2`. No hace falta poner los ARNK.
+4. **Si un segmento sale `UC`**, la clase ya no tiene lugar. Revisar disponibilidad con `1<fecha><origen><destino><hora>¥<aerolínea>` (ej. `114JANMEXCDG1955¥AF`). Descartar todo con `I` y volver a cargar el segmento en la siguiente clase disponible de la misma cabina. Avisarle a Mariana qué clase se cerró, porque si ya la tiene confirmada en su PNR no debe soltarla.
+5. **Cotizar un boleto por aerolínea**, seleccionando sus segmentos y la validadora, en USD:
+   - Con MX en la lista: `WPS1/8¥AAM¥MUSD`, `WPS2/6-7¥AAF¥MUSD`, `WPS4-5¥ATK¥MUSD`.
+   - Sin MX (se emite por Brickell): agregar venta y emisión en Miami, `WPSMIA¥TMIA`. Ej.: con un solo boleto en pantalla, `WPSMIA¥TMIA¥AMS¥MUSD`.
+   - `WPNC¥S1/8¥AAM¥MUSD` busca la más barata **sin re-reservar** (nunca usar `WPNCB` sin permiso).
+6. **Cargo de Brickell Travel:** $3.75 USD por pasajero por emisión de boleto. Va como renglón aparte ("FEE BRICKELL") y se suma al total por pasajero, junto con los asientos.
+7. **De cada cotización, leer y reportar:** total por pasajero y para todos, familia de marca (BRANDED FARE), si es tarifa privada, la validadora, la fecha límite de compra (LAST DAY TO PURCHASE) y las maletas.
+8. **Al terminar:** `I` para descartar y `*A` para confirmar `NO DATA`. Nunca `E`/`ER`.
+9. **Formato del total de Mariana:** TTL TKTS (suma de boletos) + TTL SEATS + FEE BRICKELL = TTL P/PAX.
+
+### Misma aerolínea: cotizar siempre como un solo boleto
+
+Cuando dos o más vuelos del itinerario son de la misma aerolínea, **siempre se intenta primero cotizarlos juntos, como un solo boleto**, aunque no sean consecutivos ni formen un viaje redondo (por ejemplo Seúl–Tokio y, semanas después, Okinawa–Seúl con Korean Air). Suele salir más barato que la suma de los tramos sueltos.
+
+- **En Sabre:** cargar juntos todos los segmentos de esa aerolínea y cotizarlos en una sola entrada.
+  - Misma cabina en todos: `WPNC¥S<n>/<m>¥TC-BB¥MUSD` (o `TC-YB` para Economy).
+  - Cabinas mezcladas (un tramo sin Business a la venta, por ejemplo): revisar la disponibilidad, vender cada segmento en la clase más baja disponible de su cabina y cotizar tal como está reservado con `WPMUSD`. `WP¥MUSD` da error de formato.
+  - Descartar siempre con `I` y confirmar con `*A` que diga NO DATA.
+- **En Expedia y en el sitio de la aerolínea:** buscar la misma combinación como multidestino. Si no la arman (pasa con cabinas mezcladas), decirlo y mostrar los tramos por separado.
+- **En el comparativo:** mostrar las dos cifras, juntos y por separado, con la diferencia, y usar la más barata en el total. Avisar de las condiciones del boleto único (cambios, reembolso, fecha límite de compra y cualquier restricción de venta que marque la regla).
+- Si la aerolínea no permite combinarlos o juntos sale más caro, decirlo y dejar los tramos sueltos.
+
 ## 5. Traslados (conector Rolzo)
 
 - **Herramientas:** `estado_rolzo` (confirma que diga "produccion"), `buscar_lugar` y `cotizar_traslado`.

@@ -11,6 +11,7 @@ Todo lo necesario para trabajar con el mismo flujo de cotización de The Suite L
 | `TSL - Formato Nuevo` | Generadores y ejemplos de cada documento |
 | `TSL - Brand Files` | Tipografías (IvyOra y Karla), logos y guía de marca |
 | `4 Guias` | `Guia_Sabre_TSL.md` e instrucciones para el proyecto |
+| `sync` | Registro de sincronización de skills (`registro.md`), estado (`estado.json`) y el comparador (`comparar.py`) |
 
 ## Instalación (una sola vez)
 
@@ -27,6 +28,8 @@ Todo lo necesario para trabajar con el mismo flujo de cotización de The Suite L
 ## Actualizaciones
 
 Cuando cambie una skill o una plantilla, se actualiza aquí. Vuelve a descargar el repositorio, reemplaza las carpetas y vuelve a subir a Claude el ZIP de la skill que cambió.
+
+Una tarea programada de Claude revisa una vez al día este repositorio y `luisbtrejo77-max/nuba-tsl-skills`, compara cada skill contra las instaladas en la cuenta de Mariana y prepara la tarjeta de actualización. Cada revisión queda anotada en `sync/registro.md`.
 
 ## Las skills y cuándo se usan
 
