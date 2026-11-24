@@ -11,3 +11,4 @@ La versión es la huella del texto de la skill (12 caracteres), la misma que usa
 | 2026-11-23 13:25 | `tsl-ads-instagram` | instalada | `d5eed2ecd556` | `5c7ec783d2a3` | Subida al repo de Mariana |
 | 2026-11-23 13:25 | `tsl-cotizacion-vuelos` | instalada | `f2475025955e` | `6dfe11cae15c` | Subida al repo de Mariana |
 | 2026-11-23 14:02 | `tsl-cotizacion-vuelos` | instalada, mariana | `6dfe11cae15c` | `21b13043ddc8` | Versión nueva detectada |
+| 2026-11-24 07:26 | (todas) | | | | Revisión sin cambios |
