@@ -12,3 +12,5 @@ La versión es la huella del texto de la skill (12 caracteres), la misma que usa
 | 2026-11-23 13:25 | `tsl-cotizacion-vuelos` | instalada | `f2475025955e` | `6dfe11cae15c` | Subida al repo de Mariana |
 | 2026-11-23 14:02 | `tsl-cotizacion-vuelos` | instalada, mariana | `6dfe11cae15c` | `21b13043ddc8` | Versión nueva detectada |
 | 2026-11-24 07:26 | (todas) | | | | Revisión sin cambios |
+| 2026-11-25 07:25 | `nuba-core-comisiones` | luis | `ninguna` | `18c80dadb6c9` | Versión nueva detectada |
+| 2026-11-25 07:25 | `nuba-core-comisiones` | luis (commit 7e81ad9) | ninguna | `18c80dadb6c9` | No propuesta: no pasó la revisión (manda correos de cobro a proveedores y a finanzas, y cambia comisiones en NUBA Core y en el portal, con el OK de Luis o sin confirmación, no con la de Mariana; está escrita para la sesión de Luis; incluye un número IATA sin verificar). Además `propose_skills` no estuvo disponible en esta corrida. No se instaló nada |

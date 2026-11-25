@@ -8,6 +8,14 @@
     "mariana": null
    }
   },
+  "nuba-core-comisiones": {
+   "base": "18c80dadb6c9",
+   "visto": {
+    "instalada": null,
+    "luis": "18c80dadb6c9",
+    "mariana": null
+   }
+  },
   "nuba-core-expediente": {
    "base": "dd9c91267e2a",
    "visto": {
@@ -105,5 +113,5 @@
    }
   }
  },
- "ultima_revision": "2026-11-24 07:26"
+ "ultima_revision": "2026-11-25 07:25"
 }
