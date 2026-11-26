@@ -17,10 +17,10 @@
    }
   },
   "nuba-core-expediente": {
-   "base": "dd9c91267e2a",
+   "base": "7700dda7a3f2",
    "visto": {
     "instalada": "dd9c91267e2a",
-    "luis": "dd9c91267e2a",
+    "luis": "7700dda7a3f2",
     "mariana": null
    }
   },
@@ -113,5 +113,5 @@
    }
   }
  },
- "ultima_revision": "2026-11-25 07:25"
+ "ultima_revision": "2026-11-26 07:25"
 }
